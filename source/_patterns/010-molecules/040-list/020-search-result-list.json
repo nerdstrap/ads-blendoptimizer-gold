@@ -1,0 +1,42 @@
+{
+	"search-result-list": {
+		"list-items": [
+			{
+				"href": "#",
+				"title": "Lorem ipsum",
+				"glyph": "@",
+				"text": "Lorem ipsum",
+				"paragraph": {
+					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+				}
+			},
+			{
+				"href": "#",
+				"title": "Lorem ipsum",
+				"glyph": "@",
+				"text": "Lorem ipsum",
+				"paragraph": {
+					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+				}
+			},
+			{
+				"href": "#",
+				"title": "Lorem ipsum",
+				"glyph": "@",
+				"text": "Lorem ipsum",
+				"paragraph": {
+					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+				}
+			},
+			{
+				"href": "#",
+				"title": "Lorem ipsum",
+				"glyph": "@",
+				"text": "Lorem ipsum",
+				"paragraph": {
+					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,41 @@
+%terms-font-size {
+	font-size: $h5;
+}
+
+#divTermsAndConditions {
+	@extend %terms-font-size;
+
+	.uracHeader {
+		display: block;
+		@include title-setup;
+		color: $color-dark;
+		font-weight: 600;
+		font-size: 1.25rem;
+
+		& + p {
+			margin-top: -$default-space  / 2;
+		}
+	}
+
+	p, li, ul, div {
+		@extend %terms-font-size;
+	}
+
+	p, ul {
+		& + ul {
+			padding-top: $default-space  / 4;
+		}
+	}
+
+	p, ul {
+		& + .uracHeader {
+			padding-top: $default-space;
+		}
+	}
+
+	ul {
+		& + p {
+			padding-top: $default-space / 2;
+		}
+	}
+}

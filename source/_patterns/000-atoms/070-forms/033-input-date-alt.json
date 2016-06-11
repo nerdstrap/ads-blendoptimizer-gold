@@ -1,0 +1,8 @@
+{
+	"input": {
+		"id": "atoms-forms-input-date-alt",
+		"inputClasses": "js-format-date",
+		"type": "tel",
+		"placeholder": "e.g. 04/18/2016"
+	}
+}

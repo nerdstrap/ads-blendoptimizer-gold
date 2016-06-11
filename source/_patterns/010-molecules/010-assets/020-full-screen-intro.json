@@ -1,0 +1,40 @@
+{
+	"full-screen-intro": {
+		"background-image-url": "/images/fpo-placeimg_600x400.jpg",
+		"inner-page-nav": {
+			"innerPageNavExtraClasses": "c-page__inner-nav",
+			"innerPageNavExtraClasses1": "t-4",
+			"list-items": [
+				{
+					"inner-page-cta": {
+						"isActive": "true",
+						"href": "#",
+						"title": "Lorem ipsum (active)",
+						"text": "Lorem ipsum (active)"
+					}
+				},
+				{
+					"inner-page-cta": {
+						"href": "#",
+						"title": "Lorem ipsum",
+						"text": "Lorem ipsum"
+					}
+				},
+				{
+					"inner-page-cta": {
+						"href": "#",
+						"title": "Lorem ipsum",
+						"text": "Lorem ipsum"
+					}
+				}
+			]
+		},
+		"page-header": {
+			"text": "Lorem ipsum",
+			"tag": "h1"
+		},
+		"page-subheader": {
+			"tag": "h2"
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.ui-autocomplete, .c-autocomplete-list {
+	padding-left: 0;
+	list-style: none;
+	z-index: 5;
+
+
+	@media screen and (min-width: $bp-1) {
+		max-width: $max-width - $default-space * 3;
+	}
+
+	@media screen and (max-width: $bp-1) {
+		max-width: calc(100% - #{($default-space * 4)});
+	}
+}
+
+.ui-menu-item {
+	display: block;
+	background-color: $color-light-light;
+	color: $color-primary;
+	cursor: pointer;
+
+	@include disable-select;
+	@include title-setup;
+
+	@include units($version: "half-sized", $variation: (base: true));
+	// @include units($version: "half-sized", $variation: (top: true, bottom: true));
+	// @include units($version: "two-times", $variation: (right: true, left: true));
+
+	transition-property: background-color;
+	will-change: background-color;
+	transition-duration: 500ms;
+	transition-timing-function: ease-out;
+	transition-delay: 0;
+	outline: none;
+
+
+	&:focus, &:hover, &:active {
+		color: $color-light-light;
+	}
+
+	&:focus, &:hover {
+		transition-timing-function: ease-in;
+		transition-duration: 150ms;
+		background-color: $button-bg-hover;
+	}
+
+	&:active {
+		background-color: $button-bg-active;
+	}
+
+	&:active, &:active:hover, &:active:focus {
+		transition-timing-function: ease-in-out;
+		transition-duration: 10ms;
+	}
+
+	& + .ui-menu-item {
+		border-top: rem(1) solid $color-dark-light;
+	}
+}

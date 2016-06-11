@@ -1,0 +1,18 @@
+{{#ordered-list}}
+    <ol>
+		{{#list-items}}
+            <li>
+				{{text}}
+				{{#nested-ordered-list}}
+                    <ol>
+						{{#nested-ordered-list-items}}
+                            <li>
+								{{text}}
+                            </li>
+						{{/nested-ordered-list-items}}
+                    </ol>
+				{{/nested-ordered-list}}
+            </li>
+		{{/list-items}}
+    </ol>
+{{/ordered-list}}

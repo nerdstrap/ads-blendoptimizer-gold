@@ -1,0 +1,201 @@
+@font-face {
+	font-family: 'webfont';
+	src:url('../fonts/ads/fonts/ads.eot');
+	src:url('../fonts/ads/fonts/ads.eot') format('embedded-opentype'),
+		url('../fonts/ads/fonts/ads.woff') format('woff'),
+		url('../fonts/ads/fonts/ads.ttf') format('truetype'),
+		url('../fonts/ads/fonts/ads.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+%glyph-shared {
+	@include suffixcate {
+		@include glyph;
+		white-space: nowrap;
+	}
+}
+
+%glyph-pseudo-shared {
+	@include suffixcate {
+		content: attr(data-icon);
+	}
+}
+
+%glyph-pseudo-no-speak {
+	@include suffixcate {
+		speak: none;
+	}
+}
+
+%u-glyph-circled {
+	@include allChange($property: background-color);
+	vertical-align: middle;
+	display: inline-block;
+	width: rem(26);
+	height: rem(26);
+	border-radius: 50%;
+	background-color: $color-primary;
+	color: $color-light-light;
+	font-size: rem(18);
+	transform: translateY(-#{rem(1)});
+	text-align: center;
+
+	&:hover {
+		&:before, &:after {
+			background-color: $color-secondary;
+		}
+
+		&:active {
+			background-color: $color-secondary-light;
+		}
+	}
+}
+
+.u-glyph {
+	@extend %glyph-shared;
+
+	&--animate {
+		&-before:before, &-after:after {
+			@include anchor-animate;
+		}
+	}
+
+	&--no-speak {
+		@extend %glyph-pseudo-no-speak;
+	}
+
+	&-before--circled, &-after--circled {
+		vertical-align: middle;
+	}
+
+	&-before--circled {
+		&:before {
+			@extend %u-glyph-circled;
+		}
+	}
+
+	&-after--circled {
+		&:after {
+			@extend %u-glyph-circled;
+		}
+	}
+
+	&-before {
+		&[data-icon] {
+			&:before {
+				@extend %glyph-pseudo-shared;
+			}
+		}
+
+		&:before {
+			@extend %glyph-shared;
+		}
+
+		&--no-speak {
+			&:before {
+				@extend %glyph-pseudo-no-speak;
+			}
+		}
+
+		&\@large {
+			&[data-icon] {
+				&:before {
+					@extend %glyph-pseudo-shared\@large;
+				}
+			}
+
+			&:before {
+				@extend %glyph-shared\@large;
+			}
+
+			&--no-speak {
+				&:before {
+					@extend %glyph-pseudo-no-speak\@large;
+				}
+			}
+		}
+
+		&\@small {
+			&[data-icon] {
+				&:before {
+					@extend %glyph-pseudo-shared\@small;
+				}
+			}
+
+			&:before {
+				@extend %glyph-shared\@small;
+			}
+
+			&--no-speak {
+				&:before {
+					@extend %glyph-pseudo-no-speak\@small;
+				}
+			}
+		}
+	}
+
+	&-after {
+		&[data-icon] {
+			&:after {
+				@extend %glyph-pseudo-shared;
+			}
+		}
+
+		&:after {
+			@extend %glyph-shared;
+		}
+
+		&--no-speak {
+			&:after {
+				@extend %glyph-pseudo-no-speak;
+			}
+		}
+
+		&\@large {
+			&[data-icon] {
+				&:after {
+					@extend %glyph-pseudo-shared\@large;
+				}
+			}
+
+			&:after {
+				@extend %glyph-shared\@large;
+			}
+
+			&--no-speak {
+				&:after {
+					@extend %glyph-pseudo-no-speak\@large;
+				}
+			}
+		}
+
+		&\@small {
+			&[data-icon] {
+				&:after {
+					@extend %glyph-pseudo-shared\@small;
+				}
+			}
+
+			&:after {
+				@extend %glyph-shared\@small;
+			}
+
+			&--no-speak {
+				&:after {
+					@extend %glyph-pseudo-no-speak\@small;
+				}
+			}
+		}
+	}
+}
+
+.c-calendar-icon {
+	&__base {
+		fill: currentColor;
+	}
+
+	&__accent {
+		fill: $color-primary;
+	}
+}

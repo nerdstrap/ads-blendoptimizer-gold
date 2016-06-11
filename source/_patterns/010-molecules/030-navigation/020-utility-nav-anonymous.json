@@ -1,0 +1,9 @@
+{
+	"utility-nav": {
+		"i18n_welcome": "Welcome, ",
+		"i18n_register": "Register",
+		"href": "#",
+		"title": "Lorem ipsum",
+		"i18n_login": "Login"
+	}
+}

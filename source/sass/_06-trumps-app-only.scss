@@ -1,0 +1,10 @@
+// .c-weather .c-page-header-scalable {
+// 	word-break: break-all;
+// }
+
+
+.redUnderline {
+	@extend .c-anchor;
+	@extend .c-anchor--primary;
+	word-break: break-all;
+}

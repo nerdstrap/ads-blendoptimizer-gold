@@ -1,0 +1,28 @@
+{
+	"inner-page-nav": {
+		"list-items": [
+			{
+				"inner-page-cta": {
+					"isActive": "true",
+					"href": "#",
+					"title": "Lorem ipsum (active)",
+					"text": "Lorem ipsum (active)"
+				}
+			},
+			{
+				"inner-page-cta": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "Lorem ipsum"
+				}
+			},
+			{
+				"inner-page-cta": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "Lorem ipsum"
+				}
+			}
+		]
+	}
+}

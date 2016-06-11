@@ -1,0 +1,54 @@
+/**
+ * STYLES SPECIFIC TO JUST PATTERN LAB
+ */
+
+#organisms-site-header-anonymous {
+	// fix for fixed position
+	#header, .c-global-header__nav-container, .c-global-header {
+		position: absolute;
+		width: 100%;
+		// @media screen and (min-height: 460px) and (max-width: $bp-header) {
+		// 	position: absolute;
+		// 	width: 100%;
+		// }
+	}
+}
+
+#organisms-site-header-authenticated {
+	// fix for fixed position
+	#header, .c-global-header__nav-container, .c-global-header {
+		position: absolute;
+		width: 100%;
+		// @media screen and (min-height: 460px) and (max-width: $bp-header) {
+		// 	position: absolute;
+		// 	width: 100%;
+		// }
+	}
+}
+
+
+#atoms-loader-full {
+	position: relative;
+
+	.c-loader-full {
+		position: relative;
+	}
+}
+
+
+#atoms-grid, #container-wrap-for-spaced-grid {
+	text-align: center;
+
+	[class*="__cell"] {
+		outline: rem(1) solid;
+	}
+}
+
+
+#molecules-full-screen-intro {
+	position: relative;
+
+	.c-page__inner-nav {
+		position: absolute;
+	}
+}

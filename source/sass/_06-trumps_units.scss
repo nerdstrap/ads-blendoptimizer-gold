@@ -1,0 +1,396 @@
+// padding
+
+$variations-spacing: (top: 1, right: 2, bottom: 3, left: 4);
+.u-space {
+	@each $version, $number in $variations-spacing {
+		&-#{$number} {
+			@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+				@include units($variation: (#{$version}: true));
+			}
+
+			&-fixed {
+				@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+					padding-#{$version}: $default-space;
+				}
+			}
+
+			&-lg {
+				@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+					@include units($version: "two-times", $variation: (#{$version}: true));
+				}
+			}
+
+			&-lg-fixed {
+				@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+					padding-#{$version}: $default-space * 2;
+				}
+			}
+
+			&-sm {
+				@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+					@include units($version: "half-sized", $variation: (#{$version}: true));
+				}
+			}
+
+			&-sm-fixed {
+				@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+					padding-#{$version}: $default-space / 2;
+				}
+			}
+
+			&-tiny, &-tiny-fixed {
+				@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+					padding-#{$version}: $default-space / 4;
+				}
+			}
+		}
+	}
+
+	@include suffixcateExtend((".u-space-1"));
+	@include suffixcateExtend((".u-space-2"));
+	@include suffixcateExtend((".u-space-3"));
+	@include suffixcateExtend((".u-space-4"));
+
+	&-1-3 {
+		@include suffixcateExtend((".u-space-1"));
+		@include suffixcateExtend((".u-space-3"));
+
+
+		&-tiny, &-tiny-fixed {
+			@include suffixcateExtend((".u-space-1-tiny"));
+			@include suffixcateExtend((".u-space-3-tiny"));
+		}
+
+		&-sm, &-sm-fixed {
+			@include suffixcateExtend((".u-space-1-sm"));
+			@include suffixcateExtend((".u-space-3-sm"));
+		}
+
+		&-fixed {
+			@include suffixcateExtend((".u-space-1-fixed"));
+			@include suffixcateExtend((".u-space-3-fixed"));
+		}
+
+		&-lg {
+			@include suffixcateExtend((".u-space-1-lg"));
+			@include suffixcateExtend((".u-space-3-lg"));
+		}
+
+		&-lg-fixed {
+			@include suffixcateExtend((".u-space-1-lg-fixed"));
+			@include suffixcateExtend((".u-space-3-lg-fixed"));
+		}
+	}
+
+	&-2-4 {
+		@include suffixcateExtend((".u-space-2"));
+		@include suffixcateExtend((".u-space-4"));
+
+
+		&-tiny, &-tiny-fixed {
+			@include suffixcateExtend((".u-space-2-tiny"));
+			@include suffixcateExtend((".u-space-4-tiny"));
+		}
+
+		&-sm, &-sm-fixed {
+			@include suffixcateExtend((".u-space-2-sm"));
+			@include suffixcateExtend((".u-space-4-sm"));
+		}
+
+		&-fixed {
+			@include suffixcateExtend((".u-space-2-fixed"));
+			@include suffixcateExtend((".u-space-4-fixed"));
+		}
+
+		&-lg {
+			@include suffixcateExtend((".u-space-2-lg"));
+			@include suffixcateExtend((".u-space-4-lg"));
+		}
+
+		&-lg-fixed {
+			@include suffixcateExtend((".u-space-2-lg-fixed"));
+			@include suffixcateExtend((".u-space-4-lg-fixed"));
+		}
+	}
+
+
+	&-fixed {
+		@include suffixcateExtend((".u-space-1-fixed"));
+		@include suffixcateExtend((".u-space-2-fixed"));
+		@include suffixcateExtend((".u-space-3-fixed"));
+		@include suffixcateExtend((".u-space-4-fixed"));
+	}
+
+	&-lg {
+		@include suffixcateExtend((".u-space-1-lg"));
+		@include suffixcateExtend((".u-space-2-lg"));
+		@include suffixcateExtend((".u-space-3-lg"));
+		@include suffixcateExtend((".u-space-4-lg"));
+	}
+
+	&-lg-fixed {
+		@include suffixcateExtend((".u-space-1-lg-fixed"));
+		@include suffixcateExtend((".u-space-2-lg-fixed"));
+		@include suffixcateExtend((".u-space-3-lg-fixed"));
+		@include suffixcateExtend((".u-space-4-lg-fixed"));
+	}
+
+	&-sm {
+		@include suffixcateExtend((".u-space-1-sm"));
+		@include suffixcateExtend((".u-space-2-sm"));
+		@include suffixcateExtend((".u-space-3-sm"));
+		@include suffixcateExtend((".u-space-4-sm"));
+	}
+
+	&-sm-fixed {
+		@include suffixcateExtend((".u-space-1-sm-fixed"));
+		@include suffixcateExtend((".u-space-2-sm-fixed"));
+		@include suffixcateExtend((".u-space-3-sm-fixed"));
+		@include suffixcateExtend((".u-space-4-sm-fixed"));
+	}
+
+	&-tiny, &-tiny-fixed {
+		@include suffixcateExtend((".u-space-1-tiny"));
+		@include suffixcateExtend((".u-space-2-tiny"));
+		@include suffixcateExtend((".u-space-3-tiny"));
+		@include suffixcateExtend((".u-space-4-tiny"));
+	}
+}
+
+
+.u-gutt {
+	@each $version, $number in $variations-spacing {
+		&-#{$number} {
+			@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+				@include units($property: "margin", $variation: (#{$version}: true));
+			}
+
+			&-fixed {
+				@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+					margin-#{$version}: $default-space;
+				}
+			}
+
+			&-lg {
+				@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+					@include units($property: "margin", $version: "two-times", $variation: (#{$version}: true));
+				}
+			}
+
+			&-lg-fixed {
+				@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+					margin-#{$version}: $default-space * 2;
+				}
+			}
+
+			&-sm {
+				@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+					@include units($property: "margin", $version: "half-sized", $variation: (#{$version}: true));
+				}
+			}
+
+			&-sm-fixed {
+				@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+					margin-#{$version}: $default-space / 2;
+				}
+			}
+
+			&-tiny, &-tiny-fixed {
+				@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+					margin-#{$version}: $default-space / 4;
+				}
+			}
+		}
+	}
+
+	@include suffixcateExtend((".u-gutt-1"));
+	@include suffixcateExtend((".u-gutt-2"));
+	@include suffixcateExtend((".u-gutt-3"));
+	@include suffixcateExtend((".u-gutt-4"));
+
+	&-1-3 {
+		@include suffixcateExtend((".u-gutt-1"));
+		@include suffixcateExtend((".u-gutt-3"));
+
+
+		&-tiny, &-tiny-fixed {
+			@include suffixcateExtend((".u-gutt-1-tiny"));
+			@include suffixcateExtend((".u-gutt-3-tiny"));
+		}
+
+		&-sm, &-sm-fixed {
+			@include suffixcateExtend((".u-gutt-1-sm"));
+			@include suffixcateExtend((".u-gutt-3-sm"));
+		}
+
+		&-fixed {
+			@include suffixcateExtend((".u-gutt-1-fixed"));
+			@include suffixcateExtend((".u-gutt-3-fixed"));
+		}
+
+		&-lg {
+			@include suffixcateExtend((".u-gutt-1-lg"));
+			@include suffixcateExtend((".u-gutt-3-lg"));
+		}
+
+		&-lg-fixed {
+			@include suffixcateExtend((".u-gutt-1-lg-fixed"));
+			@include suffixcateExtend((".u-gutt-3-lg-fixed"));
+		}
+	}
+
+	&-2-4 {
+		@include suffixcateExtend((".u-gutt-2"));
+		@include suffixcateExtend((".u-gutt-4"));
+
+
+		&-tiny, &-tiny-fixed {
+			@include suffixcateExtend((".u-gutt-2-tiny"));
+			@include suffixcateExtend((".u-gutt-4-tiny"));
+		}
+
+		&-sm, &-sm-fixed {
+			@include suffixcateExtend((".u-gutt-2-sm"));
+			@include suffixcateExtend((".u-gutt-4-sm"));
+		}
+
+		&-fixed {
+			@include suffixcateExtend((".u-gutt-2-fixed"));
+			@include suffixcateExtend((".u-gutt-4-fixed"));
+		}
+
+		&-lg {
+			@include suffixcateExtend((".u-gutt-2-lg"));
+			@include suffixcateExtend((".u-gutt-4-lg"));
+		}
+
+		&-lg-fixed {
+			@include suffixcateExtend((".u-gutt-2-lg-fixed"));
+			@include suffixcateExtend((".u-gutt-4-lg-fixed"));
+		}
+	}
+
+	&-fixed {
+		@include suffixcateExtend((".u-gutt-1-fixed"));
+		@include suffixcateExtend((".u-gutt-2-fixed"));
+		@include suffixcateExtend((".u-gutt-3-fixed"));
+		@include suffixcateExtend((".u-gutt-4-fixed"));
+	}
+
+	&-lg {
+		@include suffixcateExtend((".u-gutt-1-lg"));
+		@include suffixcateExtend((".u-gutt-2-lg"));
+		@include suffixcateExtend((".u-gutt-3-lg"));
+		@include suffixcateExtend((".u-gutt-4-lg"));
+	}
+
+	&-lg-fixed {
+		@include suffixcateExtend((".u-gutt-1-lg-fixed"));
+		@include suffixcateExtend((".u-gutt-2-lg-fixed"));
+		@include suffixcateExtend((".u-gutt-3-lg-fixed"));
+		@include suffixcateExtend((".u-gutt-4-lg-fixed"));
+	}
+
+	&-sm {
+		@include suffixcateExtend((".u-gutt-1-sm"));
+		@include suffixcateExtend((".u-gutt-2-sm"));
+		@include suffixcateExtend((".u-gutt-3-sm"));
+		@include suffixcateExtend((".u-gutt-4-sm"));
+	}
+
+	&-sm-fixed {
+		@include suffixcateExtend((".u-gutt-1-sm-fixed"));
+		@include suffixcateExtend((".u-gutt-2-sm-fixed"));
+		@include suffixcateExtend((".u-gutt-3-sm-fixed"));
+		@include suffixcateExtend((".u-gutt-4-sm-fixed"));
+	}
+
+	&-tiny, &-tiny-fixed {
+		@include suffixcateExtend((".u-gutt-1-tiny"));
+		@include suffixcateExtend((".u-gutt-2-tiny"));
+		@include suffixcateExtend((".u-gutt-3-tiny"));
+		@include suffixcateExtend((".u-gutt-4-tiny"));
+	}
+}
+
+
+%u-space-child-left {
+	@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+		> * + * {
+			@include units($variation: (left: true));
+		}
+	}
+}
+
+%u-space-small-child-left {
+	@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+		> * + * {
+			@include units($version: "half-sized", $variation: (left: true));
+		}
+	}
+}
+
+%u-space-tiny-child-left {
+	@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+		> * + * {
+			padding-left: $default-space / 4;
+		}
+	}
+}
+
+.u-space-children {
+
+	@include suffixcateExtend(('%u-space-child-left'));
+
+
+	&-sm {
+		@include suffixcateExtend(('%u-space-small-child-left'));
+	}
+
+	&-tiny {
+		@include suffixcateExtend(('%u-space-tiny-child-left'));
+	}
+
+	@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+		&.u-divider, &.u-divider\@large, &.u-divider\@small {
+			> li:before {
+				margin-left: rem(-8);
+
+				@media screen and (min-width: $bp-spaces){
+					width: $default-space;
+				}
+
+				@media screen and (max-width: $bp-spaces){
+					width: $default-space / 2;
+				}
+			}
+		}
+	}
+}
+
+.u-zone-callout, .u-zone-space {
+	@include suffixcate {
+		padding-right: ($default-space / 2) + $default-space;
+		padding-left: ($default-space / 2) + $default-space;
+	}
+}
+
+.u-zone-callout {
+	// @extend .u-gutt-2\@small;
+	// @extend .u-gutt-4\@small;
+
+	&--major {
+	}
+}
+
+.u-zone-space {
+	@include suffixcateExtend((".u-space-1-fixed", ".u-space-3-fixed"));
+
+	// @extend .u-space-1-fixed;
+	// @extend .u-space-3-fixed;
+}
+
+.u-intro-space {
+	@extend .u-zone-space;
+}
+

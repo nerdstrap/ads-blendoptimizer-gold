@@ -1,0 +1,30 @@
+{
+	"wizard-link-list": {
+		"list-items": [
+			{
+				"anchor": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "Lorem ipsum",
+					"anchorClasses": "js-page-wizard__cta"
+				}
+			},
+			{
+				"anchor": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "Lorem ipsum",
+					"anchorClasses": "js-page-wizard__cta"
+				}
+			},
+			{
+				"anchor": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "Lorem ipsum",
+					"anchorClasses": "js-page-wizard__cta"
+				}
+			}
+		]
+	}
+}

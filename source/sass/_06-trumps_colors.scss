@@ -1,0 +1,277 @@
+$colors: (
+	"primary-dark": #{$color-primary-dark},
+	"primary": #{$color-primary},
+	"primary-light": #{$color-primary-light},
+	"primary-accent": #{$color-primary-accent},
+
+	"secondary-dark": #{$color-secondary-dark},
+	"secondary": #{$color-secondary},
+	"secondary-light": #{$color-secondary-light},
+	"secondary-accent": #{$color-secondary-accent},
+
+	"dark-dark": #{$color-dark-dark},
+	"dark": #{$color-dark},
+	"dark-light": #{$color-dark-light},
+	"dark-accent": #{$color-light-dark},
+
+	"light-dark": #{$color-light-dark},
+	"light": #{$color-light},
+	"light-light": #{$color-light-light},
+	"light-accent": #{$color-light-accent},
+
+	"accent-dark": #{$color-accent-dark},
+	"accent": #{$color-accent},
+	// "accent-light": #{$color-accent-light},
+	// "accent-accent": #{$color-accent-accent}
+
+);
+
+@each $color, $value in $colors {
+    .u-#{$color} {
+    	@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+        	color: $value;
+    	}
+    }
+
+    .u-#{$color}-bg {
+    	@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+        	background-color: $value;
+    	}
+    }
+}
+
+.t-0 {
+	@include suffixcateExtend((".u-light-light-bg", ".u-dark"));
+}
+
+.u-alpha {
+	@include suffixcate {
+		background-color: rgba($color-light-light, .85);
+	}
+}
+
+.t-alpha {
+	@include suffixcateExtend((".u-alpha", ".u-dark"));
+}
+
+.t-alpha-2 {
+	@include suffixcateExtend((".u-dark"));
+
+	@include suffixcate {
+		background-color: rgba($color-light-light, .6);
+	}
+}
+
+.t-1, .t-light {
+	@include suffixcateExtend((".u-dark-light-bg", ".u-dark"));
+}
+
+.t-2, .t-dark {
+	@include suffixcateExtend((".u-dark-bg", ".u-light-light"));
+}
+
+.t-3 {
+	@include suffixcateExtend((".u-accent-dark-bg", ".u-light-light"));
+}
+
+.t-4 {
+	@include suffixcateExtend((".u-secondary-bg", ".u-light-light"));
+}
+
+
+@mixin placeholder-styles-1 {
+	color: $color-placeholder;
+}
+
+@mixin placeholder-setup-1 {
+	&::-webkit-input-placeholder {
+	   @include placeholder-styles-1;
+	}
+
+	&:-moz-placeholder {
+	   @include placeholder-styles-1;
+	}
+
+	&::-moz-placeholder {
+	   @include placeholder-styles-1;
+	}
+
+	&:-ms-input-placeholder {
+	   @include placeholder-styles-1;
+	}
+}
+
+.t-form-1  {
+	&.c-label {
+		color: $color-dark;
+	}
+
+	&.c-input, &.c-textarea, &.c-select, &.c-datepicker {
+		background-color: $color-light-light;
+		border-color: $color-dark-light;
+		border-bottom-color: $color-light-dark;
+		color: $color-dark;
+
+		&:focus {
+			border-bottom-color: $color-secondary-light;
+			color: $color-dark-dark;
+		}
+	}
+
+	.u-char-before__item:after, .u-char-after__item:after {
+		color: $color-dark-dark;
+	}
+
+	&.c-input, &.c-textarea {
+		@include placeholder-setup-1;
+	}
+
+	.c-field-toggle {
+		&__input {
+			&:checked + .c-field-toggle__text {
+				color: $color-dark-dark;
+			}
+
+			&[disabled]:checked + .c-field-toggle__text {
+				color: $color-light-dark;
+			}
+		}
+
+		&__text {
+			color: $color-dark;
+
+			&:after {
+				color: $color-secondary;
+			}
+
+			&:before {
+				background-color: $color-light-light;
+				border-color: $color-light-dark;
+			}
+
+			&:hover, &:focus {
+				color: $color-dark-dark;
+			}
+		}
+	}
+
+	&.c-input[disabled], & > .c-checkbox__input[disabled] + label:before, & > .c-radio__input[disabled] + label:before, &.c-textarea[disabled], &.c-select[disabled], &.c-select > select[disabled], &.c-datepicker[disabled], &.c-radio > input[disabled] + label:before {
+		@include disable-select;
+		cursor: default;
+		cursor: not-allowed;
+		background-color: darken($color-disabled, 10);
+
+		opacity: .7;
+	}
+
+	& > .c-checkbox__input[disabled] + label:after, & > .c-radio__input[disabled] + label:after {
+		color: darken($color-disabled, 20);
+		text-shadow: 0 rem(1) 0 rgba(255,255,255,.1), 0 rem(-1) 0 rgba(0,0,0,.1);
+	}
+}
+
+@mixin placeholder-styles-2 {
+	color: $color-light-dark;
+}
+
+@mixin placeholder-setup-2 {
+	&::-webkit-input-placeholder {
+	   @include placeholder-styles-2;
+	}
+
+	&:-moz-placeholder {
+	   @include placeholder-styles-2;
+	}
+
+	&::-moz-placeholder {
+	   @include placeholder-styles-2;
+	}
+
+	&:-ms-input-placeholder {
+	   @include placeholder-styles-2;
+	}
+}
+
+.t-form-2  {
+	&.c-label {
+		color: $color-dark;
+	}
+
+	&.c-input, &.c-textarea, &.c-select, &.c-select > select, &.c-datepicker {
+		color: $color-light;
+
+		&:focus {
+			color: $color-light-light;
+		}
+	}
+
+	&.c-input, &.c-textarea, &.c-select, &.c-datepicker {
+		background-color: $color-dark;
+		border-color: transparent;
+
+		&:focus {
+			border-bottom-color: $color-secondary-light;
+		}
+	}
+
+	&.c-select {
+		option {
+			color: $color-dark;
+		}
+	}
+
+
+
+	.u-char-before__item:after, .u-char-after__item:after {
+		color: $color-light-dark;
+	}
+
+	&.c-input, &.c-textarea {
+		@include placeholder-setup-2;
+	}
+
+	.c-input-search__btn {
+		box-shadow: rem(80) 0 0 rgba(0,0,0,.2) inset;
+
+		&:active, &:hover, &:focus {
+			box-shadow: none;
+		}
+	}
+
+	.c-field-toggle {
+		&__input {
+			&:checked + .c-field-toggle__text {
+				color: $color-dark-dark;
+			}
+
+			&[disabled]:checked + .c-field-toggle__text {
+				color: $color-light-dark;
+			}
+		}
+
+		&__text {
+			color: currentColor;
+
+			&:after {
+				color: $color-primary;
+			}
+
+			&:before {
+				background-color: $color-dark;
+				border-color: transparent;
+			}
+
+			&:hover, &:focus {
+				color: $color-dark-dark;
+			}
+		}
+	}
+
+
+	&.c-input[disabled], &.c-textarea[disabled], &.c-select[disabled], &.c-select > select[disabled], &.c-datepicker[disabled], &.c-radio > input[disabled] + label:before {
+		cursor: default;
+		background-color: $color-dark;
+		opacity: .7;
+		@include disable-select;
+	}
+}

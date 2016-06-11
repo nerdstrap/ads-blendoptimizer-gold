@@ -1,0 +1,18 @@
+{{#search-result-list}}
+    <div class="c-content-block__main">
+        <ol class="u-unlist u-zone-sections u-zone-sections--extended">
+			{{#list-items}}
+                <li class="u-zone-sections__section">
+                    <a class="u-dis-b u-space-1-3-sm c-button c-button--default c-anchor c-anchor--primary c-anchor--default" href="{{href}}" {{#title}}title="{{title}}"{{/title}}>
+						<span class="u-dis-b u-td u-lh-1">
+							{{text}}
+                        </span>
+						<span class="u-dis-b u-fs-5 u-lh-1 u-dark">
+							{{> atoms-paragraph}}
+                        </span>
+                    </a>
+                </li>
+			{{/list-items}}
+        </ol>
+    </div>
+{{/search-result-list}}

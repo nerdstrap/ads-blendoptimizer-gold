@@ -1,0 +1,11 @@
+$bp-1: $max-width + ($default-space * 2); // max-width + global gutters
+$bp-header: 47.750rem;
+$bp-grid: $bp-header; // where grid has major change
+$bp-spaces: 40rem; // where default units get smaller from Unit Space library
+$grid-1: $bp-header;
+$bp-medium: 56.250rem; // 900
+
+$suffixcate_bp: $bp-header;
+$suffixcate_bp-medium: ($suffixcate_bp $bp-medium);
+
+

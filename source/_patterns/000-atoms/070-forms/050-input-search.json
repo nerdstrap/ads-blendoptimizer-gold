@@ -1,0 +1,7 @@
+{
+	"input-search": {
+		"id": "atoms-forms-input-search",
+		"placeholder": "e.g. Lorem ipsum",
+		"tooltip": "search"
+	}
+}

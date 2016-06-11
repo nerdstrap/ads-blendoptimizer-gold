@@ -1,0 +1,40 @@
+<ul id="swatches" class="pl-swatches">
+</ul>
+
+<script>
+    (function () {
+        var request = new XMLHttpRequest(),
+                container = document.getElementById("swatches"),
+                template = '<span class="pl-swatches__item__example" style="background-color: colorvalue;"></span><b class="pl-swatches__item__value">colorvalue</b><span class="pl-swatches__item__key"><span class="pl-code-sample">$colorkeycolorchildren</span></span>';
+
+        request.open('GET', '../../data/colors.json', true);
+
+        request.onload = function () {
+            if (request.status >= 200 && request.status < 400) {
+                var resp = JSON.parse(request.responseText)
+                colors = resp.colors;
+
+                for (var i = 0; i < colors.length; i++) {
+
+                    var name = colors[i].name,
+                            value = colors[i].value,
+                            dom = document.createElement("li"),
+                            children = colors[i].extended,
+                            variablename = "";
+
+                    if (children) {
+                        for (var x = 0; x < children.length; x++) {
+                            variablename += ", $" + children[x];
+                        }
+                    }
+
+                    dom.className += ' ' + "pl-swatches__item";
+                    dom.innerHTML = template.replace(/colorvalue/gi, value).replace(/colorkey/gi, name).replace(/colorchildren/gi, variablename);
+
+                    container.appendChild(dom);
+                }
+            }
+        };
+        request.send();
+    })();
+</script>

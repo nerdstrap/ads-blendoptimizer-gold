@@ -1,0 +1,92 @@
+{
+	"table-data": {
+		"headers": [
+			{
+				"section-subheader": {
+					"text": "Lorem ipsum",
+					"custom": true,
+					"type": "span",
+					"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+				}
+			},
+			{
+				"section-subheader": {
+					"text": "Lorem ipsum",
+					"custom": true,
+					"type": "span",
+					"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+				}
+			},
+			{
+				"section-subheader": {
+					"text": "Lorem ipsum",
+					"custom": true,
+					"type": "span",
+					"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+				}
+			},
+			{
+				"section-subheader": {
+					"text": "Lorem ipsum",
+					"custom": true,
+					"type": "span",
+					"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+				}
+			}
+		],
+		"rows": [
+			{
+				"id": "ABCD-1230",
+				"data1": "Lorem ipsum",
+				"data2": "Lorem ipsum",
+				"data3": "Lorem ipsum",
+				"anchor": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "View",
+					"anchorClasses": "u-fs-2@large",
+					"glyph": "@"
+				}
+			},
+			{
+				"id": "ABCD-1231",
+				"data1": "Lorem ipsum",
+				"data2": "Lorem ipsum",
+				"data3": "Lorem ipsum",
+				"anchor": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "View",
+					"anchorClasses": "u-fs-2@large",
+					"glyph": "@"
+				}
+			},
+			{
+				"id": "ABCD-1232",
+				"data1": "Lorem ipsum",
+				"data2": "Lorem ipsum",
+				"data3": "Lorem ipsum",
+				"anchor": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "View",
+					"anchorClasses": "u-fs-2@large",
+					"glyph": "@"
+				}
+			},
+			{
+				"id": "ABCD-1233",
+				"data1": "Lorem ipsum",
+				"data2": "Lorem ipsum",
+				"data3": "Lorem ipsum",
+				"anchor": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "View",
+					"anchorClasses": "u-fs-2@large",
+					"glyph": "@"
+				}
+			}
+		]
+	}
+}

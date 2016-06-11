@@ -1,0 +1,479 @@
+// COMPONENTS: Designed components
+
+@mixin button-animate {
+	// @include allChange($duration: 150ms, $property: background-color);
+	// will-change: background-color;
+
+	transition-property: background-color;
+	will-change: background-color;
+	transition-duration: 500ms;
+	transition-timing-function: ease-out;
+	transition-delay: 0;
+
+	&:hover, &:focus  {
+		transition-timing-function: ease-in;
+		transition-duration: 150ms;
+	}
+
+	&:active, &:active:hover, &:active:focus {
+		transition-timing-function: ease-in-out;
+		transition-duration: 10ms;
+	}
+}
+
+@mixin anchor-animate {
+	transition-property: color;
+	will-change: color;
+	transition-duration: 500ms;
+	transition-timing-function: ease-out;
+	transition-delay: 0;
+
+	&:hover, &:focus  {
+		transition-timing-function: ease-in;
+		transition-duration: 150ms;
+	}
+
+	&:active, &:active:hover, &:active:focus {
+		transition-timing-function: ease-in-out;
+		transition-duration: 10ms;
+	}
+}
+
+
+%button-animate {
+	@include button-animate;
+}
+
+%button-disabled-state {
+	color: rgba(0,0,0,.2);
+	@include disable-select;
+	cursor: default;
+	cursor: not-allowed;
+	background-color: darken($color-light, 10);
+	text-shadow: rem(-1) rem(-1) 0 rgba(255,255,255,.1);
+	border-top: rem(2) solid rgba(0,0,0,.05);
+	border-left: rem(2) solid rgba(0,0,0,.05);
+	box-shadow: rem(-1) rem(-1) 0 rgba(255,255,255,.1) inset, rem(20) rem(20) rem(40) rgba(0,0,0,.01) inset;
+
+	> span {
+		position: static;
+	}
+}
+
+%button-cta {
+	@include units($version: "half-sized", $variation: (top: true, bottom: true));
+	@include units($version: "two-times", $variation: (right: true, left: true));
+	//box-shadow: 0 -0.125rem 0 rgba(0,0,0,.25) inset;
+}
+
+%button-base {
+	font-family: $font-family-button;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+}
+
+.c-cta {
+	// @extend %button-base;
+	// border-radius: 0;
+	// line-height: 1;
+	// font-size: 1rem;
+
+	// &--button {
+	// 	@extend %button-cta;
+	// 	background-color: $color-light;
+	// 	font-size: 1.250rem;
+	// 	outline: none;
+	// 	color: $color-primary;
+
+	// 	> span {
+	// 		padding-bottom: 0.125rem;
+	// 		line-height: 1.1;
+	// 	}
+
+	// 	&:hover, &:focus {
+	// 		background-color: $color-primary;
+	// 		color: #FFF;
+	// 	}
+	// }
+
+	// &--arrow, &-arrow {
+	// 	position: relative;
+	// 	padding-right: 1.875rem;
+
+	// 	&:after {
+	// 		@include glyph;
+
+	// 		//@inclide units($property: "padding", $variation: (right: true));
+	// 		content: ">";
+	// 		display: inline-block;
+	// 		position: absolute;
+	// 		top: 50%;
+	// 		transform: translateY(-50%);
+	// 		width: 1.875rem;
+	// 		text-align: center;
+
+	// 		@media screen and (min-width: $units__default-breakpoint) {
+	// 			right: $default-space;
+	// 			padding-left: 1.875rem;
+	// 		}
+
+	// 		@media screen and (max-width: $units__default-breakpoint) {
+	// 			right: $default-space / 2;
+	// 			padding-left: 20px;
+	// 		}
+	// 	}
+	// }
+}
+
+%button-states {
+	@include suffixcate {
+		&:focus, &:hover {
+			background-color: $button-bg-hover;
+		}
+
+		&:active {
+			background-color: $button-bg-active;
+		}
+	}
+}
+
+.c-button {
+	@extend %button-base;
+	border-radius: 0;
+
+	&[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active {
+		@extend %button-disabled-state;
+	}
+
+	&.-disabled {
+		@extend %button-disabled-state;
+	}
+
+	&--animate {
+		@extend %button-animate;
+	}
+
+	&--base, &--default {
+		@include disable-select;
+		@include title-setup;
+		@extend %button-animate;
+
+		&.u-glyph-before:active:before, &.u-glyph-after:active:after {
+			position: relative;
+			top: 0.125em;
+		}
+
+		> span {
+			position: relative;
+		}
+
+		&:active {
+			> span {
+				top: 0.125em;
+			}
+		}
+	}
+
+	&--base {
+		@extend %button-cta;
+		font-weight: $weight-bold;
+
+		> span {
+			display: block;
+			line-height: 1.3;
+		}
+
+		&:active {
+			box-shadow: 0 0.125rem 0 rgba(0,0,0,.3) inset, 6.250rem 6.250rem 0 rgba(0,0,0,.1) inset;
+		}
+	}
+
+	&--raised {
+		box-shadow: 0 0.063rem 0.125rem rgba(0,0,0,.2);
+	}
+
+	&--size {
+		&-1 {
+			min-width: 9.688rem;
+		}
+	}
+
+	&--primary, &--secondary {
+		color: #FFF;
+	}
+
+	&--primary {
+		@extend %button-states;
+		background-color: $button-bg;
+	}
+
+	&--secondary {
+		@extend %button-states;
+		background-color: $button-secondary-bg;
+	}
+
+	&--tertiary {
+		@extend %button-states;
+		background-color: $color-primary-dark;
+		color: $color-light-light;
+	}
+
+	&--alpha {
+		// @extend %button-states;
+		background-color: transparent;
+		// color: $color-light-light;
+	}
+
+	&--light {
+		@extend %button-states;
+		background-color: $color-dark-light;
+		color: $color-base;
+
+		&:hover {
+			color: $color-light-light;
+		}
+	}
+
+	&--arrow {
+		// @extend .c-cta-arrow;
+	}
+}
+
+.c-button[type="submit"] {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+a.c-button {
+	text-decoration: none;
+}
+
+.u-anchor-animate {
+	@include allChange($property: color);
+	// will-change: color;
+}
+
+@mixin anchor-states {
+	&:focus, &:hover {
+		color: $anchor-hover;
+	}
+
+	&:active {
+		color: $anchor-active;
+	}
+}
+
+%anchor-states {
+	@include suffixcate {
+		@include anchor-states;
+	}
+}
+
+%anchor-text-decoration {
+	text-decoration: none;
+}
+
+%anchor-text-decoration-reset {
+	text-decoration: underline;
+}
+
+.c-anchor {
+	@include suffixcateExtend((".u-anchor-animate"));
+
+	&--default {
+		@extend %anchor-text-decoration;
+		// @extend %anchor-text-decoration-reset;
+	}
+
+	&[class*="u-glyph"] {
+		@extend %anchor-text-decoration;
+
+		> span {
+			@extend %anchor-text-decoration-reset;
+		}
+	}
+
+	&--cta, &--cta-alt {
+		@extend %anchor-text-decoration;
+		position: relative;
+
+		> span {
+			line-height: 1;
+			@extend %anchor-text-decoration-reset;
+		}
+
+		&:before, &:after {
+			@include glyph;
+			@include allChange($property: "transform");
+			display: inline-block;
+			position: absolute;
+			transform: translate(0, 0);
+			width: 1em;
+			color: $color-primary;
+		}
+
+		&:before {
+			left: 0;
+			text-indent: em(5) * -1;
+		}
+
+		&:after {
+			right: 0;
+		}
+
+		&:hover {
+			&:before, &:after {
+				transform: translate(em(3), 0);
+			}
+		}
+
+		&:active {
+			&:before, &:after {
+				transform: translate(em(4), em(2));
+			}
+		}
+	}
+
+	&--cta {
+		> span {
+			margin-left: 1em;
+		}
+
+		&:before {
+			content: ">";
+		}
+	}
+
+	&--cta-alt {
+		> span {
+			padding-right: 1em + em(5);
+		}
+
+		&:after {
+			content: "–";
+		}
+	}
+
+	@include suffixcate {
+		&--primary, &--secondary {
+			@include anchor-states;
+		}
+
+		&--primary {
+			color: $anchor-primary;
+		}
+
+		&--secondary {
+			color: $anchor-secondary;
+		}
+	}
+
+	&--dark {
+		@extend %anchor-states;
+
+		@include suffixcate {
+			color: $color-dark-dark;
+		}
+	}
+
+	&--light {
+		@include suffixcate {
+			color: $color-light;
+
+			&:hover {
+				color: $color-light-light;
+			}
+		}
+	}
+
+	&--light-alt {
+		@include suffixcate {
+			color: $color-light;
+
+			&:hover {
+				color: $color-primary;
+			}
+		}
+	}
+
+	&--hover-primary {
+		@include suffixcate {
+			&:hover {
+				color: $anchor-hover;
+			}
+		}
+	}
+
+	&--hover-secondary {
+		@include suffixcate {
+			&:hover {
+				color: $anchor-hover;
+			}
+		}
+	}
+
+	&--hover-dark {
+		@include suffixcate {
+			&:hover {
+				color: $color-dark-dark;
+			}
+		}
+	}
+
+	&--hover-light {
+		@include suffixcate {
+			&:hover {
+				color: $color-light-light;
+			}
+		}
+	}
+
+	&--click-area {
+		display: inline-block;
+		min-height: 1.875rem;
+		line-height: 1.875rem;
+	}
+}
+
+a[class=""], a[class=" "], a:not([class]) {
+	@extend .c-anchor--primary;
+}
+
+.c-icon-btn {
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+
+	&--default, &--size-1, &--size-2 {
+		width: 3.125rem;
+		line-height: 3.125rem;
+	}
+
+	&--default, &--size-1 {
+		height: 3.125rem;
+		width: 3.125rem;
+	}
+
+	&--size-2 {
+		width: 3.75rem;
+
+		@media screen and (min-width: $bp-header) {
+			height: 3.125rem;
+		}
+
+		@media screen and (max-width: $bp-header) {
+			height: $global-header-mobile-height;
+		}
+	}
+
+	&--clear {
+		background-color: transparent;
+		color: $color-base;
+
+		&:hover {
+			color: $anchor-hover;
+		}
+	}
+}

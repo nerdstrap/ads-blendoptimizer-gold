@@ -1,0 +1,19 @@
+{
+	"content-block": {
+		"section-header": {
+			"text": "Lorem ipsum"
+		},
+		"paragraph": {
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+		},
+		"button": {
+			"text": "Submit"
+		},
+		"pie-chart": {
+			"r": "25%",
+			"cx": "50%",
+			"cy": "50%",
+			"textAmount": "$4,999.00"
+		}
+	}
+}

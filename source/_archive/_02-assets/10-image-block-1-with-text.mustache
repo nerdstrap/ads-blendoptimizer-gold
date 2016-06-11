@@ -1,0 +1,11 @@
+<{{#isAnchor}}a href="{{anchor.src}}"{{/isAnchor}}{{^isAnchor}}{{#custom}}{{type}}{{/custom}}{{^custom}}div{{/custom}}{{/isAnchor}} class="c-image-block {{classes}}"{{#isAnchor}} title="{{anchor.title}}"{{/isAnchor}}>
+	<span class="c-intrinsic c-intrinsic--feature t-bg-light">
+		{{> atoms-feature-image("classes": "c-image-block__img u-obj-fix", "custom": true, "src": "https://placeimg.com/400/150/nature") }}
+	</span>
+
+	{{#text}}
+		<span class="c-image-block__text-block u-gutt">
+			{{> atoms-subtitle("custom": true, "type": "span", "classes": "c-image-block__text u-dis-b") }}
+		</span>
+	{{/text}}
+</{{#isAnchor}}a{{/isAnchor}}{{^isAnchor}}{{#custom}}{{type}}{{/custom}}{{^custom}}div{{/custom}}{{/isAnchor}}>

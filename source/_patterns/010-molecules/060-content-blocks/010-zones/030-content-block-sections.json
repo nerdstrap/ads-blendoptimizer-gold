@@ -1,0 +1,54 @@
+{
+	"content-block": {
+		"sections": [
+			{
+				"media-image": {
+					"alt": "media image",
+					"src": "/images/placeholder-image_50x50.png"
+				},
+				"section-header": {
+					"text": "Lorem ipsum"
+				},
+				"paragraph": {
+					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+				}
+			},
+			{
+				"media-image": {
+					"alt": "media image",
+					"src": "/images/placeholder-image_50x50.png"
+				},
+				"section-header": {
+					"text": "Lorem ipsum"
+				},
+				"paragraph": {
+					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+				}
+			},
+			{
+				"media-image": {
+					"alt": "media image",
+					"src": "/images/placeholder-image_50x50.png"
+				},
+				"section-header": {
+					"text": "Lorem ipsum"
+				},
+				"paragraph": {
+					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+				}
+			},
+			{
+				"media-image": {
+					"alt": "media image",
+					"src": "/images/placeholder-image_50x50.png"
+				},
+				"section-header": {
+					"text": "Lorem ipsum"
+				},
+				"paragraph": {
+					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+				}
+			}
+		]
+	}
+}

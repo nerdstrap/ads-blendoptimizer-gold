@@ -1,0 +1,82 @@
+{
+	"form": {
+		"fieldset": {
+			"legend": {
+				"section-header": {
+					"text": "Lorem ipsum",
+					"custom": true,
+					"type": "span",
+					"sectionHeaderClasses": "u-dis-b o-sections__section"
+				},
+				"article-header": {
+					"text": "Lorem ipsum",
+					"custom": true,
+					"type": "span",
+					"articleHeaderClasses": "u-dis-b o-sections__section"
+				},
+				"text": "Lorem ipsum"
+			},
+			"form-items": [
+				{
+					"input-form-item": {
+						"label": {
+							"id": "organisms-forms-form-alt-input-1",
+							"text": "Lorem ipsum",
+							"labelClasses": "u-full",
+							"labelClasses1": "c-form-item__label"
+						},
+						"input": {
+							"id": "organisms-forms-form-alt-input-1",
+							"placeholder": "e.g. Lorem ipsum",
+							"inputClasses": "u-full",
+							"inputClasses1": "c-form-item__field"
+						}
+					}
+				},
+				{
+					"input-form-item": {
+						"label": {
+							"id": "organisms-forms-form-alt-input-2",
+							"text": "Lorem ipsum",
+							"labelClasses": "u-full",
+							"labelClasses1": "c-form-item__label"
+						},
+						"input": {
+							"id": "organisms-forms-form-alt-input-2",
+							"placeholder": "e.g. Lorem ipsum",
+							"inputClasses": "u-full",
+							"inputClasses1": "c-form-item__field"
+						}
+					}
+				},
+				{
+					"input-form-item": {
+						"label": {
+							"id": "organisms-forms-form-alt-input-3",
+							"text": "Lorem ipsum",
+							"labelClasses": "u-full",
+							"labelClasses1": "c-form-item__label"
+						},
+						"input": {
+							"id": "organisms-forms-form-alt-input-3",
+							"placeholder": "e.g. Lorem ipsum",
+							"inputClasses": "u-full",
+							"inputClasses1": "c-form-item__field"
+						}
+					}
+				}
+			]
+		},
+		"cta": {
+			"button": {
+				"text": "Submit",
+				"buttonClasses": "u-full@small"
+			}
+		},
+		"disclosure": {
+			"paragraph": {
+				"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+			}
+		}
+	}
+}

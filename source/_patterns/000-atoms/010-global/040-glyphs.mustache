@@ -1,0 +1,36 @@
+<div id="glyphs">
+</div>
+<p>
+    <a class="c-anchor c-anchor--primary u-glyph-after u-glyph-after--no-speak" data-icon="&#x3e;" href="/fonts/ads/demo.html" target="_blank">
+        Icomoon font details
+    </a>
+</p>
+
+<script>
+    (function () {
+        var request = new XMLHttpRequest();
+        var container = document.getElementById("glyphs");
+
+        request.open('GET', '/fonts/ads/selection.json', true);
+        request.onload = function () {
+            if (request.status >= 200 && request.status < 400) {
+                var resp = JSON.parse(request.responseText);
+
+                var icons = resp.icons;
+                for (var i = 0; i < icons.length; i++) {
+
+                    var name = icons[i].properties.name;
+                    var code = icons[i].properties.code;
+                    var dom = document.createElement("p");
+                    dom.className += ' ' + "u-glyph";
+                    dom.innerHTML = "&#" + code + "; " +
+                            "<code>" + "&#" + code + "</code> " +
+                            "<code>" + "&amp;#" + code + ";</code> ";
+
+                    container.appendChild(dom);
+                }
+            }
+        };
+        request.send();
+    })();
+</script>

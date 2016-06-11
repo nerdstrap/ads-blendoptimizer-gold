@@ -1,0 +1,377 @@
+%shared-across-all-form-items {
+	outline: none;
+	font-size: $h4;
+	font-family: $font-family;
+	font-weight: $weight-normal;
+}
+
+[class*="c-form-"], button {
+	//outline: none;
+}
+
+[class*="c-form-"] {
+	//@include allChange($property: "background-color, border-color");
+}
+
+%label-shared {
+	cursor: pointer;
+}
+
+.c-label {
+	@include title-setup;
+	@extend %label-shared;
+	font-weight: $weight-bold;
+	font-size: $h4;
+}
+
+@mixin placeholder-styles {
+	//color: $color-placeholder;
+}
+
+@mixin placeholder-setup {
+	&::-webkit-input-placeholder {
+	   @include placeholder-styles;
+	}
+
+	&:-moz-placeholder {
+	   @include placeholder-styles;
+	}
+
+	&::-moz-placeholder {
+	   @include placeholder-styles;
+	}
+
+	&:-ms-input-placeholder {
+	   @include placeholder-styles;
+	}
+}
+
+.c-input, .c-textarea, .c-select {
+	@extend %shared-across-all-form-items;
+	@include placeholder-styles;
+	border-top: rem(1) solid;
+	border-right: rem(1) solid;
+	border-bottom: rem(2) solid;
+	border-left: rem(1) solid;
+	border-radius: 0;
+}
+
+.c-datepicker-wrapper {
+	&:not(.u-char-before), &:not(.u-char-after) {
+		position: relative;
+	}
+
+	&:not(.u-full) {
+		display: inline-block;
+	}
+
+	@extend %shared-across-all-form-items;
+}
+
+.c-input {
+	padding: rem(10) 0 rem(9);
+	text-indent: $default-space / 2;
+	line-height: 1;
+}
+
+.c-autocomplete {
+	&-list {
+		z-index: -1;
+		position: absolute;
+		background-color: $color-light;
+		opacity: 0;
+		transition: 250ms;
+		transform: translateY(-100%);
+		transition-delay: 200ms;
+
+		&__item {
+			list-style: none;
+		}
+		&__link {
+			display: block;
+			color: $color-dark;
+			text-decoration: none;
+			&:hover {
+				color: $color-primary;
+			}
+		}
+	}
+	&__text {
+		&:after {
+			content: ">";
+			display: block;
+			transform: rotate(0deg);
+		    font-size: 1.4em;
+		    transition: 180ms ease-out;
+		}
+	}
+
+	&.js-typing:focus {
+		~ .c-autocomplete-list {
+			opacity: 1;
+			transform: translateY(0);
+			transition-delay: 0s;
+		}
+		~ .c-autocomplete__text {
+			&:after {
+				transform: rotate(90deg);
+			}
+		}
+	}
+}
+
+.c-select {
+	&:not(.u-char-before), &:not(.u-char-after) {
+		position: relative;
+	}
+
+	&:not(.u-full) {
+		display: inline-block;
+	}
+
+	&__text {
+		z-index: 0;
+		&:after {
+			content: "v";
+		}
+	}
+
+	&__input {
+		@extend %shared-across-all-form-items;
+		display: block;
+		width: 100%;
+		-webkit-appearance: none;
+		appearance: none;
+		background-color: transparent;
+		border: 0;
+		border-radius: 0;
+		padding: rem(9) rem(40) rem(10) rem(10);
+		position: relative;
+		z-index: 1;
+		cursor: pointer;
+
+		&::-ms-expand {
+			display: none;
+		}
+
+		&:active, &:focus {
+			& + .c-select__text {
+				&:after {
+					// content: "x";
+				}
+			}
+		}
+	}
+}
+
+.c-textarea {
+	min-height: rem(48);
+	line-height: 1.5;
+	padding-top: rem(10);
+	padding-right: rem(10);
+	padding-left: em(10);
+
+	&--default {
+		overflow: hidden;
+		resize: none;
+	}
+}
+
+.js-textarea-grow.c-textarea {
+	padding-bottom: rem(10);
+	box-sizing: content-box;
+	width: calc(100% - #{$default-space});
+}
+
+.c-field-toggle {
+	position: relative;
+
+	&__input {
+		margin: 0;
+		opacity: 0;
+		width: 0;
+	}
+
+	&__text {
+		@extend %label-shared;
+		padding-left: rem(29);
+
+		&:before, &:after {
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		&:before {
+			border: rem(1) solid;
+			content: "";
+			width: rem(20);
+			height: rem(20);
+		}
+
+		&:after {
+			opacity: 0;
+		}
+	}
+
+	&__input:checked + &__text:before {
+	}
+
+	&__input:checked + &__text:after {
+		opacity: 1;
+	}
+
+	&__input[disabled], &__input[disabled]:checked, &__input[disabled] + &__text {
+		@include disable-select;
+		cursor: default;
+		cursor: not-allowed;
+	}
+}
+
+.c-radio {
+	&__input {
+		@extend %shared-across-all-form-items;
+	}
+
+	&__text {
+		&:before, &:after {
+			border-radius: 50%;
+		}
+
+		&:before {
+
+		}
+
+		&:after {
+			content: "";
+			background-color: currentColor;
+			margin-top: rem(5);
+			margin-left: rem(5);
+			width: rem(10);
+			height: rem(10);
+		}
+	}
+}
+
+.c-checkbox {
+	&__input {
+		@extend %shared-across-all-form-items;
+	}
+
+	&__text {
+		&:before, &:after {
+		}
+
+		&:before {
+
+		}
+
+		&:after {
+			@include glyph;
+			content: "X";
+			text-align: center;
+			width: rem(20);
+		}
+	}
+}
+
+.c-datepicker {
+	&-wrapper {
+
+	}
+
+	&__icon {
+		height: 100%;
+		font-size: 1.5em;
+
+		.glyph {
+			max-width: 1em;
+			max-height: 1em;
+		}
+	}
+}
+
+.c-legend {
+	& + .c-fieldset {
+		margin-top: $default-space / 2;
+	}
+}
+
+
+.c-fieldset {
+
+}
+
+
+.c-form-item {
+	&__label {
+		padding-bottom: $default-space / 4;
+	}
+
+	&__field {
+	}
+}
+
+
+.field-validation-valid {
+	speak: none;
+	display: none;
+}
+
+.field-validation-valid, .field-validation-error, .c-label__required {
+	font-size: $h6;
+}
+
+.field-validation-error, .c-label__required {
+	color: $color-primary;
+}
+
+.c-label__required {
+	vertical-align: top;
+}
+
+
+
+.c-form-tip {
+	position: relative;
+
+	&__label {
+		padding-left: rem(20);
+	}
+
+	&__tip {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: rem(20);
+		text-align: left;
+	}
+}
+
+.c-form-block__row {
+	.o-flex\@large--grid {
+		align-items: flex-end;
+	}
+}
+
+
+.validation-summary-errors {
+	background-color: #FFF;
+	border: 1px solid;
+	color: $color-primary-dark;
+	padding: $default-space / 2;
+	margin-bottom: $default-space + ($default-space / 2);
+
+	> ul {
+		list-style: none;
+		padding-left: 0;
+
+		> li {
+			& + li {
+				margin-top: $default-space / 2;
+			}
+		}
+	}
+}

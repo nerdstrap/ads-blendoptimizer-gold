@@ -1,0 +1,955 @@
+// TRUMPS: Helpers and overrides
+@import "_06-trumps_glyphs";
+
+/*
+.what-we-do-cards {
+  @include clearfix;
+  border-top: 10px solid rgba(255, 255, 255, .46);
+  color: $white;
+  padding-bottom: 4em;
+  overflow: hidden; // added for pseudo-element
+  position: relative; // added for pseudo-element
+
+  // Fixed-position background image
+  &::before {
+    content: ' ';
+    position: fixed; // instead of background-attachment
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    background: url('/img/front/strategy.jpg') no-repeat center center;
+    background-size: cover;
+    will-change: transform; // creates a new paint layer
+    z-index: -1;
+  }
+}
+*/
+
+
+%styles-ug-img {
+
+	&:before {
+		content: "";
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -3;
+		will-change: transform;
+	}
+
+	@media screen and (min-width: $bp-header) {
+		&:before {
+			position: fixed;
+		}
+	}
+
+	@media screen and (max-width: $bp-header) {
+		&:before {
+			position: absolute;
+		}
+	}
+}
+
+.u-bg-img {
+
+	overflow: hidden;
+	position: relative;
+
+	@extend %styles-ug-img;
+
+	&[style*="background"] {
+		@extend %styles-ug-img;
+	}
+
+	&--large {
+		&[style*="background"] {
+			@media screen and (max-width: $bp-header) {
+				background: none !important;
+			}
+		}
+	}
+
+	&--small {
+		&[style*="background"] {
+			@media screen and (min-width: $bp-header) {
+				background: none !important;
+			}
+		}
+	}
+
+	&--full {
+		@media screen and (max-width: $bp-header) {
+			background-position: center center;
+			background-size: cover;
+		}
+	}
+
+
+}
+
+.u-b {
+	&-light {
+		@include suffixcate {
+			font-weight: $weight-light;
+		}
+	}
+
+	&-normal {
+		@include suffixcate {
+			font-weight: $weight-normal;
+		}
+	}
+
+	&-bold {
+		@include suffixcate {
+			font-weight: $weight-bold;
+		}
+	}
+
+	&-ultra {
+		@include suffixcate {
+			font-weight: $weight-ultra;
+		}
+	}
+}
+
+.u-lh {
+	&-0 {
+		@include suffixcate {
+			line-height: 2em;
+		}
+	}
+
+	&-1 {
+		@include suffixcate {
+			line-height: 1.5em;
+		}
+	}
+
+	&-2 {
+		@include suffixcate {
+			line-height: 1em;
+		}
+	}
+
+	&-3 {
+		@include suffixcate {
+			line-height: .9em;
+		}
+	}
+
+	&-4 {
+		@include suffixcate {
+			line-height: .8em;
+		}
+	}
+
+	&-5 {
+		@include suffixcate {
+			line-height: .5em;
+		}
+	}
+}
+
+
+.u-fs {
+	&-1 {
+		@include suffixcate {
+			font-size: $h1;
+		}
+	}
+
+	&-2 {
+		@include suffixcate {
+			font-size: $h2;
+		}
+	}
+
+	&-3 {
+		@include suffixcate {
+			font-size: $h3;
+		}
+	}
+
+	&-4 {
+		@include suffixcate {
+			font-size: $h4;
+		}
+	}
+
+	&-5 {
+		@include suffixcate {
+			font-size: $h5;
+		}
+	}
+
+	&-6 {
+		@include suffixcate {
+			font-size: $h6;
+		}
+	}
+
+
+	&-1-alt {
+		@include suffixcate {
+			font-size: $em1;
+		}
+	}
+
+	&-2-alt {
+		@include suffixcate {
+			font-size: $em2;
+		}
+	}
+
+	&-3-alt {
+		@include suffixcate {
+			font-size: $em3;
+		}
+	}
+
+	&-4-alt {
+		@include suffixcate {
+			font-size: $em4;
+		}
+	}
+
+	&-5-alt {
+		@include suffixcate {
+			font-size: $em5;
+		}
+	}
+
+	&-6-alt {
+		@include suffixcate {
+			font-size: $em6;
+		}
+	}
+}
+
+.u-list {
+	@include suffixcate {
+		padding-left: 1rem;
+	}
+}
+
+.u-unlist {
+	@include suffixcate {
+		@include unlist;
+	}
+}
+
+.u-w {
+	@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+		word-break: break-all;
+	}
+}
+
+.u-nw {
+	@include suffixcate {
+		white-space: nowrap;
+	}
+}
+
+.u-va-t {
+	@include suffixcate {
+		vertical-align: top;
+	}
+}
+
+.u-va-m {
+	@include suffixcate {
+		vertical-align: middle;
+	}
+}
+
+.u-va-b {
+	@include suffixcate {
+		vertical-align: bottom;
+	}
+}
+
+.u-dis-i {
+	display: inline;
+}
+
+.u-dis-ib {
+	@include suffixcate {
+		display: inline-block;
+	}
+}
+
+.u-dis-b {
+	@include suffixcate {
+		display: block;
+	}
+}
+
+.u-dis-t {
+	@include suffixcate {
+		display: table;
+	}
+}
+
+.u-dis-tc {
+	@include suffixcate {
+		display: table-cell;
+	}
+}
+
+
+%display-hidden {
+	@include suffixcate {
+		display: none;
+	}
+}
+
+%u-speak-none {
+	@include suffixcate {
+		speak: none;
+	}
+}
+
+.u-speak-none {
+	@extend %u-speak-none;
+
+	&\@large {
+		@extend %u-speak-none\@large;
+	}
+
+	&\@small {
+		@extend %u-speak-none\@small;
+	}
+}
+
+.u-dis-none {
+	@extend %u-speak-none;
+	@extend %display-hidden;
+
+	@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: false) {
+		speak: none;
+		display: none;
+	}
+}
+
+.u-a-l {
+	@include suffixcate {
+		text-align: left;
+	}
+}
+
+.u-a-c {
+	@include suffixcate  {
+		text-align: center;
+	}
+}
+
+.u-a-r {
+	@include suffixcate {
+		text-align: right;
+	}
+}
+
+.u-obj-fix {
+	display: block;
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.u-a-vh-before, .u-a-vh-after {
+	position: relative;
+}
+
+.u-a-vh, .u-a-vh-before:before, .u-a-vh-after:after {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.u-a-vh-before:before, .u-a-vh-after:after {
+	position: absolute;
+}
+
+
+.u-emphasize {
+	text-transform: uppercase;
+}
+
+.u-strong, strong, b {
+	font-weight: $weight-bold;
+}
+
+.u-italic {
+	font-style: italic;
+}
+
+%clear-setup {
+	clear: both;
+}
+
+%clear-after-setup {
+	&:after {
+		@extend %clear-setup;
+		display: table;
+		content: "";
+	}
+}
+
+.o-clear {
+	@extend %clear-setup;
+
+	&-after {
+		@extend %clear-after-setup;
+	}
+}
+
+%f-r {
+	float: right;
+}
+
+.u-f-r {
+	@extend %f-r;
+
+	&-children {
+		@extend %clear-after-setup;
+
+		> div, > li, > span {
+			@extend %f-r;
+		}
+	}
+}
+
+%f-l {
+	float: left;
+}
+
+.u-f-l {
+	@extend %f-l;
+
+	&-children {
+		@extend %clear-after-setup;
+
+		> div, > li, > span {
+			@extend %f-l;
+		}
+	}
+}
+
+.u-full {
+	@include suffixcate {
+		width: 100%;
+	}
+
+	&-alt {
+		@include suffixcate {
+			max-width: 100%;
+		}
+	}
+
+	&-alt-2 {
+		@include suffixcate {
+			min-width: 100%;
+		}
+	}
+}
+
+img, textarea, span, label, aside, main {
+	&.u-full {
+		display: block;
+
+		&\@large {
+			@media screen and (min-width: $bp-grid) {
+				display: block;
+			}
+		}
+
+		&\@small {
+			@media screen and (max-width: $bp-grid) {
+				display: block;
+			}
+		}
+	}
+}
+
+.u-form-block__element.u-full {
+	> label, > input {
+		@extend .u-full;
+	}
+}
+
+.u-font-primary {
+	font-family: $font-primary;
+}
+
+.u-font-secondary {
+	font-family: $font-secondary;
+}
+
+@mixin width-size-generator($value: 1, $bp: $bp-grid) {
+	&-#{$value} {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			width: percentage(1 / $value);
+		}
+
+		&-alt {
+			@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+				max-width: percentage(1 / $value);
+			}
+		}
+
+		&-alt-2 {
+			@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+				min-width: percentage(1 / $value);
+			}
+		}
+		// &\@large {
+		// 	@media screen and (min-width: $bp) {
+		// 		width: percentage(1 / $value);
+		// 	}
+		// }
+
+		// &\@small {
+		// 	@media screen and (max-width: $bp) {
+		// 		width: percentage(1 / $value);
+		// 	}
+		// }
+	}
+}
+
+
+.u-round {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.u-size {
+	@for $i from 1 through 12 {
+		@include width-size-generator($i);
+	}
+
+	&-sm {
+		max-width: 1em;
+		max-height: 1em;
+	}
+
+	&-cta {
+		min-width: rem(40);
+		min-height: rem(40);
+	}
+}
+
+.u-width {
+	&-0 {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			width: rem(40);
+		}
+	}
+
+	&-1 {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			width: rem(50);
+		}
+	}
+
+
+	&-2 {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			width: rem(75);
+		}
+	}
+
+	&-3 {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			width: rem(100);
+		}
+	}
+
+	&-4 {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			width: rem(200);
+		}
+	}
+
+	&-5 {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			width: rem(300);
+		}
+	}
+
+	&-6 {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			width: rem(420);
+		}
+	}
+
+	&-1-alt {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			max-width: rem(50);
+		}
+	}
+
+	&-2-alt {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			max-width: rem(75);
+		}
+	}
+
+	&-3-alt {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			max-width: rem(100);
+		}
+	}
+
+	&-4-alt {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			max-width: rem(200);
+		}
+	}
+
+	&-5-alt {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			max-width: rem(300);
+		}
+	}
+
+	&-6-alt {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			max-width: rem(420);
+		}
+	}
+
+	&-1-alt-2 {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			min-width: rem(50);
+		}
+	}
+
+	&-2-alt-2 {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			min-width: rem(75);
+		}
+	}
+
+	&-3-alt-2 {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			min-width: rem(100);
+		}
+	}
+
+	&-4-alt-2 {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			min-width: rem(200);
+		}
+	}
+
+	&-5-alt-2 {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			min-width: rem(300);
+		}
+	}
+
+	&-6-alt-2 {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			min-width: rem(420);
+		}
+	}
+}
+
+.u-date-width {
+	@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+		max-width: rem(142);
+	}
+}
+
+@import "_06-trumps_units";
+@import "_06-trumps_colors";
+
+.u-center {
+	@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+.u-vis-0 {
+	@include suffixcate {
+		position: absolute;
+		top: -3125rem;
+		left: -3125rem;
+		font-size: 0;
+		height: 0;
+		width: 0;
+		overflow: hidden;
+		visibility: none;
+	}
+}
+
+.u-hidden {
+	@extend %display-hidden;
+
+	&\@large {
+		@extend %display-hidden\@large;
+	}
+
+	&\@small {
+		@extend %display-hidden\@small;
+	}
+}
+
+@mixin bracket-styles {
+	position: relative;
+
+	&:before {
+		font-size: 1em;
+		display: inline-block;
+		content: "|";
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+	}
+}
+
+.u-divider {
+	&__child + .u-divider__child {
+		@include bracket-styles
+	}
+}
+
+.u-divider\@large {
+	&__child + .u-divider\@large__child {
+		@media screen and (min-width: $bp-header) {
+			@include bracket-styles
+		}
+	}
+}
+
+.u-divider\@small {
+	&__child + .u-divider\@small__child {
+		@media screen and (max-width: $bp-header) {
+			@include bracket-styles
+		}
+	}
+}
+
+.u-zone-sections {
+	@include suffixcate {
+		&__section {
+			& + & {
+				border-top: rem(1) solid;
+			}
+		}
+	}
+
+	@include suffixcate {
+		&--extended {
+			border-top: rem(1) solid;
+			// border-bottom: rem(1) solid;
+		}
+	}
+}
+
+.t-body-style {
+	background-color: #FFF;
+}
+
+.o-sections__section > .u-space-children {
+	@include units($property: "margin", $version: "neg", $variation: (top: true));
+}
+
+%u-char-glyph {
+	@include glyph;
+}
+
+%u-char-glyph-default {
+	width: rem(40);
+	text-align: center;
+}
+
+.u-td {
+	text-decoration: underline;
+}
+
+.u-char {
+	&-before, &-after {
+		position: relative;
+
+		&__item {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+
+			&--full {
+				height: 100%;
+			}
+		}
+	}
+
+	&-before {
+		> .c-input {
+			padding-left: rem(40);
+		}
+
+		&__item {
+			left: 0;
+
+			&:after {
+				@extend %u-char-glyph;
+			}
+
+			&--default {
+				@extend %u-char-glyph-default;
+			}
+		}
+	}
+
+	&-after {
+		> .c-input {
+			padding-right: rem(40);
+		}
+
+		&__item {
+			right: 0;
+
+			&:after {
+				@extend %u-char-glyph;
+			}
+
+			&--default {
+				@extend %u-char-glyph-default;
+			}
+		}
+	}
+}
+
+.u-data-title {
+	&-button, &-button:before, &-button:after {
+		line-height: 2.5rem;
+	}
+
+	&-button {
+		&:before, &:after {
+			// @include button-animate;
+			display: inline-block;
+			width: rem(30);
+			height: rem(40);
+			text-align: center;
+			// background-color: $button-bg;
+			// color: $color-light-light;
+		}
+
+		&:before {
+			margin-right: $default-space / 2;
+		}
+
+		&:after {
+			margin-left: $default-space / 2;
+		}
+	}
+
+	&-style-1 {
+		@include suffixcate {
+			display: block;
+
+			&:before {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
+
+.u-shadow {
+	@include suffixcate {
+		box-shadow: 0 rem(1) rem(2) rgba(0,0,0,.075), 0 rem(-1) rem(2) rgba(255,255,255,.05);
+	}
+}
+
+
+a {
+	&:hover, &:active {
+		.u-data-title-button:before, .u-data-title-button:after {
+			// background-color: $button-bg-hover;
+			background-color: rgba(255,255,255,.7);
+		}
+	}
+
+	&:active {
+		.u-data-title-button:before, .u-data-title-button:after {
+			// background-color: $button-bg-active;
+		}
+	}
+}
+
+
+$u-outline-styles: ($default-space / 2) solid #FFF;
+.u-outline {
+	&-1 {
+		@include suffixcate {
+			border-top: $u-outline-styles;
+		}
+	}
+
+	&-2 {
+		@include suffixcate {
+			border-right: $u-outline-styles;
+		}
+	}
+
+	&-3 {
+		@include suffixcate {
+			border-bottom: $u-outline-styles;
+		}
+	}
+
+	&-4 {
+		@include suffixcate {
+			border-left: $u-outline-styles;
+		}
+	}
+
+	@include suffixcateExtend((".u-outline-1", ".u-outline-2", ".u-outline-3", ".u-outline-4"));
+
+	&-1-3 {
+		@include suffixcateExtend((".u-outline-1", ".u-outline-3"));
+	}
+
+	&-2-4 {
+		@include suffixcateExtend((".u-outline-2", ".u-outline-4"));
+	}
+}
+
+.u-text-shad {
+	text-shadow: 0 0 rem(50) rgba($color-secondary-dark,.6), 0 0 rem(5) rgba($color-secondary-dark,.2);
+}
+
+.u-glyph-base-reset-alignment {
+	position: relative;
+	top: rem(4);
+}
+
+.u-offset-item {
+	@media screen and (min-width: $bp-medium) {
+		position: relative;
+
+		&__btn {
+			position: absolute;
+			transform: translateY(-100%);
+		}
+	}
+}
+
+@import "_06-trumps_global-only";
+@import "_06-trumps-browsers";
+@import "_06-trumps-external-overrides";
+@import "_06-trumps-app-only";
+@import "_06-trumps-ie-fixes";
+@import "_06-trumps-ios-droid-fixes";
+

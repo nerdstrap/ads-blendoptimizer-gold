@@ -1,0 +1,10 @@
+{{#select}}
+    <span class="{{#selectClasses}}{{selectClasses}} {{/selectClasses}}t-form-1 u-char-after c-select{{#selectClasses1}} {{selectClasses1}}{{/selectClasses1}}">
+		<select {{#autocompleteOff}}autocomplete="off" {{/autocompleteOff}}class="{{#selectExtraClasses}}{{selectExtraClasses}} {{/selectExtraClasses}}t-form-1 c-select__input{{#selectExtraClasses1}} {{selectExtraClasses1}}{{/selectExtraClasses1}}"{{#disabled}} disabled="disabled"{{/disabled}}{{#id}} id="{{id}}"{{/id}}{{#name}} name="{{name}}"{{/name}}{{^name}} name="{{id}}"{{/name}}>
+			{{#options}}
+				<option value="{{value}}"{{#disabled}} disabled="disabled"{{/disabled}}{{#selected}} selected="selected"{{/selected}}>{{text}}</option>
+			{{/options}}
+		</select>
+		<label class="u-char-after__item u-char-after__item--default c-select__text" {{#id}} for="{{id}}"{{/id}}><span class="u-dis-none">{{placeholder}}</span></label>
+	</span>
+{{/select}}

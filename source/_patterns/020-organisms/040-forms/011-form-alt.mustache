@@ -1,0 +1,50 @@
+{{#form}}
+    <div class="t-2 u-zone-space c-content-block">
+        <div class="c-content-block__main">
+            <form action="{{action}}" class="c-content-block c-form-block c-form"{{#id}} id="{{id}}"{{/id}} method="{{method}}">
+                <div class="c-form-block c-content-block">
+                    <div class="c-content-block__main c-form-block__main">
+                        <div class="c-form-block__row">
+							{{#fieldset}}
+                                <fieldset class="c-content-block c-fieldset c-form-block__row">
+									{{#legend}}
+                                        <legend class="c-content-block__header c-content-block c-legend c-form-block__header">
+											<span class="u-dis-b o-sections c-content-block__header">
+												{{> atoms-section-header }}
+												{{> atoms-article-header }}
+											</span>
+											<span class="u-dis-b u-space-3 o-sections c-content-block__main">
+												<span class="u-dis-b o-sections__section">
+													{{{text}}}
+												</span>
+											</span>
+                                        </legend>
+									{{/legend}}
+                                    <div class="o-sections c-content-block__main">
+                                        <div class="o-sections__section o-sections@small">
+											{{#form-items}}
+                                                <div class="o-sections@small__section o-flex@large__cell u-size-1@large">
+													{{> molecules-input-form-item}}
+                                                </div>
+											{{/form-items}}
+                                        </div>
+                                    </div>
+                                </fieldset>
+							{{/fieldset}}
+                        </div>
+                    </div>
+                </div>
+				{{#cta}}
+                    <div class="u-a-r@large c-content-block__footer c-form-block__footer">
+						{{> atoms-button-primary-size-1}}
+                    </div>
+				{{/cta}}
+            </form>
+			{{#disclosure}}
+                <div class="u-space-1 u-fs-6 c-form-disclaimer">
+					{{> atoms-paragraph}}
+                </div>
+			{{/disclosure}}
+        </div>
+    </div>
+{{/form}}

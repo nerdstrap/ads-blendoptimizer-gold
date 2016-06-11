@@ -1,0 +1,51 @@
+{{#wizard-page}}
+    <div class="o-container-global">
+		{{> organisms-site-header-authenticated}}
+        <div class="t-4@large c-page" id="main"{{#page-name}} data-pagename="{{page-name}}"{{/page-name}}>
+			{{> molecules-inner-page-navigation}}
+            <div class="t-0@small o-container c-page__content">
+                <div class="u-space-1@large u-space-3-lg@large u-space-1-3-sm@small o-container__wrap c-content-block">
+                    <div class="c-content-block__main">
+                        <div class="t-alpha@large u-shadow@large u-shadow@large o-tabular@large o-tabular@large--full">
+							{{#wizard-nav}}
+                                <div class="t-alpha-2@large u-space-1-3-sm@large u-dis-none@small u-va-t o-tabular@large__cell c-side-nav">
+                                    <ul class="js-page-wizard__nav u-unlist c-list-children">
+										{{#list-items}}
+                                            <li>
+                                                <a class="js-page-wizard__cta u-dis-b u-glyph-before u-space-2-4-fixed u-space-1-3-sm c-anchor c-anchor--default c-anchor--secondary c-button c-button--default" href="{{href}}" {{#title}}title="{{title}}"{{/title}}>
+													{{text}}
+                                                </a>
+                                            </li>
+										{{/list-items}}
+                                    </ul>
+                                </div>
+							{{/wizard-nav}}
+                            <div class="o-sections@small o-tabular@large__cell js-page-wizard c-page-wizard">
+								{{#zones}}
+                                    <div class="js-page-wizard__item o-sections@small__section  t-1@small u-zone-space@large o-sections o-media__main c-content-block c-page-wizard__article"{{#id}} id="{{id}}"{{/id}}>
+                                        <div class="u-zone-space@small o-sections__section c-content-block__header js-page-wizard__content-trigger c-expandable-cta@small">
+                                            <h3 class="c-anchor@small c-anchor@small--primary c-title c-section-header@small c-page-header-scalable@large">
+											<span>
+												{{text}}
+                                            </span>
+                                            </h3>
+                                        </div>
+                                        <div class="u-space-3-fixed@small u-space-2-4-lg@small js-page-wizard__content u-space-1-sm@large">
+                                            <div class="o-sections__section c-content-block__main">
+												{{> atoms-paragraph}}
+                                            </div>
+                                            <div class="o-sections__section c-content-block__footer">
+												{{> atoms-cta-block}}
+                                            </div>
+                                        </div>
+                                    </div>
+								{{/zones}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		{{> organisms-site-footer}}
+    </div>
+{{/wizard-page}}

@@ -1,0 +1,23 @@
+{{#site-header}}
+    <div class="{{#siteHeaderClasses}}{{siteHeaderClasses}} {{/siteHeaderClasses}}t-1 o-container c-global-header" id="header">
+        <div class="u-space-4-sm@large o-container__wrap">
+            <header class="c-global-header__nav-container">
+                <h1 class="u-vis-0">
+					{{text}}
+                </h1>
+                <div class="c-global-header__nav-container__item c-global-header__nav-container__logo c-global-header__nav-container__logo--app">
+					{{> atoms-logo-app}}
+                </div>
+                <div class="c-global-header__nav-container__item c-global-header__nav-container__nav">
+					{{> atoms-menu-btn}}
+                    <nav class="c-global-header__nav">
+                        <div class="c-global-header__nav__scroll-area c-global-nav-container">
+							{{> molecules-utility-nav-anonymous}}
+							{{> molecules-primary-nav}}
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </div>
+{{/site-header}}

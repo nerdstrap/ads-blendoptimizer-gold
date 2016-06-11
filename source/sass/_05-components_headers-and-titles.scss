@@ -1,0 +1,120 @@
+.c-title {
+	@include title-setup;
+	letter-spacing: -.02em;
+
+	&-section {
+		outline: 0.625rem solid lime;
+	}
+}
+
+.c-subtitle {
+	outline: 0.625rem solid blue;
+
+	&-section {
+		outline: 0.625rem solid red;
+	}
+}
+
+%page-header {
+	@include suffixcate {
+		font-family: $font-secondary;
+		text-transform: uppercase;
+		line-height: .9;
+	}
+
+	@include suffixcateExtend((".u-b-ultra"));
+}
+
+.c-page-header {
+	@include suffixcate {
+		font-size: $h0;
+	}
+
+	@include suffixcateExtend(("%page-header"));
+
+	&-scalable {
+		@include suffixcateExtend(("%page-header"));
+		@include scaleFontDown($bp-1, $h0, $h1);
+
+		@include suffixcate($base: false) {
+			font-weight: $weight-ultra;
+			font-family: $font-secondary;
+			text-transform: uppercase;
+			line-height: .9;
+			font-size: $h0;
+			@include scaleFontDown($bp-1, $h0, $h1);
+		}
+	}
+
+	&--large, &-scalable--large {
+		> span {
+			font-size: $em3;
+		}
+	}
+}
+
+%page-subheader {
+	@include suffixcate {
+		color: inherit;
+		line-height: 1.1;
+		font-weight: $weight-light;
+	}
+}
+
+.c-page-subheader {
+	@include suffixcate {
+		font-size: $h2;
+
+		&--large, &-scalable--large {
+			> span {
+				font-size: $em2;
+			}
+		}
+	}
+
+	@include suffixcateExtend(("%page-subheader"));
+
+	&-scalable {
+		@include suffixcateExtend(("%page-subheader"));
+		@include scaleFontDown($bp-1, $h2, $h4);
+	}
+}
+
+[class*="c-page-subheader"] + [class*="c-page-header"] {
+	padding-top: $default-space / 2;
+}
+
+.c-section-header {
+	@include suffixcate {
+		font-size: $h3;
+		line-height: 1.2;
+	}
+
+	@include suffixcateExtend((".u-b-bold"));
+}
+
+.c-section-subheader {
+	@include suffixcate {
+		font-size: $h4;
+	}
+
+	@include suffixcateExtend((".u-b-bold"));
+}
+
+.c-article-header {
+	@include suffixcateExtend((".c-section-subheader"));
+}
+
+.c-article-subheader {
+	@include suffixcate {
+		font-size: $h5;
+	}
+
+	@include suffixcateExtend((".u-b-light"));
+}
+
+.c-paragraph-header {
+	font-size: 1em;
+	font-weight: $weight-normal;
+	line-height: 1.5;
+}

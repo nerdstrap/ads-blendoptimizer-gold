@@ -1,0 +1,12 @@
+{{#pie-chart}}
+	<span class="{{#pieChartClasses}}{{pieChartClasses}} {{/pieChartClasses}}js-savings-amount u-dis-ib u-width-3@large u-width-4-alt@small u-full@small u-center@small{{#pieChartClasses1}} {{pieChartClasses1}}{{/pieChartClasses1}}">
+		<span class="c-intrinsic c-intrinsic--1x1 c-savings-amount{{#pieChartExtraClasses}} {{pieChartExtraClasses}}{{/pieChartExtraClasses}}">
+			<svg class="c-intrinsic__element c-piechart" viewBox="0 0 64 64">
+				<circle r="{{r}}" cx="{{cx}}" cy="{{cy}}" class="c-piechart__amnt"></circle>
+			</svg>
+			<span class="c-savings-amount__amount u-secondary c-title">
+				{{textAmount}}
+			</span>
+		</span>
+	</span>
+{{/pie-chart}}

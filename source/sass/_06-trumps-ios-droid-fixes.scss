@@ -1,0 +1,5 @@
+[data-useragent*="ndroid"], [data-useragent*="iPho"], [data-useragent*="iPa"], [data-useragent*="ipho"], [data-useragent*="ipa"] {
+	.u-bg-img:before {
+		position: absolute;
+	}
+}

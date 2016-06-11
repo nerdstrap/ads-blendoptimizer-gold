@@ -1,0 +1,42 @@
+{
+	"pagination-list": {
+		"list-items": [
+			{
+				"anchor": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "1",
+					"anchorClasses": "u-space-1-3-sm u-space-2-4-tiny u-dis-ib",
+					"anchorClasses1": "c-pagination__cta c-pagination__cta--active"
+				}
+			},
+			{
+				"anchor": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "2",
+					"anchorClasses": "u-space-1-3-sm u-space-2-4-tiny u-dis-ib",
+					"anchorClasses1": "c-pagination__cta c-pagination__cta--active"
+				}
+			},
+			{
+				"anchor": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "3",
+					"anchorClasses": "u-space-1-3-sm u-space-2-4-tiny u-dis-ib",
+					"anchorClasses1": "c-pagination__cta c-pagination__cta--active"
+				}
+			},
+			{
+				"anchor": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "4",
+					"anchorClasses": "u-space-1-3-sm u-space-2-4-tiny u-dis-ib",
+					"anchorClasses1": "c-pagination__cta c-pagination__cta--active"
+				}
+			}
+		]
+	}
+}

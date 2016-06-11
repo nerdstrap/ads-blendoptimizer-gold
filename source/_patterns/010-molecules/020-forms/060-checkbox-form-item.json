@@ -1,0 +1,16 @@
+{
+	"checkbox-form-item": {
+		"label": {
+			"id": "molecules-forms-checkbox-form-item",
+			"text": "Lorem ipsum",
+			"labelClasses": "u-full",
+			"labelClasses1": "c-form-item__label"
+		},
+		"checkbox": {
+			"id": "molecules-forms-checkbox-form-item",
+			"text": "Lorem ipsum",
+			"checked": "true",
+			"checkBoxClasses1": "c-form-item__field"
+		}
+	}
+}

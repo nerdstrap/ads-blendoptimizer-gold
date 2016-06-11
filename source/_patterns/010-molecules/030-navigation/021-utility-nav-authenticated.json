@@ -1,0 +1,10 @@
+{
+	"utility-nav": {
+		"i18n_welcome": "Welcome, ",
+		"href": "#",
+		"title": "Lorem ipsum",
+		"firstName": "First",
+		"lastName": "Last",
+		"i18n_logout": "Logout"
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"timeline-block": {
+		"section-header": {
+			"text": "Lorem ipsum"
+		},
+		"paragraph": {
+			"text": "Lorem ipsum dolor sit amet."
+		},
+		"timeline-list": {
+			"timelineListClasses": "",
+			"list-items": [
+				{
+					"image-with-content": {
+						"alt": "image with content",
+						"src": "/images/stack.svg",
+						"text": "Lorem ipsum"
+					}
+				},
+				{
+					"image-with-content": {
+						"alt": "image with content",
+						"src": "/images/stack.svg",
+						"text": "Lorem ipsum"
+					}
+				},
+				{
+					"image-with-content": {
+						"alt": "image with content",
+						"src": "/images/stack.svg",
+						"text": "Lorem ipsum"
+					}
+				}
+			]
+		}
+	}
+}

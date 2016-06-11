@@ -1,0 +1,56 @@
+{{#expand-grid-row}}
+    <div class="{{expandGridRowClasses}}{{expandGridRowClasses}} {{expandGridRowClasses}}t-1 o-sections{{#expandGridRowClasses1}} {{expandGridRowClasses1}}{{/expandGridRowClasses1}}">
+        <div class="c-content-block__main">
+            <div class="o-sections">
+                <div class="o-sections__section c-toggle c-toggle-block c-data">
+                    <div class="u-fs-5 o-sections-lg@small o-tabular@large o-tabular@large--full c-data c-data--5 c-data@small--basic">
+                        <div class="u-dis-none@small u-space-children@large o-tabular@large__header">
+							{{#headers}}
+                                <div class="o-tabular@large__cell">
+									{{> atoms-section-subheader}}
+                                </div>
+							{{/headers}}
+                        </div>
+                    </div>
+					{{#rows}}
+                        <div class="c-data@small__group c-data__row c-data__row--style-2 o-sections-lg@small__section c-toggle c-toggle-block">
+                            <div class="js-toggle-state c-toggle__cta c-toggle-block__cta c-button u-glyph-after || u-fs-5 o-sections-lg@small o-tabular@large o-tabular@large--full c-data c-data--5 c-data@small--basic">
+                                <div class="o-sections@small u-space-children@large o-tabular@large__row c-data@small__group c-data__row c-data__row--style-2">
+									{{#cells}}
+                                        <div class="o-sections@small__section u-space-1-3-sm@large o-tabular@large__cell" data-title="{{title}}">
+											{{data}}
+                                        </div>
+									{{/cells}}
+                                </div>
+                            </div>
+                            <div class="c-toggle__content c-toggle__content--animate c-toggle-block__content@large">
+                                <div class="u-fs-5">
+                                    <div class="u-zone-space">
+                                        <div class="u-space-1 u-fs-5 o-sections-lg@small o-tabular@large o-tabular@large--full c-data c-data--5 c-data@small--basic">
+                                            <div class="u-dis-none@small u-space-children@large o-tabular@large__header">
+												{{#expandable-headers}}
+                                                    <div class="u-space-1-3-sm@large o-tabular@large__cell">
+														{{> atoms-section-subheader}}
+                                                    </div>
+												{{/expandable-headers}}
+                                            </div>
+											{{#expandable-rows}}
+                                                <div class="o-sections-lg@small__section o-sections@small u-space-children@large o-tabular@large__row c-data@small__group c-data__row c-data__row--style-2">
+													{{#cells}}
+                                                        <div class="u-space-1-3-sm@large o-tabular@large__cell u-dis-b@small o-sections@small__section" data-title="{{title}}">
+															{{data}}
+                                                        </div>
+													{{/cells}}
+                                                </div>
+											{{/expandable-rows}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					{{/rows}}
+                </div>
+            </div>
+        </div>
+    </div>
+{{/expand-grid-row}}

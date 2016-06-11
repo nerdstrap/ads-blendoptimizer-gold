@@ -1,0 +1,218 @@
+{
+	"form-page": {
+		"site-header": {
+			"text": "Lorem ipsum",
+			"logo": {
+				"href": "/",
+				"src": "/images/bog-logo.svg",
+				"title": "Lorem ipsum",
+				"alt": "App Logo",
+				"siteHeaderClasses": "u-full@large"
+			},
+			"menu-button": {
+				"text": "User Menu",
+				"showMenu": "closed",
+				"menuButtonClasses": "c-global-header__toggle",
+				"menuButtonClasses1": "js-secondary-nav-toggle u-dis-none@large"
+			},
+			"utility-nav": {
+				"i18n_welcome": "Welcome, ",
+				"i18n_logout": "Logout",
+				"href": "#",
+				"title": "Lorem ipsum",
+				"firstName": "First",
+				"lastName": "Last",
+				"utilityNavClasses": "u-space-2-4@large",
+				"utilityNavClasses1": "c-global-header__utility"
+			},
+			"primary-nav": {
+				"primaryNavClasses": "c-global-header__primary-nav",
+				"list-items": [
+					{
+						"nav-cta": {
+							"href": "#",
+							"title": "Lorem ipsum",
+							"text": "Lorem ipsum",
+							"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+							"navCtaClasses1": "c-nav-cta--header"
+						}
+					},
+					{
+						"nav-cta": {
+							"href": "#",
+							"title": "Lorem ipsum",
+							"text": "Lorem ipsum",
+							"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+							"navCtaClasses1": "c-nav-cta--header"
+						}
+					},
+					{
+						"nav-cta": {
+							"href": "#",
+							"title": "Lorem ipsum",
+							"text": "Lorem ipsum",
+							"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+							"navCtaClasses1": "c-nav-cta--header"
+						}
+					},
+					{
+						"nav-cta": {
+							"href": "#",
+							"title": "Lorem ipsum",
+							"text": "Lorem ipsum",
+							"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+							"navCtaClasses1": "c-nav-cta--header"
+						}
+					}
+				]
+			}
+		},
+		"page-name": "Lorem ipsum",
+		"inner-page-nav": {
+			"innerPageNavClasses": "c-page__inner-nav",
+			"list-items": [
+				{
+					"inner-page-cta": {
+						"isActive": "true",
+						"href": "#",
+						"title": "Lorem ipsum (active)",
+						"text": "Lorem ipsum (active)"
+					}
+				},
+				{
+					"inner-page-cta": {
+						"href": "#",
+						"title": "Lorem ipsum",
+						"text": "Lorem ipsum"
+					}
+				},
+				{
+					"inner-page-cta": {
+						"href": "#",
+						"title": "Lorem ipsum",
+						"text": "Lorem ipsum"
+					}
+				}
+			]
+		},
+		"page-header": {
+			"tag": "h1",
+			"text": "Lorem ipsum"
+		},
+		"form": {
+			"fieldset": {
+				"legend": {
+					"section-header": {
+						"text": "Lorem ipsum",
+						"custom": true,
+						"type": "span",
+						"sectionHeaderClasses": "u-dis-b o-sections__section"
+					},
+					"article-header": {
+						"text": "Lorem ipsum",
+						"custom": true,
+						"type": "span",
+						"articleHeaderClasses": "u-dis-b o-sections__section"
+					},
+					"text": "Lorem ipsum"
+				},
+				"form-items": [
+					{
+						"input-form-item": {
+							"label": {
+								"id": "organisms-forms-form-input-1",
+								"text": "Lorem ipsum",
+								"labelClasses": "u-full",
+								"labelClasses1": "c-form-item__label"
+							},
+							"input": {
+								"id": "organisms-forms-form-input-1",
+								"placeholder": "e.g. Lorem ipsum",
+								"inputClasses": "u-full",
+								"inputClasses1": "c-form-item__field"
+							}
+						}
+					},
+					{
+						"input-form-item": {
+							"label": {
+								"id": "organisms-forms-form-input-2",
+								"text": "Lorem ipsum",
+								"labelClasses": "u-full",
+								"labelClasses1": "c-form-item__label"
+							},
+							"input": {
+								"id": "organisms-forms-form-input-2",
+								"placeholder": "e.g. Lorem ipsum",
+								"inputClasses": "u-full",
+								"inputClasses1": "c-form-item__field"
+							}
+						}
+					},
+					{
+						"input-form-item": {
+							"label": {
+								"id": "organisms-forms-form-input-3",
+								"text": "Lorem ipsum",
+								"labelClasses": "u-full",
+								"labelClasses1": "c-form-item__label"
+							},
+							"input": {
+								"id": "organisms-forms-form-input-3",
+								"placeholder": "e.g. Lorem ipsum",
+								"inputClasses": "u-full",
+								"inputClasses1": "c-form-item__field"
+							}
+						}
+					}
+				]
+			},
+			"cta": {
+				"button": {
+					"text": "Submit",
+					"buttonClasses": "u-full@small"
+				}
+			},
+			"disclosure": {
+				"paragraph": {
+					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+				}
+			}
+		},
+		"site-footer": {
+			"extended-nav": {
+				"extendedNavClasses": "t-1 u-space-1-3-sm o-sections__section c-global-footer__item c-global-footer__item--nav",
+				"list-items": [
+					{
+						"nav-cta": {
+							"href": "#",
+							"title": "Lorem ipsum",
+							"text": "Lorem ipsum",
+							"navCtaClasses": "u-space-2-4@large u-dis-ib@large u-dis-b@small c-anchor--hover-secondary",
+							"navCtaClasses1": "c-nav-cta--footer"
+						}
+					},
+					{
+						"nav-cta": {
+							"href": "#",
+							"title": "Lorem ipsum",
+							"text": "Lorem ipsum",
+							"navCtaClasses": "u-space-2-4@large u-dis-ib@large u-dis-b@small c-anchor--hover-secondary",
+							"navCtaClasses1": "c-nav-cta--footer"
+						}
+					},
+					{
+						"nav-cta": {
+							"href": "#",
+							"title": "Lorem ipsum",
+							"text": "Lorem ipsum",
+							"navCtaClasses": "u-space-2-4@large u-dis-ib@large u-dis-b@small c-anchor--hover-secondary",
+							"navCtaClasses1": "c-nav-cta--footer"
+						}
+					}
+				]
+			},
+			"i18n_copyright": "<span class=\"u-nw\">&copy;2016 ADS</span>. All Rights Reserved."
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"datepicker-form-item": {
+		"label": {
+			"id": "molecules-forms-datepicker-form-item",
+			"text": "Lorem ipsum",
+			"labelClasses": "u-full",
+			"labelClasses1": "c-form-item__label"
+		},
+		"datepicker": {
+			"id": "molecules-forms-datepicker-form-item",
+			"type": "tel",
+			"datePickerClasses1": "c-form-item__field",
+			"datePickerExtraClasses": "js-format-date"
+		}
+	}
+}

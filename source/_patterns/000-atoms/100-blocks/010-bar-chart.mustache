@@ -1,0 +1,16 @@
+{{#bar-chart}}
+	<div class="{{#barChartClasses}}{{barChartClasses}} {{/barChartClasses}}c-bar-chart{{#barChartClasses1}} {{barChartClasses1}}{{/barChartClasses1}}">
+		<div class="u-dark-bg">
+			<div class="js-bar-chart-amount t-4 u-a-r u-space-sm c-bar-chart__amount" data-amount="{{amount}}" data-total="{{total}}">
+			</div>
+		</div>
+		<div class="u-fs-5-alt o-grid">
+			<div class="u-size-2 o-grid__cell">
+				{{textAmount}}
+			</div>
+			<div class="u-a-c u-size-2 o-grid__cell">
+				{{textTotal}}
+			</div>
+		</div>
+	</div>
+{{/bar-chart}}

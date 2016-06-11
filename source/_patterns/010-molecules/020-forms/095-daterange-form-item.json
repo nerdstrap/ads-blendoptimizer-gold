@@ -1,0 +1,34 @@
+{
+	"daterange-form-item": {
+		"datepicker-form-items": [
+			{
+				"label": {
+					"id": "molecules-forms-daterange-form-item-datepicker-1",
+					"text": "Start Date",
+					"labelClasses": "u-full",
+					"labelClasses1": "c-form-item__label datepicker-start__label"
+				},
+				"datepicker": {
+					"id": "molecules-forms-daterange-form-item-datepicker-1",
+					"type": "tel",
+					"datePickerClasses1": "c-form-item__field datepicker-start__input",
+					"datePickerExtraClasses": "js-format-date"
+				}
+			},
+			{
+				"label": {
+					"id": "molecules-forms-daterange-form-item-datepicker-2",
+					"text": "End Date",
+					"labelClasses": "u-full",
+					"labelClasses1": "c-form-item__label datepicker-end__label"
+				},
+				"datepicker": {
+					"id": "molecules-forms-daterange-form-item-datepicker-2",
+					"type": "tel",
+					"datePickerClasses1": "c-form-item__field datepicker-end__input",
+					"datePickerExtraClasses": "js-format-date"
+				}
+			}
+		]
+	}
+}

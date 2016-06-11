@@ -1,0 +1,13 @@
+{{#inner-page-nav}}
+    <div class="{{#innerPageNavClasses}}{{innerPageNavClasses}} {{/innerPageNavClasses}}t-2 o-sections__section o-container__wrap-full c-inner-page-nav{{#innerPageNavClasses1}} {{innerPageNavClasses1}}{{/innerPageNavClasses1}}">
+        <nav class="c-contextual-nav-wrapper">
+            <ul class="u-unlist u-a-c@large u-full@large o-tabular@large c-inner-page-nav__list c-contextual-nav">
+				{{#list-items}}
+                    <li class="o-tabular@large__cell c-inner-page-nav__list__item">
+						{{> atoms-inner-page-cta}}
+                    </li>
+				{{/list-items}}
+            </ul>
+        </nav>
+    </div>
+{{/inner-page-nav}}

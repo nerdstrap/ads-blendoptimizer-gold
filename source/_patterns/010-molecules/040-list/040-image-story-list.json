@@ -1,0 +1,27 @@
+{
+	"image-story-list": {
+		"list-items": [
+			{
+				"image-with-content": {
+					"alt": "image with content",
+					"src": "/images/stack.svg",
+					"text": "Lorem ipsum"
+				}
+			},
+			{
+				"image-with-content": {
+					"alt": "image with content",
+					"src": "/images/stack.svg",
+					"text": "Lorem ipsum"
+				}
+			},
+			{
+				"image-with-content": {
+					"alt": "image with content",
+					"src": "/images/stack.svg",
+					"text": "Lorem ipsum"
+				}
+			}
+		]
+	}
+}

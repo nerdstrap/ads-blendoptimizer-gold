@@ -1,0 +1,7 @@
+{
+	"textarea": {
+		"id": "atoms-forms-textarea-alt",
+		"rows": "3",
+		"placeholder": "e.g. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	}
+}

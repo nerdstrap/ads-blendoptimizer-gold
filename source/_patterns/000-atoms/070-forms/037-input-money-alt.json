@@ -1,0 +1,8 @@
+{
+	"input": {
+		"id": "atoms-forms-input-money-alt",
+		"inputClasses": "js-format-money",
+		"type": "tel",
+		"placeholder": "e.g. 1,500.95"
+	}
+}

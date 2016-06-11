@@ -1,0 +1,20 @@
+{
+	"select": {
+		"id": "atoms-forms-select-alt",
+		"placeholder": "Select an option",
+		"options": [
+			{
+				"value": "1",
+				"text": "Lorem ipsum"
+			},
+			{
+				"value": "2",
+				"text": "Lorem ipsum"
+			},
+			{
+				"value": "3",
+				"text": "Lorem ipsum"
+			}
+		]
+	}
+}

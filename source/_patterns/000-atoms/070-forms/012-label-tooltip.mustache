@@ -1,0 +1,13 @@
+{{#label}}
+    <span class="u-dis-b c-form-tip">
+        <label class="{{#labelClasses}}{{labelClasses}} {{/labelClasses}}t-form-1 c-label c-form-tip__label{{#labelClasses1}} {{labelClasses1}}{{/labelClasses1}}" for="{{id}}">
+			{{text}}{{#isRequired}}<span class="c-label__required">*</span>{{/isRequired}}
+		</label>
+		<span class="u-dis-ib c-anchor c-anchor--light c-tooltip-question c-form-tip__tip">
+			<span href="#" class="c-tooltip c-tooltip--right c-tooltip--sized" data-tooltip="{{tooltip}}">
+				<span class="u-vis-0">{{tooltip}}</span>
+				<span class="u-glyph-before u-glyph-before--no-speak" data-icon="?"></span>
+			</span>
+		</span>
+	</span>
+{{/label}}

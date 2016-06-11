@@ -1,0 +1,23 @@
+{{#dashboard}}
+    <div class="o-container-global">
+		{{> organisms-site-header-authenticated}}
+        <div class="o-container" id="main"{{#page-name}} data-pagename="{{page-name}}"{{/page-name}}>
+            <div class="o-sections c-page">
+				{{> molecules-inner-page-navigation}}
+                <div class="c-page__header">
+					{{> molecules-page-intro}}
+                </div>
+                <div class="u-gutt-1-3-sm c-page__main">
+                    <div class="o-sections__section ">
+                        <div class="o-sections__section o-container__wrap o-sections">
+                            <div class="o-sections__section">
+								{{> organisms-dashboard-content-zone}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		{{> organisms-site-footer}}
+    </div>
+{{/dashboard}}

@@ -1,0 +1,9 @@
+{
+	"nav-cta": {
+		"href": "#",
+		"title": "Lorem ipsum",
+		"text": "Lorem ipsum",
+		"navCtaClasses": "u-space-2-4@large u-dis-ib@large u-dis-b@small c-anchor--hover-secondary",
+		"navCtaClasses1": "c-nav-cta--footer"
+	}
+}

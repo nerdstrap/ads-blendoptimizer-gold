@@ -1,0 +1,8 @@
+{
+	"flag-object": {
+		"showSpacing": "true",
+		"src": "/images/placeholder-image_50x50.png",
+		"alt": "Lorem ipsum",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	}
+}

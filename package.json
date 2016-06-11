@@ -1,0 +1,36 @@
+{
+	"name": "pattern-lab-starter-kit",
+	"version": "0.1.4",
+	"main": "README.md",
+	"scripts": {
+		"gulp": "gulp",
+		"dev": "npm install && gulp --env development",
+		"production": "npm install && gulp --env production",
+		"deploy": "npm install && gulp --env production && gulp deploy",
+		"azure": "npm install && gulp --env production && gulp azure"
+	},
+	"engines": {
+		"node": ">=0.10.0",
+		"npm": ">=2.0.0"
+	},
+	"dependencies": {
+		"gulp": "3.9"
+	},
+	"devDependencies": {
+		"gulp-exec": "2.1.1",
+		"del": "1.2.0",
+		"gulp-watch": "4.3.2",
+		"browser-sync": "2.7.13",
+		"gulp-ruby-sass": "2.0.3",
+		"gulp-sourcemaps": "1.5.2",
+		"gulp-csso": "1.0.0",
+		"gulp-csscomb": "3.0.6",
+		"gulp-autoprefixer": "2.3.1",
+		"gulp-imagemin": "2.3.0",
+		"run-sequence": "1.1.1",
+		"gulp-if": "1.2.5",
+		"gulp-util": "3.0.6",
+		"vinyl-ftp": "0.4.4",
+		"yargs": "3.15.0"
+	}
+}

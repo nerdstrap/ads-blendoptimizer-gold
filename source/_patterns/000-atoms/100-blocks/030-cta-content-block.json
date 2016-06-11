@@ -1,0 +1,10 @@
+{
+	"cta-content-block": {
+		"media-image": {
+			"alt": "media image",
+			"src": "/images/placeholder-image_50x50.png"
+		},
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus sapiente doloribus blanditiis assumenda exercitationem nam nobis, molestiae fugiat tempora sit.",
+		"text2": "- username"
+	}
+}

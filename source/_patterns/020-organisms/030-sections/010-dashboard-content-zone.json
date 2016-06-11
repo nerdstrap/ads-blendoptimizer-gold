@@ -1,0 +1,74 @@
+{
+	"dashboard-content-zone": {
+		"rows": [
+			{
+				"cells": [
+					{
+						"content-block": {
+							"contentBlockClasses": "u-full",
+							"section-header": {
+								"text": "Lorem ipsum 1"
+							},
+							"paragraph": {
+								"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+							},
+							"button": {
+								"text": "Submit 1",
+								"buttonClasses": "u-gutt-1"
+							}
+						}
+					},
+					{
+						"content-block": {
+							"contentBlockClasses": "u-full",
+							"section-header": {
+								"text": "Lorem ipsum 2"
+							},
+							"paragraph": {
+								"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+							},
+							"button": {
+								"text": "Submit 2",
+								"buttonClasses": "u-gutt-1"
+							}
+						}
+					}
+				]
+			},
+			{
+				"cells": [
+					{
+						"content-block": {
+							"contentBlockClasses": "u-full",
+							"section-header": {
+								"text": "Lorem ipsum 3"
+							},
+							"paragraph": {
+								"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+							},
+							"button": {
+								"text": "Submit 3",
+								"buttonClasses": "u-gutt-1"
+							}
+						}
+					},
+					{
+						"content-block": {
+							"contentBlockClasses": "u-full",
+							"section-header": {
+								"text": "Lorem ipsum 4"
+							},
+							"paragraph": {
+								"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+							},
+							"button": {
+								"text": "Submit 4",
+								"buttonClasses": "u-gutt-1"
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

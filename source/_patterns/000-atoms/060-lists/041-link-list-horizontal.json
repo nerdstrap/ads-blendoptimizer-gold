@@ -1,0 +1,27 @@
+{
+	"link-list-horizontal": {
+		"list-items": [
+			{
+				"anchor": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "Lorem ipsum"
+				}
+			},
+			{
+				"anchor": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "Lorem ipsum"
+				}
+			},
+			{
+				"anchor": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "Lorem ipsum"
+				}
+			}
+		]
+	}
+}

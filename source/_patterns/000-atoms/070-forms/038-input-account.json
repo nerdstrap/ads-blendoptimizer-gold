@@ -1,0 +1,8 @@
+{
+	"input": {
+		"id": "atoms-forms-input-account",
+		"inputClasses": "js-format-account",
+		"type": "tel",
+		"placeholder": "e.g. 1234-1234-1234"
+	}
+}

@@ -1,0 +1,17 @@
+{{#utility-nav}}
+    <ul class="{{#utilityNavClasses}}{{utilityNavClasses}} {{/utilityNavClasses}}u-a-r@large u-divider@large u-space-children@large u-unlist c-utility-nav{{#utilityNavClasses1}} {{utilityNavClasses1}}{{/utilityNavClasses1}}" role="navigation">
+        <li class="u-divider@large__child u-dis-ib@large c-utility-nav__item">
+            <span class="u-dis-none@small">{{i18n_welcome}}</span>
+            <a class="u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-b@small c-anchor c-anchor--primary" href="{{href}}" {{#title}}title="{{title}}"{{/title}}>
+			<span>
+				{{i18n_register}}
+			</span>
+            </a>
+        </li>
+        <li class="u-divider@large__child u-dis-ib@large c-utility-nav__item">
+            <a class="u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-b@small u-glyph-before@large c-anchor c-anchor--primary" data-icon="P" href="{{href}}" {{#title}}title="{{title}}"{{/title}}>
+                <span>{{i18n_login}}</span>
+            </a>
+        </li>
+    </ul>
+{{/utility-nav}}

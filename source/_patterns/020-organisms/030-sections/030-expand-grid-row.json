@@ -1,0 +1,400 @@
+{
+	"expand-grid-row": {
+		"headers": [
+			{
+				"section-subheader": {
+					"text": "Lorem ipsum",
+					"custom": true,
+					"type": "span",
+					"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+				}
+			},
+			{
+				"section-subheader": {
+					"text": "Lorem ipsum",
+					"custom": true,
+					"type": "span",
+					"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+				}
+			},
+			{
+				"section-subheader": {
+					"text": "Lorem ipsum",
+					"custom": true,
+					"type": "span",
+					"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+				}
+			},
+			{
+				"section-subheader": {
+					"text": "Lorem ipsum",
+					"custom": true,
+					"type": "span",
+					"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+				}
+			}
+		],
+		"rows": [
+			{
+				"id": "ABCD-1230",
+				"cells": [
+					{
+						"title": "Lorem ipsum:",
+						"data": "Lorem ipsum"
+					},
+					{
+						"title": "Lorem ipsum:",
+						"data": "Lorem ipsum"
+					},
+					{
+						"title": "Lorem ipsum:",
+						"data": "Lorem ipsum"
+					},
+					{
+						"title": "Lorem ipsum:",
+						"data": "Lorem ipsum"
+					}
+				],
+				"expandable-headers": [
+					{
+						"section-subheader": {
+							"text": "Lorem ipsum",
+							"custom": true,
+							"type": "span",
+							"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+						}
+					},
+					{
+						"section-subheader": {
+							"text": "Lorem ipsum",
+							"custom": true,
+							"type": "span",
+							"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+						}
+					},
+					{
+						"section-subheader": {
+							"text": "Lorem ipsum",
+							"custom": true,
+							"type": "span",
+							"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+						}
+					},
+					{
+						"section-subheader": {
+							"text": "Lorem ipsum",
+							"custom": true,
+							"type": "span",
+							"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+						}
+					}
+				],
+				"expandable-rows": [
+					{
+						"id": "ABCD-2230",
+						"cells": [
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							}
+						]
+					},
+					{
+						"id": "ABCD-2231",
+						"cells": [
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							}
+						]
+					},
+					{
+						"id": "ABCD-2232",
+						"cells": [
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "ABCD-1231",
+				"cells": [
+					{
+						"title": "Lorem ipsum:",
+						"data": "Lorem ipsum"
+					},
+					{
+						"title": "Lorem ipsum:",
+						"data": "Lorem ipsum"
+					},
+					{
+						"title": "Lorem ipsum:",
+						"data": "Lorem ipsum"
+					},
+					{
+						"title": "Lorem ipsum:",
+						"data": "Lorem ipsum"
+					}
+				],
+				"expandable-headers": [
+					{
+						"section-subheader": {
+							"text": "Lorem ipsum",
+							"custom": true,
+							"type": "span",
+							"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+						}
+					},
+					{
+						"section-subheader": {
+							"text": "Lorem ipsum",
+							"custom": true,
+							"type": "span",
+							"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+						}
+					},
+					{
+						"section-subheader": {
+							"text": "Lorem ipsum",
+							"custom": true,
+							"type": "span",
+							"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+						}
+					},
+					{
+						"section-subheader": {
+							"text": "Lorem ipsum",
+							"custom": true,
+							"type": "span",
+							"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+						}
+					}
+				],
+				"expandable-rows": [
+					{
+						"id": "ABCD-3230",
+						"cells": [
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							}
+						]
+					},
+					{
+						"id": "ABCD-3231",
+						"cells": [
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							}
+						]
+					},
+					{
+						"id": "ABCD-3232",
+						"cells": [
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "ABCD-1232",
+				"cells": [
+					{
+						"title": "Lorem ipsum:",
+						"data": "Lorem ipsum"
+					},
+					{
+						"title": "Lorem ipsum:",
+						"data": "Lorem ipsum"
+					},
+					{
+						"title": "Lorem ipsum:",
+						"data": "Lorem ipsum"
+					},
+					{
+						"title": "Lorem ipsum:",
+						"data": "Lorem ipsum"
+					}
+				],
+				"expandable-headers": [
+					{
+						"section-subheader": {
+							"text": "Lorem ipsum",
+							"custom": true,
+							"type": "span",
+							"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+						}
+					},
+					{
+						"section-subheader": {
+							"text": "Lorem ipsum",
+							"custom": true,
+							"type": "span",
+							"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+						}
+					},
+					{
+						"section-subheader": {
+							"text": "Lorem ipsum",
+							"custom": true,
+							"type": "span",
+							"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+						}
+					},
+					{
+						"section-subheader": {
+							"text": "Lorem ipsum",
+							"custom": true,
+							"type": "span",
+							"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+						}
+					}
+				],
+				"expandable-rows": [
+					{
+						"id": "ABCD-4230",
+						"cells": [
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							}
+						]
+					},
+					{
+						"id": "ABCD-4231",
+						"cells": [
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							}
+						]
+					},
+					{
+						"id": "ABCD-4232",
+						"cells": [
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							},
+							{
+								"title": "Lorem ipsum:",
+								"data": "Lorem ipsum"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

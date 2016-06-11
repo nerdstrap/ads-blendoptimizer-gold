@@ -1,0 +1,13 @@
+{{#dashboard-content-zone}}
+    <div class="{{#dashboardContentClasses}}{{dashboardContentClasses}} {{/dashboardContentClasses}}o-tabular@medium-large o-tabular--full@medium-large  o-sections@small-medium o-tabular-bordered@medium-large{{#dashboardContentClasses1}} {{dashboardContentClasses1}}{{/dashboardContentClasses1}}">
+		{{#rows}}
+            <div class="t-1@medium-large o-sections@small-medium o-sections@small-medium__section o-tabular-bordered@medium-large__row u-size-2@medium-large o-tabular@medium-large__cell">
+				{{#cells}}
+                    <div class="o-sections@small-medium__section o-tabular-bordered@medium-large__cell">
+						{{> molecules-grid-content-block}}
+                    </div>
+				{{/cells}}
+            </div>
+		{{/rows}}
+    </div>
+{{/dashboard-content-zone}}

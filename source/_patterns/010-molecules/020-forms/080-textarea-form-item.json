@@ -1,0 +1,17 @@
+{
+	"textarea-form-item": {
+		"label": {
+			"id": "molecules-forms-textarea-form-item",
+			"text": "Lorem ipsum",
+			"labelClasses": "u-full",
+			"labelClasses1": "c-form-item__label"
+		},
+		"textarea": {
+			"id": "molecules-forms-textarea-form-item",
+			"rows": "3",
+			"placeholder": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eligendi velit facere.",
+			"textAreaClasses": "u-full",
+			"textAreaClasses1": "c-form-item__field"
+		}
+	}
+}

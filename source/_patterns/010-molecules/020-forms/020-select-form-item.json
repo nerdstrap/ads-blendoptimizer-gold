@@ -1,0 +1,29 @@
+{
+	"select-form-item": {
+		"label": {
+			"id": "molecules-forms-select-form-item",
+			"text": "Lorem ipsum",
+			"labelClasses": "u-full",
+			"labelClasses1": "c-form-item__label"
+		},
+		"select": {
+			"id": "molecules-forms-select-form-item",
+			"options": [
+				{
+					"value": "1",
+					"text": "Lorem ipsum"
+				},
+				{
+					"value": "2",
+					"text": "Lorem ipsum"
+				},
+				{
+					"value": "3",
+					"text": "Lorem ipsum"
+				}
+			],
+			"inputClasses": "u-full",
+			"inputClasses1": "c-form-item__field"
+		}
+	}
+}

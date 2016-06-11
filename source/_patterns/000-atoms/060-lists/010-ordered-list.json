@@ -1,0 +1,28 @@
+{
+	"ordered-list": {
+		"list-items": [
+			{
+				"text": "Lorem ipsum dolor sit."
+			},
+			{
+				"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quasi modi voluptatum praesentium, officia nemo sint quod qui recusandae ipsam blanditiis officiis dicta a soluta cumque perspiciatis minima ut ullam ea doloribus rerum delectus ducimus odio placeat? In, unde blanditiis!"
+			},
+			{
+				"text": "Lorem ipsum dolor.",
+				"nested-ordered-list": {
+					"nested-ordered-list-items": [
+						{
+							"text": "Lorem ipsum dolor sit amet."
+						},
+						{
+							"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eligendi velit facere."
+						}
+					]
+				}
+			},
+			{
+				"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis optio, illum quod, amet adipisci repellat?"
+			}
+		]
+	}
+}

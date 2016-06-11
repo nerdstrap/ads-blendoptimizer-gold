@@ -1,0 +1,22 @@
+// ELEMENTS: Unclassed HTML elements (Type selectors)
+
+body {
+	font-family: $font-family;
+	font-size: $base-font-size;
+	font-weight: $weight-normal;
+	line-height: (22/16);
+	overflow-x: hidden;
+	margin: 0;
+	-webkit-overflow-scrolling: touch;
+	min-width: $min-width;
+
+	@if ($color-base != #000) {
+		color: $color-base;
+	}
+}
+
+a {
+	word-wrap: break-word;
+}
+
+@import "03-elements_unit-resets";

@@ -1,0 +1,30 @@
+/*! v0.1.54 || 2016-05-27 2:59PM EST */
+
+// Namespace (o-, c-, u-, t-, _-, js-, qa-) Reference : http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/
+// BEMIT: http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further
+// BEM: http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403
+// ITCSS: https://www.youtube.com/watch?v=1OKZOV-iLj4
+
+// SETTINGS: Global variables, config switches
+@import "00-settings";
+
+// TOOLS: Default mixin and functions
+@import "01-tools";
+
+// GENERIC: Ground-zero styles (normalize, resets, box-sizing)
+@import "02-generic";
+
+// ELEMENTS: Unclassed HTML elements (Type selectors)
+@import "03-elements";
+
+// OBJECTS: Cosmetic-free design patterns
+@import "04-objects";
+
+// COMPONENTS: Designed components
+@import "05-components";
+
+// TRUMPS: Helpers and overrides
+@import "06-trumps";
+
+// !!!remove before production!!!
+@import "06-trumps_demo-online"; // only for development purpose

@@ -1,0 +1,133 @@
+{
+	"colors": [
+		{
+			"name": "color-primary-dark",
+			"value": "#355000",
+			"extended": [
+				"color-error"
+			]
+		},
+		{
+			"name": "color-primary",
+			"value": "#669900",
+			"extended": [
+				"anchor-primary",
+				"button-bg-hover"
+			]
+		},
+		{
+			"name": "color-primary-light",
+			"value": "#80B811"
+		},
+		{
+			"name": "color-primary-accent",
+			"value": "#9FD435"
+		},
+		{
+			"name": "color-secondary-dark",
+			"value": "#10033B"
+		},
+		{
+			"name": "color-secondary",
+			"value": "#250D71",
+			"extended": [
+				"button-bg",
+				"anchor-hover"
+			]
+		},
+		{
+			"name": "color-secondary-light",
+			"value": "#341A88",
+			"extended": [
+				"anchor-active",
+				"button-bg-active"
+			]
+		},
+		{
+			"name": "color-secondary-accent",
+			"value": "#4D349C"
+		},
+		{
+			"name": "color-accent-dark",
+			"value": "#562700"
+		},
+		{
+			"name": "color-accent",
+			"value": "#A44A00",
+			"extended": [
+				"color-accent-light",
+				"color-accent-accent"
+			]
+		},
+		{
+			"name": "color-accent-accent",
+			"value": "#E38639",
+			"extended": [
+				"color-success"
+			]
+		},
+		{
+			"name": "color-dark-dark",
+			"value": "#000000",
+			"extended": [
+				"color-base",
+				"color-label"
+			]
+		},
+		{
+			"name": "color-dark",
+			"value": "#4F4E4E",
+			"extended": [
+				"mobile-menu-bg",
+				"header-color",
+				"anchor-secondary",
+				"button-secondary-bg"
+			]
+		},
+		{
+			"name": "color-dark-light",
+			"value": "#E5E6E5",
+			"extended": [
+				"color-disabled",
+				"bg-content-zones"
+			]
+		},
+		{
+			"name": "color-dark-accent",
+			"value": "#474646"
+		},
+		{
+			"name": "color-light-dark",
+			"value": "#999B9B",
+			"extended": [
+				"color-placeholder"
+			]
+		},
+		{
+			"name": "color-light",
+			"value": "#F5F5F5"
+		},
+		{
+			"name": "color-light-light",
+			"value": "#FFF"
+		},
+		{
+			"name": "color-light-accent",
+			"value": "#F9F9F9"
+		},
+		{
+			"name": "light-gradient-dark",
+			"value": "linear-gradient(to right, rgba(109,131,159,1) 0%, rgba(109,131,159,0.92) 40%, rgba(109,131,159,.1) 80%, rgba(109,131,159,0) 100%)",
+			"extended": [
+				"page-intro-gradient"
+			]
+		},
+		{
+			"name": "light-gradient",
+			"value": "linear-gradient(to bottom, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.94) 100%)",
+			"extended": [
+				"header-gradient-mobile"
+			]
+		}
+	]
+}

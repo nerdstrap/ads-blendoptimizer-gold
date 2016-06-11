@@ -1,0 +1,68 @@
+.c-bar-chart {
+	&__amount {
+		@include allChange($duration: 1.5s, $timing: cubic-bezier(.25,.16,.26,1), $delay: 0, $property: (max-width));
+		// @include allChange($duration: 1.5s, $timing: ease-in-out, $delay: 0, $property: (max-width));
+		max-width: 0;
+
+		&:before {
+			content: "$" attr(data-amount);
+		}
+
+		&[data-amount="0"]/*, &:not([style])*/ {
+			background-color: transparent;
+			opacity: .5;
+		}
+	}
+}
+
+.c-piechart {
+	@include allChange($duration: 1.5s, $timing: cubic-bezier(.25,.16,.26,1), $delay: 0, $property: (stroke-dasharray, background));
+	transform: rotate(-90deg);
+	background: $color-dark-accent;
+	border-radius: 50%;
+	display: block;
+	stroke: $color-secondary;
+	stroke-width: 50%;
+	stroke-dasharray: 0, 100;
+	overflow: hidden;
+
+	&--static-percent {
+		stroke-dasharray: 80, 100;
+	}
+}
+
+
+.c-savings-amount {
+	&:before, &:after, &__amount {
+		font-size: rem(19);
+		letter-spacing: -0.045em;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&:after {
+		@include title-setup;
+		color: $color-secondary;
+		display: block;
+		// font-size: $h3;
+		font-weight: $weight-bold;
+		content: attr(data-amount);
+		z-index: 3;
+	}
+
+	&:before {
+		content: "";
+		width: 80%;
+		height: 80%;
+		z-index: 2;
+		border-radius: 50%;
+		background-color: $color-dark-light;
+	}
+
+	&__amount {
+
+		z-index: 4;
+	}
+}

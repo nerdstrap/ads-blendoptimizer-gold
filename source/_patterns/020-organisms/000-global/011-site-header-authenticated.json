@@ -1,0 +1,69 @@
+{
+	"site-header": {
+		"text": "Lorem ipsum",
+		"logo": {
+			"href": "/",
+			"src": "/images/bog-logo.svg",
+			"title": "Lorem ipsum",
+			"alt": "App Logo",
+			"logoClasses": "u-full@large"
+		},
+		"menu-button": {
+			"text": "User Menu",
+			"showMenu": "closed",
+			"menuButtonClasses": "js-secondary-nav-toggle u-dis-none@large",
+			"menuButtonClasses1": "c-global-header__toggle"
+		},
+		"utility-nav": {
+			"i18n_welcome": "Welcome, ",
+			"i18n_logout": "Logout",
+			"href": "#",
+			"title": "Lorem ipsum",
+			"firstName": "First",
+			"lastName": "Last",
+			"utilityNavClasses": "u-space-2-4@large",
+			"utilityNavClasses1": "c-global-header__utility"
+		},
+		"primary-nav": {
+			"primaryNavClasses": "c-global-header__primary-nav",
+			"list-items": [
+				{
+					"nav-cta": {
+						"href": "#",
+						"title": "Lorem ipsum",
+						"text": "Lorem ipsum",
+						"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+						"navCtaClasses1": "c-nav-cta--header"
+					}
+				},
+				{
+					"nav-cta": {
+						"href": "#",
+						"title": "Lorem ipsum",
+						"text": "Lorem ipsum",
+						"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+						"navCtaClasses1": "c-nav-cta--header"
+					}
+				},
+				{
+					"nav-cta": {
+						"href": "#",
+						"title": "Lorem ipsum",
+						"text": "Lorem ipsum",
+						"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+						"navCtaClasses1": "c-nav-cta--header"
+					}
+				},
+				{
+					"nav-cta": {
+						"href": "#",
+						"title": "Lorem ipsum",
+						"text": "Lorem ipsum",
+						"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+						"navCtaClasses1": "c-nav-cta--header"
+					}
+				}
+			]
+		}
+	}
+}

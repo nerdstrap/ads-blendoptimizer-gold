@@ -1,0 +1,54 @@
+// GENERIC: Ground-zero styles (normalize, resets, box-sizing)
+:root {
+	@include scaleFontUp($bp-1, 1rem, rem(18.5)); // 16 to...
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+@mixin selection-styles {
+	background: $color-secondary-light;
+}
+
+::-moz-selection {
+	@include selection-styles;
+}
+
+::selection {
+	@include selection-styles;
+}
+
+a, button, label, legend {
+	@include disable-select;
+}
+
+button, a {
+	-webkit-tap-highlight-color: transparent;
+}
+
+main {
+	display: block;
+}
+
+img {
+	border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1rem;
+}
+
+legend, fieldset {
+	display: block;
+	padding: 0;
+	border: 0;
+}
+
+fieldset {
+	margin: 0;
+}
+
+// article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+// 	display: block;
+// }

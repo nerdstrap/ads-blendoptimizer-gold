@@ -1,0 +1,42 @@
+{
+	"primary-nav": {
+		"list-items": [
+			{
+				"nav-cta": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "Lorem ipsum",
+					"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+					"navCtaClasses1": "c-nav-cta--header"
+				}
+			},
+			{
+				"nav-cta": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "Lorem ipsum",
+					"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+					"navCtaClasses1": "c-nav-cta--header"
+				}
+			},
+			{
+				"nav-cta": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "Lorem ipsum",
+					"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+					"navCtaClasses1": "c-nav-cta--header"
+				}
+			},
+			{
+				"nav-cta": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"text": "Lorem ipsum",
+					"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+					"navCtaClasses1": "c-nav-cta--header"
+				}
+			}
+		]
+	}
+}

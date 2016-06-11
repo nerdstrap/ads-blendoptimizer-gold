@@ -1,0 +1,27 @@
+{{#table-data}}
+    <div class="u-fs-5 o-sections-lg@small o-tabular@large o-tabular@large--full c-data c-data--1 c-data@small--basic">
+        <div class="u-dis-none@small u-space-children@large o-tabular@large__header">
+			{{#headers}}
+                <div class="o-tabular@large__cell">
+					{{> atoms-section-subheader}}
+                </div>
+			{{/headers}}
+        </div>
+		{{#rows}}
+            <div class="o-sections-lg@small__section o-sections@small u-space-children@large o-tabular@large__row c-data@small__group c-data__row c-data__row--style-1" data-id="{{id}}">
+                <div class="o-sections@small__section u-space-1-3-sm@large o-tabular@large__cell" data-title="Header:">
+					{{data1}}
+                </div>
+                <div class="o-sections@small__section u-space-1-3-sm@large o-tabular@large__cell u-dis-ib@small" data-title="Header:">
+					{{data2}}
+                </div>
+                <div class="o-sections@small__section u-space-1-3-sm@large o-tabular@large__cell u-dis-ib@small" data-title="Header:">
+					{{data3}}
+                </div>
+                <div class="o-sections@small__section u-space-1-3-sm@large o-tabular@large__cell u-dis-ib@small" data-title="Header:">
+					{{data4}}
+                </div>
+            </div>
+		{{/rows}}
+    </div>
+{{/table-data}}

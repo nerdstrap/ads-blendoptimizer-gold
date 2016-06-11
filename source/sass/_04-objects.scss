@@ -1,0 +1,359 @@
+// OBJECTS: Cosmetic-free design patterns
+
+.o-sections {
+	@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+		&__section {
+			& + & {
+				@include units($property: "margin", $version: "half-sized", $variation: (top: true));
+			}
+		}
+	}
+
+	&-lg {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			&__section {
+				& + & {
+					margin-top: $default-space;
+					//@include units($property: "margin", $variation: (top: true));
+				}
+			}
+		}
+	}
+
+	@include suffixcate {
+		&-2-4__section {
+			& + & {
+				@include units($property: "margin", $version: "half-sized", $variation: (left: true));
+			}
+		}
+	}
+
+	@include suffixcate {
+		&-2-4-alt__section {
+			margin-left: $default-space / -2;
+
+			& + & {
+				@include units($property: "padding", $version: "half-sized", $variation: (left: true));
+			}
+		}
+	}
+
+	// @media screen and (min-width: $bp-grid) {
+	// 	&\@large__section + .o-sections\@large__section {
+	// 		@include units($property: "margin", $version: "half-sized", $variation: (top: true));
+	// 	}
+
+	// 	&-2-4\@large__section + .o-sections-2-4\@large__section {
+	// 		@include units($property: "margin", $version: "half-sized", $variation: (left: true));
+	// 	}
+	// }
+
+	// @media screen and (max-width: $bp-grid) {
+	// 	&\@small__section + .o-sections\@small__section {
+	// 		@include units($property: "margin", $version: "half-sized", $variation: (top: true));
+	// 	}
+
+	// 	&-2-4\@small__section + .o-sections-2-4\@small__section {
+	// 		@include units($property: "margin", $version: "half-sized", $variation: (left: true));
+	// 	}
+	// }
+}
+
+.o-container-global {
+	@media screen and (min-width: $bp-header) {
+		@include units($property: "margin", $variation: (bottom: true));
+	}
+
+	&--constraints {
+		width: 90vw;
+	}
+}
+
+.o-container-full {
+	position: relative;
+}
+
+%container-margin-sides {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.o-container {
+	&__wrap-full, &__wrap {
+		max-width: $max-width;
+	}
+
+	&__wrap-full {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	&__wrap {
+		@media screen and (min-width: $bp-1) {
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		@media screen and (max-width: $bp-1) {
+			margin-right: $default-space / 2;
+			margin-left: $default-space / 2;
+		}
+	}
+}
+
+.o-media {
+	@include suffixcate {
+		@include clear-after;
+
+		&__asset {
+			float: left;
+		}
+
+		&__main {
+			overflow: hidden;
+		}
+	}
+}
+
+.o-flag {
+	@include suffixcate  {
+		display: table;
+
+		&__item {
+			display: table-cell;
+		}
+
+		&--full {
+			width: 100%;
+		}
+	}
+}
+
+
+.o-grid, .o-grid__row {
+	@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+		&:after {
+			clear: both;
+			display: table;
+			content: "";
+		}
+	}
+}
+
+.o-grid {
+	@include suffixcate($bp: $suffixcate_bp-medium, $all: true, $base: true) {
+		&__cell {
+			float: left;
+		}
+
+		&__cell-alt {
+			float: right;
+		}
+
+		&__row {
+
+		}
+	}
+}
+
+
+.o-flex {
+	@include suffixcate  {
+		-js-display: flex;
+		display: flex;
+
+		&__cell {
+			flex-shrink: 0;
+			flex-grow: 1;
+		}
+
+		&--justify {
+			justify-content: space-between;
+		}
+
+		&--stretch, &--stretch {
+			align-items: stretch;
+		}
+
+		&--grid {
+			flex-wrap: wrap;
+			align-content: stretch;
+			justify-content: space-between;
+			width: 100%;
+		}
+
+		&--wrap {
+			flex-wrap: wrap;
+			width: 100%;
+
+			> * {
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+.o-flex {
+	&--spaced {
+		margin-top: -$default-space / 4;
+		margin-left: -$default-space / 4;
+		width: calc(100% + #{$default-space / 2});
+
+		> .o-flex__cell {
+			padding: $default-space / 4;
+		}
+	}
+
+	@include suffixcate {
+		&__cell {
+			&-1 {
+				order: 1;
+			}
+
+			&-2 {
+				order: 2;
+			}
+
+			&-3 {
+				order: 3;
+			}
+		}
+	}
+
+	&\@large {
+		@media screen and (min-width: $bp-grid) {
+			&--spaced {
+				margin-top: -$default-space / 4;
+				margin-left: -$default-space / 4;
+				width: calc(100% + #{$default-space / 2});
+
+				> .o-flex\@large__cell {
+					padding: $default-space / 4;
+				}
+			}
+		}
+	}
+
+	&\@small {
+		@media screen and (max-width: $bp-grid) {
+			&--spaced {
+				margin-top: -$default-space / 4;
+				margin-left: -$default-space / 4;
+				width: calc(100% + #{$default-space / 2});
+
+				> .o-flex\@small__cell {
+					padding: $default-space / 4;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+
+ul, ol {
+	&.o-tabular--rowed {
+		@include suffixcate  {
+			> li {
+				display: table-row;
+			}
+		}
+	}
+}
+
+.o-masonry {
+	@include suffixcate {
+		flex-direction: row;
+
+		&__section {
+			flex-direction: column;
+			flex: 1;
+		}
+
+		&__article {
+		}
+	}
+
+	&__article {
+	}
+}
+
+
+
+@import "_04-objects_lists";
+
+.o-tabular {
+	@include suffixcate($bp: $suffixcate_bp-medium, $all: true)  {
+		display: table;
+
+		&__header {
+			display: table-header-group;
+		}
+
+		&__footer {
+			display: table-footer-group;
+		}
+
+		&__row {
+			display: table-row;
+		}
+
+		&__cell {
+			display: table-cell;
+		}
+
+		&--full {
+			width: 100%;
+		}
+	}
+}
+
+.o-tabular-bordered {
+	@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+		// border-spacing: $default-space / 2;
+		// width: calc(100% + #{$default-space});
+		// margin-top: -$default-space / 2;
+		// margin-left: -$default-space / 2;
+
+		&__row {
+			&:nth-child(odd) {
+				border-right: ($default-space / 4) solid $color-light-light;
+			}
+
+			&:nth-child(even) {
+				border-left: ($default-space / 4) solid $color-light-light;
+			}
+		}
+
+		&__cell {
+			& + & {
+				border-top: ($default-space / 2) solid $color-light-light;
+			}
+		}
+	}
+
+	&-alt {
+		@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+			// border-spacing: $default-space / 2;
+			// width: calc(100% + #{$default-space});
+			// margin-top: -$default-space / 2;
+			// margin-left: -$default-space / 2;
+			&__cell {
+				//& + & {
+					border-top: rem(1) solid $color-dark;
+				//}
+			}
+		}
+	}
+}
+
+.c-content-columns {
+	@include suffixcate($bp: $suffixcate_bp-medium, $all: true) {
+		p {
+			column-count: 2;
+		}
+	}
+}
