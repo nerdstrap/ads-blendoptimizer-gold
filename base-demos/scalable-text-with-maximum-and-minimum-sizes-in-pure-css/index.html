@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Scalable Text with Maximum and Minimum Sizes in Pure CSS </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+    <link rel='stylesheet prefetch' href='http://nicetransition.com/demos/codepen-external-scaling-styles.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="o-container">
+	<section>
+		<h1 class="c-title  u-a-c">
+			<span class="c-dis-b u-scalable-1">
+				Scalable Text in CSS
+			</span>
+			<span class="c-dis-b u-scalable-2">
+				with Maximum Sizes
+			</span>
+			<span class="c-dis-b u-scalable-3">
+				and Minimum Sizes
+			</span>
+		</h1>
+		<p class="u-scalable-4  u-a-c">
+			Scale <code>font-size</code> property based on viewport width using only CSS. The following CSS units will work: <code>em</code>, <code>rem</code>, <code>px</code>, <code>ch</code>, <code>cm</code>, <code>mm</code>, <code>in</code>, <code>pt</code>, <code>pc</code>.
+		</p>
+	</section>
+	
+	<hr />
+	
+	<section>
+		<h2 class="u-scalable-3">
+			MIXINS
+		</h2>
+		<p class="u-scalable-4">
+			Mixins have up to four values that need to be passed:
+		</p>
+		<ul class="u-scalable-4">
+			<li>
+				<b class="c-code">context-width</b>: The identified width that is used as the scaling point.
+			</li>
+			<li>
+				<b class="c-code">base-font-size</b>: The base <code>font-size</code>. When the viewport is equal to <span class="c-code">context-width</span>'s width, the calculated font-size will be equal to <span class="c-code">base-font-size</span>. <span class="c-code">base-font-size</span> has to be a smaller value than <span class="c-code">limit-font-size-max</span> and has to be a larger value than <span class="c-code">limit-font-size-min</span>.
+			</li>
+			<li>
+				<b class="c-code">limit-font-size-min</b>: The minimal size that is intended for <code>font-size</code>. The scaling effect will not allow the font to be smaller than the <span class="c-code">limit-font-size-min</span>. <span class="c-code">limit-font-size-min</span> has to be a smaller value than <span class="c-code">base-font-size</span>.
+			</li>
+			<li>
+				<b class="c-code">limit-font-size-max</b>: The maximum size that is intended for <code>font-size</code>. The scaling effect will not allow the font to be larger than the <span class="c-code">limit-font-size-max</span>.  <span class="c-code">limit-font-size-max</span> has to be a larger value than <span class="c-code">base-font-size</span>.
+			</li>
+		</ul>
+		<p>
+			<b>Note</b>: All values need to be the same unit type.
+		</p>
+		<article>
+			<h3 class="u-scalable-3">
+				<span class="c-code">scaleFont()</span>
+			</h3>
+			<p class="u-scalable-4">
+				Scales font &quot;up&quot; as browser gets wider with a maximum set <code>font-size</code> and scales font &quot;down&quot; as browser gets thinner with a minimum set <code>font-size</code>.
+			</p>
+			<p class="u-scalable-4">
+				<code>
+					@include scaleFont(context-width, base-font-size, limit-font-size-min, limit-font-size-max);
+				</code>
+			</p>
+<pre class="u-scalable-4">
+.selector-name { // apply to any selector
+
+	@include scaleFont(62.5rem, 4rem, 1.875rem, 6.25rem);
+	// 4 required arguments*:
+	// 62.5rem: context-width
+	// 4rem: base-font-size
+	// 1.875rem: limit-font-size-min
+	// 6.25rem: limit-font-size-max
+	// *All values need to be the same unit type
+}</pre>
+		</article>
+		<article>
+			<h3 class="u-scalable-3">
+				<span class="c-code">scaleFontUp()</span>
+			</h3>
+			<p class="u-scalable-4">
+				Scales font &quot;up&quot; as browser gets wider with a maximum set <code>font-size</code>.
+			</p>
+			<p class="u-scalable-4">
+				<code>
+					@include scaleFontUp(context-width, base-font-size, limit-font-size-max);
+				</code>
+			</p>
+<pre class="u-scalable-4">
+.selector-name { // apply to any selector
+
+	@include scaleFontUp(62.5rem, 4rem, 6.25rem);
+	// 3 required arguments*:
+	// 62.5rem: context-width
+	// 4rem: base-font-size
+	// 6.25rem: limit-font-size-max
+	// *All values need to be the same unit type
+}</pre>
+		</article>
+		<article>
+			<h3 class="u-scalable-3">
+				<span class="c-code">scaleFontDown()</span>
+			</h3>
+			<p class="u-scalable-4">
+				Scales font &quot;down&quot; as browser gets thinner with a minimum set <code>font-size</code>.
+			</p>
+			<p class="u-scalable-4">
+				<code>
+					@include scaleFontDown(context-width, base-font-size, limit-font-size-min);
+				</code>
+			</p>
+<pre class="u-scalable-4">
+.selector-name { // apply to any selector
+
+	@include scaleFontDown(62.5rem, 4rem,  1.875rem);
+	// 3 required arguments*:
+	// 62.5rem: context-width
+	// 4rem: base-font-size
+	// 1.875rem: limit-font-size-min
+	// *All values need to be the same unit type
+}</pre>
+		</article>
+	</section>
+</div>
+    
+    
+    
+    
+    
+  </body>
+</html>

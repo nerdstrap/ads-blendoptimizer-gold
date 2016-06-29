@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Reusable Custom Glyphs Before/After a String</title>
+    <meta name="viewport" content="width=device-width" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    
+    <link rel='stylesheet prefetch' href='http://nicetransition.com/demos/codepen-external-scaling-styles.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    
+<div class="o-container">
+	<section class="u-a-c">
+		<h1 class="c-title u-fs-1">
+			Reusable Glyphs
+		</h1>
+		<p class="u-fs-4">
+			Implement custom glyphs using data-attribute in html and CSS. 
+		</p>
+		<p>
+			I recommend using <a href="https://icomoon.io/app">Icomoon.io</a> for generating a custom web font.
+		</p>
+	</section>
+	
+	<hr />
+	
+	<section>
+		<h2 class="u-fs-3">
+			Classes
+		</h2>
+		<article>
+			<h3 class="u-fs-3">
+				<span class="c-code">.u-glyph-before[data-icon]</span>
+			</h3>
+			<p class="u-fs-4">
+				Add a custom glyph before text, change the <span class="c-code">[data-icon]</span> to your desired character or the unicode.
+			</p>
+			<pre class="u-fs-4">
+&lt;span class=&quot;u-glyph-before&quot; data-icon=&quot;X&quot;&gt;
+	I have an &quot;X&quot; before me
+&lt;/span&gt;
+			</pre>
+			<p class="u-fs-4">
+				<span class="u-glyph-before" data-icon="X">
+					I have an "X" before me
+				</span>
+			</p>
+		</article>
+		<article>
+			<h3 class="u-fs-3">
+				<span class="c-code">.u-glyph-after[data-icon]</span>
+			</h3>
+			<p class="u-fs-4">
+				Add a custom glyph after text, change the <span class="c-code">[data-icon]</span> to your desired character or the unicode.
+			</p>
+			<pre class="u-fs-4">
+&lt;span class=&quot;u-glyph-after&quot; data-icon=&quot;X&quot;&gt;
+	I have an &quot;X&quot; after me
+&lt;/span&gt;
+			</pre>
+			<p class="u-fs-4">
+				<span class="u-glyph-after" data-icon="X">
+					I have an "X" after me
+				</span>
+			</p>
+		</article>
+		<article>
+			<h3 class="u-fs-3">
+				<span class="c-code">.u-glyph</span>
+			</h3>
+			<p class="u-fs-4">
+				Replace a character or unicode with a glyph
+			</p>
+			<pre class="u-fs-4">
+&lt;span class=&quot;u-glyph&quot;&gt;
+	X
+&lt;/span&gt;
+			</pre>
+			<p class="u-fs-4">
+				<span class="u-glyph">
+					X
+				</span>
+			</p>
+		</article>
+		<article>
+			<h3 class="u-fs-3">
+				<span class="c-code">.u-glyph--no-speak</span>
+			</h3>
+			<p class="u-fs-4">
+				Prevent screen readers from reading your character.
+			</p>
+			<pre class="u-fs-4">
+&lt;span class=&quot;u-glyph--no-speak&quot;&gt;
+	X
+&lt;/span&gt;
+			</pre>
+			<p class="u-fs-4">
+				<span class="u-glyph--no-speak">
+					X
+				</span>
+			</p>
+		</article>
+	</section>
+</div>
+    
+    
+    
+    
+    
+  </body>
+</html>

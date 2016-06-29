@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'webfont';
+  font-weight: normal;
+  font-style: normal;
+}
+.u-glyph, .u-glyph-before:before, .u-glyph-after:after {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  white-space: nowrap;
+}
+
+.u-glyph-before[data-icon]:before, .u-glyph-after[data-icon]:after {
+  content: attr(data-icon);
+}
+
+.u-glyph--no-speak, .u-glyph-before--no-speak:before, .u-glyph-after--no-speak:after {
+  speak: none;
+}
+
+a {
+  color: currentColor;
+}
+
+body {
+  padding-left: 65px;
+}

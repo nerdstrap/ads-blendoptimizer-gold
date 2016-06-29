@@ -1,0 +1,65 @@
+/*! * [Scalable Text in CSS with Maximum and Minimum Sizes](https://github.com/kevinmack18/SCALABLE-TEXT-IN-CSS) */
+@media screen and (max-width: 77.5rem) and (max-width: 36.32813rem) {
+  .u-scalable-1 {
+    font-size: 1.875rem;
+  }
+}
+
+@media screen and (min-width: 77.5rem) and (min-width: 36.32813rem), screen and (max-width: 77.5rem) and (min-width: 36.32813rem) {
+  .u-scalable-1 {
+    font-size: 5.16129vw;
+  }
+}
+@media screen and (min-width: 77.5rem) and (min-width: 121.09375rem) {
+  .u-scalable-1 {
+    font-size: 6.25rem;
+  }
+}
+
+@media screen and (max-width: 77.5rem) {
+  .u-scalable-2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 77.5rem) and (max-width: 96.875rem) {
+  .u-scalable-2 {
+    font-size: 3.87097vw;
+  }
+}
+@media screen and (min-width: 77.5rem) and (min-width: 96.875rem) {
+  .u-scalable-2 {
+    font-size: 3.75rem;
+  }
+}
+
+@media screen and (min-width: 77.5rem) {
+  .u-scalable-3 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 77.5rem) and (min-width: 29.0625rem) {
+  .u-scalable-3 {
+    font-size: 3.87097vw;
+  }
+}
+@media screen and (max-width: 77.5rem) and (max-width: 29.0625rem) {
+  .u-scalable-3 {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 77.5rem) {
+  .u-scalable-4 {
+    font-size: 1.375rem;
+  }
+}
+@media screen and (max-width: 77.5rem) and (min-width: 56.36364rem) {
+  .u-scalable-4 {
+    font-size: 1.77419vw;
+  }
+}
+@media screen and (max-width: 77.5rem) and (max-width: 56.36364rem) {
+  .u-scalable-4 {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,140 @@
+/*! * [Suffixcate - Responsive Suffixes](https://github.com/nicetransition/suffixcate) */
+a {
+  color: inherit;
+}
+
+.o-table {
+  display: table;
+}
+.o-table__cell {
+  display: table-cell;
+}
+@media screen and (min-width: 460px) {
+  .o-table\@large {
+    display: table;
+  }
+  .o-table\@large__cell {
+    display: table-cell;
+  }
+}
+@media screen and (max-width: 460px) {
+  .o-table\@small {
+    display: table;
+  }
+  .o-table\@small__cell {
+    display: table-cell;
+  }
+}
+
+.u-full {
+  width: 100%;
+}
+@media screen and (min-width: 460px) {
+  .u-full\@large {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .u-full\@medium-large {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 768px) {
+  .u-full\@medium {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .u-full\@small-medium {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .u-full\@small {
+    width: 100%;
+  }
+}
+
+.u-color-primary {
+  color: red;
+}
+@media screen and (min-width: 460px) {
+  .u-color-primary\@large {
+    color: red;
+  }
+}
+@media screen and (max-width: 460px) {
+  .u-color-primary\@small {
+    color: red;
+  }
+}
+
+.t-1 {
+  background-color: #CCC;
+  color: #000;
+}
+@media screen and (min-width: 460px) {
+  .t-1\@large {
+    background-color: #CCC;
+    color: #000;
+  }
+}
+@media screen and (min-width: 768px) {
+  .t-1\@medium-large {
+    background-color: #CCC;
+    color: #000;
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 768px) {
+  .t-1\@medium {
+    background-color: #CCC;
+    color: #000;
+  }
+}
+@media screen and (max-width: 768px) {
+  .t-1\@small-medium {
+    background-color: #CCC;
+    color: #000;
+  }
+}
+@media screen and (max-width: 460px) {
+  .t-1\@small {
+    background-color: #CCC;
+    color: #000;
+  }
+}
+
+.t-2 {
+  background-color: #333;
+  color: #FFF;
+}
+@media screen and (min-width: 460px) {
+  .t-2\@large {
+    background-color: #333;
+    color: #FFF;
+  }
+}
+@media screen and (min-width: 768px) {
+  .t-2\@medium-large {
+    background-color: #333;
+    color: #FFF;
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 768px) {
+  .t-2\@medium {
+    background-color: #333;
+    color: #FFF;
+  }
+}
+@media screen and (max-width: 768px) {
+  .t-2\@small-medium {
+    background-color: #333;
+    color: #FFF;
+  }
+}
+@media screen and (max-width: 460px) {
+  .t-2\@small {
+    background-color: #333;
+    color: #FFF;
+  }
+}

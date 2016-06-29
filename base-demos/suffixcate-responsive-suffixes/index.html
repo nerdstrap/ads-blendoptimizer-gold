@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>suffixcate() - Responsive Suffixes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+    <link rel='stylesheet prefetch' href='http://nicetransition.com/demos/codepen-external-scaling-styles.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="o-container">
+	<section>
+		<h1 class="c-title  u-a-c">
+			<span class="c-dis-b u-fs-1">
+				Responsive Suffixes
+			</span>
+		</h1>
+		<p class="u-fs-4 u-a-c">
+			An approach for creating selectors that target small, medium or large screens. 
+		</p>
+		<p>
+			Visit <a href="https://github.com/kevinmack18/suffixcate" target="_blank">Suffix: Responsive Suffixes</a> on Github for more details.
+		</p>
+		
+		<p>
+			Based on the article of &quot;<a href="http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further" target="_blank">BEMIT: Taking the BEM Naming Convention a Step Further</a>&quot;.
+		</p>
+		<ul class="u-fs-4">
+			<li>
+				<b class="c-code">@large</b>: Suffix applied to your targeted &quot;larger&quot; viewports.
+			</li>
+			<li>
+				<b class="c-code">@medium</b>: Suffix applied to your targeted &quot;medium&quot; viewports.
+			</li>
+			<li>
+				<b class="c-code">@small</b>: Suffix applied to your targeted &quot;small&quot; viewports.
+			</li>
+			<li>
+				<b class="c-code">@medium-large</b>: Suffix applied to your targeted viewports that occur from &quot;medium to large&quot; viewports.
+			</li>
+			<li>
+				<b class="c-code">@small-medium</b>: Suffix applied to your targeted viewports that occur from &quot;small to medium&quot; viewports.
+			</li>
+		</ul>
+	</section>
+	
+	<hr />
+	
+	<section>
+		<h2 class="u-fs-3">
+			MIXINS
+		</h2>
+		<article>
+			<h3 class="u-fs-3">
+				<span class="c-code">suffixcate()</span>
+			</h3>
+			<p class="u-fs-4">
+				Mixin to apply suffixes to selectors. Passing in options will provide different outputs, has   up to 6 values that need to be passed:
+			</p>
+			<ul class="u-fs-4">
+				<li>
+					<b class="c-code">small</b>: $suffixcate_suffix-small (Defined variable for project's &quot;small breakpoint&quot;) - Used as the option to target the &quot;large breakpoint&quot; to add <span class="c-code">@small</span> suffix.
+				</li>
+				<li>
+					<b class="c-code">medium</b>: $suffixcate_suffix-medium (Defined variable for project's &quot;medium breakpoint&quot;) - Used as the option to target the &quot;large breakpoint&quot; to add <span class="c-code">@medium</span> suffix.
+				</li>
+				<li>
+					<b class="c-code">large</b>: $suffixcate_suffix-large (Defined variable for project's &quot;large breakpoint&quot;) - Used as the option to target the &quot;large breakpoint&quot; to add <span class="c-code">@large</span> suffix.
+				</li>
+				<li>
+					<b class="c-code">bp</b>: Default value: `<code>$suffixcate_bp</code>` (Defined variable for project's &quot;main breakpoint&quot;).
+				</li>
+				<li>
+					<b class="c-code">base</b>: Default value: `<code>true</code>` - Used as the option to include initial CSS properties in the selector or just target the generatored suffixed versions
+				</li>
+				<li>
+					<b class="c-code">all</b>: Default value: `<code>false</code>` -  Used as the option to output all variations of suffixed: <span class="c-code">@small</span>, <span class="c-code">@medium</span>, <span class="c-code">@small-medium</span>, <span class="c-code">@medium-large</span>, <span class="c-code">@large</span>
+				</li>
+			</ul>
+			<p class="u-fs-4">
+				<code>
+					@include suffixcate($small: $suffixcate_suffix-small, $medium: $suffixcate_suffix-medium, $large: $suffixcate_suffix-large, $bp: $suffixcate_bp, $base: true, $all: false);
+				</code>
+			</p>
+			<p>
+				Example 1: Basic
+			</p>
+<pre class="u-fs-4">
+.selector-name { // apply to any selector
+	@include suffixcate{
+		color: red;
+	};
+}</pre>
+
+			<p>
+				Compiles to:
+			</p>
+<pre class="u-fs-4">
+.selector-name {
+  color: red;
+}
+@media screen and (min-width: 460px) {
+  .selector-name\@large {
+    color: red;
+  }
+}
+@media screen and (max-width: 460px) {
+  .selector-name\@small {
+    color: red;
+  }
+}
+</pre>
+			<p>
+				Example 2: Does not include base
+			</p>
+<pre class="u-fs-4">
+.selector-name($base: false) { // apply to any selector
+	@include suffixcate{
+		color: red;
+	};
+}</pre>
+
+			<p>
+				Compiles to:
+			</p>
+<pre class="u-fs-4">
+@media screen and (min-width: 460px) {
+  .selector-name\@large {
+    color: red;
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 768px) {
+  .selector-name\@medium {
+    color: red;
+  }
+}
+@media screen and (max-width: 460px) {
+  .selector-name\@small {
+    color: red;
+  }
+}
+</pre>
+
+			<p>
+				Example 3: Include medium outputs
+			</p>
+<pre class="u-fs-4">
+.selector-name { // apply to any selector
+	@include suffixcate($bp: $suffixcate_bp-all){
+		color: red;
+	};
+}</pre>
+
+			<p>
+				Compiles to:
+			</p>
+<pre class="u-fs-4">
+.selector-name {
+  color: red;
+}
+@media screen and (min-width: 768px) {
+  .selector-name\@medium-large {
+    color: red;
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 768px) {
+  .selector-name\@medium {
+    color: red;
+  }
+}
+@media screen and (max-width: 460px) {
+  .selector-name\@small-medium {
+    color: red;
+  }
+}</pre>
+
+			<p>
+				Example 4: Include all outputs
+			</p>
+<pre class="u-fs-4">
+.selector-name { // apply to any selector
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true){
+		color: red;
+	};
+}</pre>
+
+			<p>
+				Compiles to:
+			</p>
+<pre class="u-fs-4">
+.selector-name {
+  color: red;
+}
+@media screen and (min-width: 460px) {
+  .selector-name\@large {
+    color: red;
+  }
+}
+@media screen and (min-width: 768px) {
+  .selector-name\@medium-large {
+    color: red;
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 768px) {
+  .selector-name\@medium {
+    color: red;
+  }
+}
+@media screen and (max-width: 460px) {
+  .selector-name\@small-medium {
+    color: red;
+  }
+}
+@media screen and (max-width: 460px) {
+  .selector-name\@small {
+    color: red;
+  }
+}
+</pre>
+		</article>
+		
+
+		<article>
+			<h3 class="u-fs-3">
+				<span class="c-code">suffixcateSmall()</span>
+			</h3>
+			<p class="u-fs-4">
+				Short-hand mixin to apply just small suffixes to selector.
+			</p>
+			<ul class="u-fs-4">
+				<li>
+					<b class="c-code">$bp</b>: The breakpoint of for the selector to have suffix added.
+				</li>
+				<li>
+					<b class="c-code">base</b>: Default value: `<code>true</code>` - Used as the option to include initial CSS properties in the selector or just target the generatored small suffixed version.
+				</li>
+			</ul>
+			<p class="u-fs-4">
+				<code>
+					@include suffixcate($small: $suffixcate_suffix-small, $medium: $suffixcate_suffix-medium, $large: $suffixcate_suffix-large, $bp: $suffixcate_bp, $base: true, $all: false);
+				</code>
+			</p>
+			<p>
+				Example 1: Basic
+			</p>
+<pre class="u-fs-4">
+.selector-name { // apply to any selector
+	@include suffixcateSmall {
+		color: red;
+	};
+}
+</pre>
+
+			<p>
+				Compiles to:
+			</p>
+<pre class="u-fs-4">
+.selector-name {
+  color: red;
+}
+@media screen and (max-width: 460px) {
+  .selector-name\@small {
+    color: red;
+  }
+}
+</pre>
+			<p>
+				Example 2: Targeted breakpoint
+			</p>
+<pre class="u-fs-4">
+.selector-name { // apply to any selector
+	@include suffixcateSmall($bp: 400px) {
+		color: red;
+	};
+}</pre>
+
+			<p>
+				Compiles to:
+			</p>
+<pre class="u-fs-4">
+.selector-name {
+  color: red;
+}
+@media screen and (max-width: 400px) {
+  .selector-name\@small {
+    color: red;
+  }
+}</pre>
+		</article>
+		
+
+		<article>
+			<h3 class="u-fs-3">
+				<span class="c-code">suffixcateMedium()</span>
+			</h3>
+			<p class="u-fs-4">
+				Short-hand mixin to apply just medium suffixes to selector.
+			</p>
+			<ul class="u-fs-4">
+				<li>
+					<b class="c-code">$bp</b>: The breakpoint of for the selector to have suffix added. Is required to be two values: &quot;main breakpint&quot; and &quot;medium breakpoint.
+				</li>
+				<li>
+					<b class="c-code">$base</b>: Default value: `<code>true</code>` - Used as the option to include initial CSS properties in the selector or just target the generatored medium suffixed version.
+				</li>
+				<li>
+					<b class="c-code">$all</b>: Default value: `<code>false</code>` -  Used as the option to output variations of medium suffix: <span class="c-code">@medium</span>, <span class="c-code">@small-medium</span>, <span class="c-code">@medium-large</span>
+				</li>
+			</ul>
+		</article>
+
+		<article>
+			<h3 class="u-fs-3">
+				<span class="c-code">suffixcateLarge()</span>
+			</h3>
+			<p class="u-fs-4">
+				Short-hand mixin to apply just medium suffixes to selector.
+			</p>
+			<ul class="u-fs-4">
+				<li>
+					<b class="c-code">$bp</b>: The breakpoint of for the selector to have suffix added.
+				</li>
+				<li>
+					<b class="c-code">$base</b>: Default value: `<code>true</code>` - Used as the option to include initial CSS properties in the selector or just target the generatored large suffixed version.
+				</li>
+			</ul>
+		</article>
+		
+		<article>
+			<h3 class="u-fs-3">
+				<span class="c-code">suffixcateExtend()</span>
+			</h3>
+			<p class="u-fs-4">
+				Utilize <code>`@extend`</code> Sass functionality to share properties of other selectors with the suffixes.
+			</p>
+			<ul class="u-fs-4">
+				<li>
+					<b class="c-code">$selector</b>: A list of selectors you want to extend.
+				</li>
+			</ul>
+			<p>
+				Example
+			</p>
+<pre class="u-fs-4">
+.demo-1 {
+	@include suffixcateLarge {
+		color: #FFF;
+		background: #000;
+	}
+}
+
+.selector-extended-demo {
+	@include suffixcateExtend($selector: ".demo-1");
+}</pre>
+
+			<p>
+				Compiles to:
+			</p>
+<pre class="u-fs-4">
+.demo-1, .selector-extended-demo {
+  color: #FFF;
+  background: #000;
+}
+@media screen and (min-width: 460px) {
+  .demo-1\@large, .selector-extended-demo\@large {
+    color: #FFF;
+    background: #000;
+  }
+}</pre>			
+			
+		</article>
+	</section>
+	<hr />
+	<section>
+		<h2 class="u-fs-3">
+			EXAMPLES
+		</h2>
+		<div class="t-1@medium-large t-2@small-medium t-2@medium ">
+			<div class="o-table@large u-full@large">
+				<div class="o-table@large__cell">
+					I am cell at large sizes.
+				</div>
+				<div class="o-table@large__cell">
+					I am cell at large sizes. <span class="u-color-primary@small">My font is red at only on small screens</span>
+				</div>
+			</div>
+			<p>
+				This section has a different theme from medium-size up and a different theme for anything below
+			</p>
+		</div>
+	</section>
+</div>
+    
+    
+    
+    
+    
+  </body>
+</html>

@@ -1,0 +1,164 @@
+$color-dark-dark: #010101;
+$color-dark-dark-contrast: #FFF;
+$color-dark: #4F4E4E;
+$color-dark-contrast: #FFF;
+$color-dark-light: #808285;
+$color-dark-light-contrast: #FFF;
+$color-dark-accent: #BCBEC0;
+$color-dark-accent-contrast: #000;
+
+$color-primary-dark: #172952;
+$color-primary-dark-contrast: #FFF;
+$color-primary: #0088CE;
+$color-primary-contrast: #FFF;
+$color-primary-light: #98D0EA;
+$color-primary-light-contrast: $color-primary-dark;
+$color-primary-accent: #11E3FC;
+$color-primary-accent-contrast: $color-dark-dark;
+
+$color-secondary-dark: #E70000;
+$color-secondary-dark-contrast: #FFF;
+$color-secondary: #F47D20;
+$color-secondary-contrast: #FFF;
+$color-secondary-light: #F9CAA6;
+$color-secondary-light-contrast: $color-dark-dark;
+$color-secondary-accent: #F2AF00;
+$color-secondary-accent-contrast: $color-dark-dark;
+
+$color-light-dark: #CCC;
+$color-light-dark-contrast: $color-dark-dark;
+$color-light: #E6E7E8;
+$color-light-contrast: #000;
+$color-light-light: #FFF;
+$color-light-light-contrast: $color-dark-dark;
+$color-light-accent: #F5F5F5;
+$color-light-accent-contrast: $color-dark-dark;
+
+$color-accent-dark: #417505;
+$color-accent-dark-contrast: #FFF;
+$color-accent: #FF9933;
+$color-accent-contrast: $color-dark-dark;
+$color-accent-light: #B8E986;
+$color-accent-light-contrast: $color-dark-dark;
+$color-accent-accent: #CCDB47;
+$color-accent-accent-contrast: #000;
+
+
+// Helper Classes for colors
+
+$palette: (
+	"primary-dark": ("#{$color-primary-dark}", "#{$color-primary-dark-contrast}"),
+	"primary": ("#{$color-primary}", "#{$color-primary-contrast}"),
+	"primary-light": ("#{$color-primary-light}", "#{$color-primary-light-contrast}"),
+	"primary-accent": ("#{$color-primary-accent}", "#{$color-primary-accent-contrast}"),
+
+	"secondary-dark": ("#{$color-secondary-dark}", "#{$color-secondary-dark-contrast}"),
+	"secondary": ("#{$color-secondary}", "#{$color-secondary-contrast}"),
+	"secondary-light": ("#{$color-secondary-light}", "#{$color-secondary-light-contrast}"),
+	"secondary-accent": ("#{$color-secondary-accent}", "#{$color-secondary-accent-contrast}"),
+
+	"dark-dark": ("#{$color-dark-dark}", "#{$color-dark-dark-contrast}"),
+	"dark": ("#{$color-dark}", "#{$color-dark-contrast}"),
+	"dark-light": ("#{$color-dark-light}", "#{$color-dark-light-contrast}"),
+	"dark-accent": ("#{$color-dark-accent}", "#{$color-dark-accent-contrast}"),
+
+	"light-dark": ("#{$color-light-dark}", "#{$color-light-dark-contrast}"),
+	"light": ("#{$color-light}", "#{$color-light-contrast}"),
+	"light-light": ("#{$color-light-light}", "#{$color-light-light-contrast}"),
+	"light-accent": ("#{$color-light-accent}", "#{$color-light-accent-contrast}"),
+
+	"accent-dark": ("#{$color-accent-dark}", "#{$color-accent-dark-contrast}"),
+	"accent": ("#{$color-accent}", "#{$color-accent-contrast}"),
+	"accent-light": ("#{$color-accent-light}", "#{$color-accent-light-contrast}"),
+	"accent-accent": ("#{$color-accent-accent}", "#{$color-accent-accent-contrast}"),
+);
+
+@mixin makeColorHelpers($color, $value, $contrast-value) {
+	$contrast-color: if($contrast-value = false, $contrast-value, false);
+	.u-#{$color} {
+		color: unquote($value);
+    }
+
+    .u-#{$color}-bg {
+        background-color: unquote($value);
+		@if ($contrast-color != false) {
+			color: unquote($contrast-color);
+		}
+    }
+}
+
+@each $color, $values in $palette {
+	@if (length($values) > 1) {
+		@include makeColorHelpers($color, nth($values, 1), nth($values, 2));
+	} @else {
+		@include makeColorHelpers($color, nth($values, 1), false);
+	}
+}
+
+
+// demo only
+$base-color: $color-dark;
+$anchor-primary-color: $color-primary;
+$anchor-primary-color-hover: $color-primary-dark;
+$anchor-primary-color-active: $color-primary-accent;
+$anchor-secondary-color: $color-dark;
+$anchor-secondary-color-hover: $color-primary-dark;
+$anchor-secondary-color-active: $color-primary-accent;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	max-width: 800px;
+	padding-right: 8px;
+	padding-left: 8px;
+	margin-right: auto;
+	margin-left: auto;
+	color: $base-color;
+}
+
+.c-anchor {
+	text-decoration: none;
+	
+	&--primary {
+		color: $anchor-primary-color;
+		
+		&:hover, &:focus {
+			color: $anchor-primary-color-hover;
+		}
+		
+		&:active{
+			color: $anchor-primary-color-active;
+		}
+	}
+	
+	&--secondary {
+		color: $anchor-secondary-color;
+		
+		&:hover, &:focus {
+			color: $anchor-secondary-color-hover;
+		}
+		
+		&:active{
+			color: $anchor-secondary-color-active;
+		}
+	}
+}
+
+.c-demo-box {
+	display: flex;
+	align-content: center;
+	
+	&__item {
+		margin: 10px;
+		padding: 10px;
+		outline: 1px solid rgba(0, 0, 0, .9);
+		border: 1px solid rgba(255, 255, 255, .7);
+		text-align: center;
+		height: 100px;
+		width: 100px;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, .2), 0 -1px 0 rgba(0, 0, 0, .1);
+	}
+}
