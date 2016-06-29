@@ -1,0 +1,391 @@
+{
+	"site-header": {
+		"text": "ADS - Blend Optimizer GOLD",
+		"logo": {
+			"href": "/",
+			"src": "/images/bog-logo.svg",
+			"title": "Lorem ipsum",
+			"alt": "BOG Logo",
+			"siteHeaderClasses": "u-full@large"
+		},
+		"menu-button": {
+			"text": "User Menu",
+			"showMenu": "closed",
+			"menuButtonClasses": "c-global-header__toggle",
+			"menuButtonClasses1": "js-secondary-nav-toggle u-dis-none@large"
+		},
+		"utility-nav": {
+			"i18n_welcome": "Welcome, ",
+			"i18n_logout": "Logout",
+			"href": "#",
+			"title": "Lorem ipsum",
+			"firstName": "Michael",
+			"lastName": "Brooks",
+			"utilityNavClasses": "u-space-2-4@large",
+			"utilityNavClasses1": "c-global-header__utility"
+		},
+		"primary-nav": {
+			"primaryNavClasses": "c-global-header__primary-nav",
+			"list-items": [
+				{
+					"nav-cta": {
+						"href": "#",
+						"title": "Dashboard",
+						"text": "Dashboard",
+						"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+						"navCtaClasses1": "c-nav-cta--header"
+					}
+				},
+				{
+					"nav-cta": {
+						"href": "#",
+						"title": "Maintenance",
+						"text": "Maintenance",
+						"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+						"navCtaClasses1": "c-nav-cta--header"
+					}
+				},
+				{
+					"nav-cta": {
+						"href": "#",
+						"title": "Create-a-Blend",
+						"text": "Create-a-Blend",
+						"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+						"navCtaClasses1": "c-nav-cta--header"
+					}
+				},
+				{
+					"nav-cta": {
+						"href": "#",
+						"title": "Tech Admin",
+						"text": "Tech Admin",
+						"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+						"navCtaClasses1": "c-nav-cta--header"
+					}
+				},
+				{
+					"nav-cta": {
+						"href": "#",
+						"title": "Operations",
+						"text": "Operations",
+						"navCtaClasses": "u-space-1-3-sm@small u-space-2-4-fixed@small u-dis-ib@large u-dis-b@small c-anchor--hover-secondary@large",
+						"navCtaClasses1": "c-nav-cta--header"
+					}
+				}
+			]
+		}
+	},
+	"page-name": "Create Blend",
+	"inner-page-nav": {
+		"innerPageNavClasses": "t-2",
+		"innerPageNavClasses1": "c-page__inner-nav",
+		"list-items": [
+			{
+				"inner-page-cta": {
+					"href": "#",
+					"title": "Select Blend",
+					"text": "Select Blend"
+				}
+			},
+			{
+				"inner-page-cta": {
+					"href": "#",
+					"title": "Lot Preferences",
+					"text": "Lot Preferences"
+				}
+			},
+			{
+				"inner-page-cta": {
+					"isActive": "true",
+					"href": "#",
+					"title": "Draft Blend",
+					"text": "Draft Blend"
+				}
+			},
+			{
+				"inner-page-cta": {
+					"href": "#",
+					"title": "Finalize Blend",
+					"text": "Finalize Blend"
+				}
+			},
+			{
+				"inner-page-cta": {
+					"href": "#",
+					"title": "Save Blend",
+					"text": "Save Blend"
+				}
+			}
+		]
+	},
+	"dashboard-grid": {
+		"dashboardGridClasses": "o-sections__section",
+		"rows": [
+			{
+				"cell0": {
+					"content-block": {
+						"section-header": {
+							"text": "Draft Blend"
+						},
+						"paragraph": {
+							"text": "graphical representation of draft blend goes here (radar chart)"
+						},
+						"button": {
+							"text": "Re-Optimize"
+						},
+						"pie-chart": {
+							"r": "25%",
+							"cx": "50%",
+							"cy": "50%",
+							"textAmount": "75 "
+						}
+					}
+				},
+				"cell1": {
+					"content-block": {
+						"contentBlockClasses": "u-full",
+						"contentBlockClasses1": "c-content-block--default",
+						"section-header": {
+							"text": "Specs"
+						},
+						"table-data": {
+							"headers": [
+								{
+									"section-subheader": {
+										"text": "Spec",
+										"custom": true,
+										"type": "span",
+										"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+									}
+								},
+								{
+									"section-subheader": {
+										"text": "Low",
+										"custom": true,
+										"type": "span",
+										"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+									}
+								},
+								{
+									"section-subheader": {
+										"text": "Actual",
+										"custom": true,
+										"type": "span",
+										"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+									}
+								},
+								{
+									"section-subheader": {
+										"text": "High",
+										"custom": true,
+										"type": "span",
+										"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+									}
+								}
+							],
+							"rows": [
+								{
+									"id": "ABCD-1230",
+									"data1": "Density",
+									"data2": "0.9500",
+									"data3": "0.9529",
+									"data4": "0.9540"
+								},
+								{
+									"id": "ABCD-1231",
+									"data1": "Melt Index",
+									"data2": "0.18",
+									"data3": "0.34",
+									"data4": "0.40"
+								},
+								{
+									"id": "ABCD-1232",
+									"data1": "IZOD",
+									"data2": "3.0",
+									"data3": "4.2",
+									"data4": "5.0"
+								},
+								{
+									"id": "ABCD-1233",
+									"data1": "NCLS",
+									"data2": "0",
+									"data3": "0",
+									"data4": "0"
+								},
+								{
+									"id": "ABCD-1234",
+									"data1": "Sink Float",
+									"data2": "0",
+									"data3": "0",
+									"data4": "0"
+								},
+								{
+									"id": "ABCD-1235",
+									"data1": "Infrared",
+									"data2": "0",
+									"data3": "0",
+									"data4": "0"
+								},
+								{
+									"id": "ABCD-1236",
+									"data1": "Contamination",
+									"data2": "0",
+									"data3": "0",
+									"data4": "0"
+								}
+							]
+						}
+					}
+				}
+			}
+		]
+	},
+	"dashboard-section": {
+		"content-block": {
+			"section-header": {
+				"text": "Included Lots"
+			},
+			"accordian-block": {
+				"sections": [
+					{
+						"text": "9999NS 20% - 8800/46000 lbs<br/>Lot 116378<br/>D 0.9513 M 0.423 I 0.85 N 6.6",
+						"article-header": {
+							"text": "Lot 116378"
+						},
+						"paragraph": {
+							"text": "Density 0.9513 Melt Index 0.423 Izod 0.85 NCLS 6.6"
+						}
+					},
+					{
+						"text": "9999V 16% - 7040/25020 lbs<br/>Lot VC011816-1<br/>D 0.9583 M 0.758 I 5.4 N 1.7",
+						"article-header": {
+							"text": "Lot VC011816-1"
+						},
+						"paragraph": {
+							"text": "Density 0.9583 Melt Index 0.758 Izod 5.4 NCLS 1.7"
+						}
+					},
+					{
+						"text": "9999X 39% - 4341/17160 lbs<br/>Lot X299202<br/>D 0.9583 M 0.758 I 5.4 N 1.7",
+						"article-header": {
+							"text": "Lot X299202"
+						},
+						"paragraph": {
+							"text": "Density 0.9583 Melt Index 0.758 Izod 5.4 NCLS 1.7"
+						}
+					},
+					{
+						"text": "9999Z 20.5% - 6520/9020lbs<br/>Lot Z108929<br/>D 0.9583 M 0.758 I 5.4 N 1.7",
+						"article-header": {
+							"text": "Lot Z108929"
+						},
+						"paragraph": {
+							"text": "Density 0.9583 Melt Index 0.758 Izod 5.4 NCLS 1.7"
+						}
+					},
+					{
+						"text": "9999B 4.5% - 3424/1980 lbs<br/>Lot B293307<br/>D 0 M 0 I 0 N 0",
+						"article-header": {
+							"text": "Lot B293307"
+						},
+						"paragraph": {
+							"text": "Density 0 Melt Index 0 Izod 0 NCLS 0"
+						}
+					}
+				]
+			}
+		}
+	},
+	"dashboard-section-2": {
+		"content-block": {
+			"section-header": {
+				"text": "Available Lots"
+			},
+			"accordian-block": {
+				"sections": [
+					{
+						"text": "9999NS 20% - 8800/46000 lbs<br/>Lot 116378<br/>D 0.9513 M 0.423 I 0.85 N 6.6",
+						"article-header": {
+							"text": "Lot 116378"
+						},
+						"paragraph": {
+							"text": "Density 0.9513 Melt Index 0.423 Izod 0.85 NCLS 6.6"
+						}
+					},
+					{
+						"text": "9999V 16% - 7040/25020 lbs<br/>Lot VC011816-1<br/>D 0.9583 M 0.758 I 5.4 N 1.7",
+						"article-header": {
+							"text": "Lot VC011816-1"
+						},
+						"paragraph": {
+							"text": "Density 0.9583 Melt Index 0.758 Izod 5.4 NCLS 1.7"
+						}
+					},
+					{
+						"text": "9999X 39% - 4341/17160 lbs<br/>Lot X299202<br/>D 0.9583 M 0.758 I 5.4 N 1.7",
+						"article-header": {
+							"text": "Lot X299202"
+						},
+						"paragraph": {
+							"text": "Density 0.9583 Melt Index 0.758 Izod 5.4 NCLS 1.7"
+						}
+					},
+					{
+						"text": "9999Z 20.5% - 6520/9020lbs<br/>Lot Z108929<br/>D 0.9583 M 0.758 I 5.4 N 1.7",
+						"article-header": {
+							"text": "Lot Z108929"
+						},
+						"paragraph": {
+							"text": "Density 0.9583 Melt Index 0.758 Izod 5.4 NCLS 1.7"
+						}
+					},
+					{
+						"text": "9999B 4.5% - 3424/1980 lbs<br/>Lot B293307<br/>D 0 M 0 I 0 N 0",
+						"article-header": {
+							"text": "Lot B293307"
+						},
+						"paragraph": {
+							"text": "Density 0 Melt Index 0 Izod 0 NCLS 0"
+						}
+					}
+				]
+			}
+		}
+	},
+	"site-footer": {
+		"extended-nav": {
+			"extendedNavClasses": "t-1 u-space-1-3-sm o-sections__section c-global-footer__item c-global-footer__item--nav",
+			"list-items": [
+				{
+					"nav-cta": {
+						"href": "#",
+						"title": "Help Desk",
+						"text": "Help Desk",
+						"navCtaClasses": "u-space-2-4@large u-dis-ib@large u-dis-b@small c-anchor--hover-secondary",
+						"navCtaClasses1": "c-nav-cta--footer"
+					}
+				},
+				{
+					"nav-cta": {
+						"href": "#",
+						"title": "Privacy Policy",
+						"text": "Privacy Policy",
+						"navCtaClasses": "u-space-2-4@large u-dis-ib@large u-dis-b@small c-anchor--hover-secondary",
+						"navCtaClasses1": "c-nav-cta--footer"
+					}
+				},
+				{
+					"nav-cta": {
+						"href": "#",
+						"title": "Terms",
+						"text": "Terms",
+						"navCtaClasses": "u-space-2-4@large u-dis-ib@large u-dis-b@small c-anchor--hover-secondary",
+						"navCtaClasses1": "c-nav-cta--footer"
+					}
+				}
+			]
+		},
+		"i18n_copyright": "<span class=\"u-nw\">&copy;2016 ADS</span>. All Rights Reserved."
+	},
+	"background-image-src": "/images/fpo-placeimg_600x400.jpg"
+}

@@ -5,8 +5,8 @@
 				"cells": [
 					{
 						"content-block": {
-							"contentBlockClasses": "u-full",
-							"contentBlockClasses1": "c-content-block--default",
+							"contentBlockClasses": "u-full@large",
+							"contentBlockClasses1": "c-content-block--default@large",
 							"section-header": {
 								"text": "Lorem ipsum"
 							},
@@ -21,8 +21,8 @@
 					},
 					{
 						"content-block": {
-							"contentBlockClasses": "u-full",
-							"contentBlockClasses1": "c-content-block--default",
+							"contentBlockClasses": "u-full@large",
+							"contentBlockClasses1": "c-content-block--default@large",
 							"section-header": {
 								"text": "Lorem ipsum"
 							},
@@ -37,8 +37,8 @@
 					},
 					{
 						"content-block": {
-							"contentBlockClasses": "u-full",
-							"contentBlockClasses1": "c-content-block--default",
+							"contentBlockClasses": "u-full@large",
+							"contentBlockClasses1": "c-content-block--default@large",
 							"section-header": {
 								"text": "Lorem ipsum"
 							},
@@ -53,8 +53,8 @@
 					},
 					{
 						"content-block": {
-							"contentBlockClasses": "u-full",
-							"contentBlockClasses1": "c-content-block--default",
+							"contentBlockClasses": "u-full@large",
+							"contentBlockClasses1": "c-content-block--default@large",
 							"section-header": {
 								"text": "Lorem ipsum"
 							},

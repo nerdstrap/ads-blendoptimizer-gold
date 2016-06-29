@@ -21,15 +21,16 @@
 					"form-items": [
 						{
 							"input-form-item": {
-								"formItemClasses": "u-space-2@large u-size-2@large u-size-1@small",
+								"formItemClasses": "u-space-2@large u-size-3@large u-size-1@small",
 								"label": {
-									"id": "organisms-forms-form-two-columns-input-1",
+									"id": "organisms-forms-form-three-columns-input-1",
 									"text": "Lorem ipsum",
+									"tooltip": "Lorem ipsum",
 									"labelClasses": "u-full",
 									"labelClasses1": "c-form-item__label"
 								},
 								"input": {
-									"id": "organisms-forms-form-two-columns-input-1",
+									"id": "organisms-forms-form-three-columns-input-1",
 									"placeholder": "e.g. Lorem ipsum",
 									"inputClasses": "u-full",
 									"inputClasses1": "c-form-item__field"
@@ -38,15 +39,34 @@
 						},
 						{
 							"input-form-item": {
-								"formItemClasses": "u-size-2@large u-size-1@small",
+								"formItemClasses": "u-space-2@large u-size-3@large u-size-1@small",
 								"label": {
-									"id": "organisms-forms-form-two-columns-input-2",
+									"id": "organisms-forms-form-three-columns-input-2",
 									"text": "Lorem ipsum",
+									"tooltip": "Lorem ipsum",
 									"labelClasses": "u-full",
 									"labelClasses1": "c-form-item__label"
 								},
 								"input": {
-									"id": "organisms-forms-form-two-columns-input-2",
+									"id": "organisms-forms-form-three-columns-input-2",
+									"placeholder": "e.g. Lorem ipsum",
+									"inputClasses": "u-full",
+									"inputClasses1": "c-form-item__field"
+								}
+							}
+						},
+						{
+							"input-form-item": {
+								"formItemClasses": "u-size-3@large u-size-1@small",
+								"label": {
+									"id": "organisms-forms-form-three-columns-input-3",
+									"text": "Lorem ipsum",
+									"tooltip": "Lorem ipsum",
+									"labelClasses": "u-full",
+									"labelClasses1": "c-form-item__label"
+								},
+								"input": {
+									"id": "organisms-forms-form-three-columns-input-3",
 									"placeholder": "e.g. Lorem ipsum",
 									"inputClasses": "u-full",
 									"inputClasses1": "c-form-item__field"
@@ -61,15 +81,15 @@
 					"form-items": [
 						{
 							"select-form-item": {
-								"formItemClasses": "u-space-2@large u-size-2@large u-size-1@small",
+								"formItemClasses": "u-space-2@large u-size-3@large u-size-1@small",
 								"label": {
-									"id": "organisms-forms-form-two-columns-select-3",
+									"id": "organisms-forms-form-three-columns-select-1",
 									"text": "Lorem ipsum",
 									"labelClasses": "u-full",
 									"labelClasses1": "c-form-item__label"
 								},
 								"select": {
-									"id": "organisms-forms-form-two-columns-select-3",
+									"id": "organisms-forms-form-three-columns-select-1",
 									"options": [
 										{
 											"value": "1",
@@ -91,15 +111,45 @@
 						},
 						{
 							"select-form-item": {
-								"formItemClasses": "u-size-2@large u-size-1@small",
+								"formItemClasses": "u-space-2@large u-size-3@large u-size-1@small",
 								"label": {
-									"id": "organisms-forms-form-two-columns-select-4",
+									"id": "organisms-forms-form-three-columns-select-2",
 									"text": "Lorem ipsum",
 									"labelClasses": "u-full",
 									"labelClasses1": "c-form-item__label"
 								},
 								"select": {
-									"id": "organisms-forms-form-two-columns-select-4",
+									"id": "organisms-forms-form-three-columns-select-2",
+									"options": [
+										{
+											"value": "1",
+											"text": "Lorem ipsum"
+										},
+										{
+											"value": "2",
+											"text": "Lorem ipsum"
+										},
+										{
+											"value": "3",
+											"text": "Lorem ipsum"
+										}
+									],
+									"selectClasses": "u-full",
+									"selectClasses1": "c-form-item__field"
+								}
+							}
+						},
+						{
+							"select-form-item": {
+								"formItemClasses": "u-size-3@large u-size-1@small",
+								"label": {
+									"id": "organisms-forms-form-three-columns-select-3",
+									"text": "Lorem ipsum",
+									"labelClasses": "u-full",
+									"labelClasses1": "c-form-item__label"
+								},
+								"select": {
+									"id": "organisms-forms-form-three-columns-select-3",
 									"options": [
 										{
 											"value": "1",

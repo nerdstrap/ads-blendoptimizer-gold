@@ -22,13 +22,20 @@
 									{{/legend}}
                                     <div class="o-sections c-content-block__main">
                                         <div class="o-sections__section o-sections@small">
-											{{#rows}}
+											{{#inputRows}}
                                                 <div class="o-sections@small__section o-flex@large u-size-1@large">
 													{{#form-items}}
 														{{> molecules-input-form-item}}
 													{{/form-items}}
                                                 </div>
-											{{/rows}}
+											{{/inputRows}}
+											{{#selectRows}}
+                                                <div class="o-sections@small__section o-flex@large u-size-1@large">
+													{{#form-items}}
+														{{> molecules-select-form-item}}
+													{{/form-items}}
+                                                </div>
+											{{/selectRows}}
                                         </div>
                                     </div>
                                 </fieldset>

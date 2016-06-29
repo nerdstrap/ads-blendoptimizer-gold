@@ -181,6 +181,7 @@
 				]
 			},
 			"i18n_copyright": "<span class=\"u-nw\">&copy;2016 ADS</span>. All Rights Reserved."
-		}
+		},
+		"background-image-src": "/images/fpo-placeimg_600x400.jpg"
 	}
 }

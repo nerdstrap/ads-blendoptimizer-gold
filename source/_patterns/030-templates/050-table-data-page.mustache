@@ -1,4 +1,4 @@
-{{#form-page}}
+{{#table-data-page}}
     <div class="o-container-global">
 		{{> organisms-site-header-authenticated}}
         <div class="t-2@large c-page" id="main"{{#page-name}} data-pagename="{{page-name}}"{{/page-name}}>
@@ -6,14 +6,17 @@
             <div class="u-bg-img u-bg-img--large c-image-feature@large c-image-feature@large--style-1 c-image-feature@large--size-1 t-0@small o-container c-page__content c-image-feature__content">
                 <div class="u-space-1@large u-space-3-lg@large u-space-1-3-sm@small o-container__wrap">
                     <div class="o-sections">
-                        <div class="o-sections__section t-alpha@large u-shadow@large t-1@small u-zone-space o-sections o-media__main c-content-block">
-                            <div class="o-sections__section c-content-block__header">
-								{{> atoms-page-header-scalable}}
+						{{#zones}}
+                            <div class="o-sections__section t-alpha@large u-shadow@large t-1@small u-zone-space o-sections o-media__main c-content-block">
+                                <div class="o-sections__section c-content-block__header">
+									{{> atoms-page-header-scalable}}
+                                </div>
+                                <div class="o-sections__section c-content-block__main">
+									{{> atoms-paragraph}}
+									{{> molecules-table-data-striped}}
+                                </div>
                             </div>
-                            <div class="o-sections__section c-content-block__main">
-								{{> organisms-form}}
-                            </div>
-                        </div>
+						{{/zones}}
                     </div>
                 </div>
             </div>
@@ -34,4 +37,4 @@
             }
         }
     </style>
-{{/form-page}}
+{{/table-data-page}}

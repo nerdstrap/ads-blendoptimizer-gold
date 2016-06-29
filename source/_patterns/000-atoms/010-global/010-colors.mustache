@@ -11,7 +11,7 @@
 
         request.onload = function () {
             if (request.status >= 200 && request.status < 400) {
-                var resp = JSON.parse(request.responseText)
+                var resp = JSON.parse(request.responseText);
                 colors = resp.colors;
 
                 for (var i = 0; i < colors.length; i++) {

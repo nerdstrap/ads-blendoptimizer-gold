@@ -1,8 +1,8 @@
 {{#dashboard-grid}}
-    <div class="o-sections-2-4 o-sections o-flex o-flex--grid o-flex--spaced">
+    <div class="{{#dashboardGridClasses}}{{dashboardGridClasses}} {{/dashboardGridClasses}}o-sections-2-4 o-sections o-flex o-flex--grid o-flex--spaced{{#dashboardGridClasses1}} {{dashboardGridClasses1}}{{/dashboardGridClasses1}}">
 		{{#rows}}
 			{{#cells}}
-                <div class="o-sections__section u-size-2 o-flex o-flex--stretch o-flex__cell">
+                <div class="o-sections@small__section u-size-2@large o-flex@large o-flex@large--stretch o-flex@large__cell">
 					{{> molecules-grid-content-block}}
                 </div>
 			{{/cells}}

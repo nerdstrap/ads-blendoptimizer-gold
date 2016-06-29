@@ -748,15 +748,6 @@ $modal-panel-width: $max-width / 2;
 	}
 }
 
-.c-timecard {
-	border: rem(1) dashed $color-dark-dark;
-
-	hr {
-		margin-top: $default-space;
-		margin-bottom: $default-space;
-	}
-}
-
 .c-side-nav {
 	width: rem(240);
 }

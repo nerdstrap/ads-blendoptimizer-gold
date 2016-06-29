@@ -1,0 +1,17 @@
+{
+	"input-form-item": {
+		"label": {
+			"id": "molecules-forms-input-form-item",
+			"text": "Lorem ipsum",
+			"tooltip": "Lorem ipsum",
+			"labelClasses": "u-full",
+			"labelClasses1": "c-form-item__label"
+		},
+		"input": {
+			"id": "molecules-forms-input-form-item",
+			"placeholder": "e.g. Lorem ipsum",
+			"inputClasses": "u-full",
+			"inputClasses1": "c-form-item__field"
+		}
+	}
+}

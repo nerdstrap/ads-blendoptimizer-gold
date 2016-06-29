@@ -1,5 +1,5 @@
 {
-	"form-page": {
+	"table-data-page": {
 		"site-header": {
 			"text": "Lorem ipsum",
 			"logo": {
@@ -95,90 +95,83 @@
 				}
 			]
 		},
-		"page-header": {
-			"tag": "h1",
-			"text": "Lorem ipsum"
-		},
-		"form": {
-			"fieldset": {
-				"legend": {
-					"section-header": {
-						"text": "Lorem ipsum",
-						"custom": true,
-						"type": "span",
-						"sectionHeaderClasses": "u-dis-b o-sections__section"
-					},
-					"article-header": {
-						"text": "Lorem ipsum",
-						"custom": true,
-						"type": "span",
-						"articleHeaderClasses": "u-dis-b o-sections__section"
-					},
+		"zones": [
+			{
+				"page-header": {
+					"tag": "h1",
 					"text": "Lorem ipsum"
 				},
-				"form-items": [
-					{
-						"input-form-item": {
-							"label": {
-								"id": "organisms-forms-form-input-1",
-								"text": "Lorem ipsum",
-								"labelClasses": "u-full",
-								"labelClasses1": "c-form-item__label"
-							},
-							"input": {
-								"id": "organisms-forms-form-input-1",
-								"placeholder": "e.g. Lorem ipsum",
-								"inputClasses": "u-full",
-								"inputClasses1": "c-form-item__field"
-							}
-						}
-					},
-					{
-						"input-form-item": {
-							"label": {
-								"id": "organisms-forms-form-input-2",
-								"text": "Lorem ipsum",
-								"labelClasses": "u-full",
-								"labelClasses1": "c-form-item__label"
-							},
-							"input": {
-								"id": "organisms-forms-form-input-2",
-								"placeholder": "e.g. Lorem ipsum",
-								"inputClasses": "u-full",
-								"inputClasses1": "c-form-item__field"
-							}
-						}
-					},
-					{
-						"input-form-item": {
-							"label": {
-								"id": "organisms-forms-form-input-3",
-								"text": "Lorem ipsum",
-								"labelClasses": "u-full",
-								"labelClasses1": "c-form-item__label"
-							},
-							"input": {
-								"id": "organisms-forms-form-input-3",
-								"placeholder": "e.g. Lorem ipsum",
-								"inputClasses": "u-full",
-								"inputClasses1": "c-form-item__field"
-							}
-						}
-					}
-				]
-			},
-			"cta": {
-				"button": {
-					"text": "Submit",
-					"buttonClasses": "u-full@small"
-				}
-			},
-			"disclosure": {
 				"paragraph": {
 					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+				},
+				"table-data": {
+					"headers": [
+						{
+							"section-subheader": {
+								"text": "Lorem ipsum",
+								"custom": true,
+								"type": "span",
+								"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+							}
+						},
+						{
+							"section-subheader": {
+								"text": "Lorem ipsum",
+								"custom": true,
+								"type": "span",
+								"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+							}
+						},
+						{
+							"section-subheader": {
+								"text": "Lorem ipsum",
+								"custom": true,
+								"type": "span",
+								"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+							}
+						},
+						{
+							"section-subheader": {
+								"text": "Lorem ipsum",
+								"custom": true,
+								"type": "span",
+								"sectionSubHeaderClasses": "u-space-1-3-sm@large@large u-dis-b"
+							}
+						}
+					],
+					"rows": [
+						{
+							"id": "ABCD-1230",
+							"data1": "Lorem ipsum",
+							"data2": "Lorem ipsum",
+							"data3": "Lorem ipsum",
+							"data4": "Lorem ipsum"
+						},
+						{
+							"id": "ABCD-1231",
+							"data1": "Lorem ipsum",
+							"data2": "Lorem ipsum",
+							"data3": "Lorem ipsum",
+							"data4": "Lorem ipsum"
+						},
+						{
+							"id": "ABCD-1232",
+							"data1": "Lorem ipsum",
+							"data2": "Lorem ipsum",
+							"data3": "Lorem ipsum",
+							"data4": "Lorem ipsum"
+						},
+						{
+							"id": "ABCD-1233",
+							"data1": "Lorem ipsum",
+							"data2": "Lorem ipsum",
+							"data3": "Lorem ipsum",
+							"data4": "Lorem ipsum"
+						}
+					]
 				}
 			}
-		},
+		],
 		"site-footer": {
 			"extended-nav": {
 				"extendedNavClasses": "t-1 u-space-1-3-sm o-sections__section c-global-footer__item c-global-footer__item--nav",

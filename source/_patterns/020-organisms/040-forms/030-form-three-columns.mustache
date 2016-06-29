@@ -22,11 +22,20 @@
 									{{/legend}}
                                     <div class="o-sections c-content-block__main">
                                         <div class="o-sections__section o-sections@small">
-											{{#form-items}}
-                                                <div class="o-sections@small__section o-flex@large__cell u-size-1@large c-form-block__row">
-													{{> molecules-input-form-item}}
+											{{#inputRows}}
+                                                <div class="o-sections@small__section o-flex@large u-size-1@large c-form-block__row">
+													{{#form-items}}
+														{{> molecules-input-tooltip-form-item}}
+													{{/form-items}}
                                                 </div>
-											{{/form-items}}
+											{{/inputRows}}
+											{{#selectRows}}
+                                                <div class="o-sections@small__section o-flex@large u-size-1@large c-form-block__row">
+													{{#form-items}}
+														{{> molecules-select-form-item}}
+													{{/form-items}}
+                                                </div>
+											{{/selectRows}}
                                         </div>
                                     </div>
                                 </fieldset>

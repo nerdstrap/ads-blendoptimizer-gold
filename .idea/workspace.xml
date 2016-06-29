@@ -1,7 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="788842c2-1295-4c04-bded-04de2d11a25b" name="Default" comment="" />
+    <list default="true" id="788842c2-1295-4c04-bded-04de2d11a25b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/011-input-tooltip-form-item.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/011-input-tooltip-form-item.mustache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/021-select-tooltip-form-item.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/021-select-tooltip-form-item.mustache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/061-accordian-block-alt.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/061-accordian-block-alt.mustache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/060-content-block-table-data.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/060-content-block-table-data.mustache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/070-content-block-accordian-alt.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/070-content-block-accordian-alt.mustache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/070-content-block-accordian.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/070-content-block-accordian.mustache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/030-form-three-columns.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/030-form-three-columns.mustache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/030-templates/050-table-data-page.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/030-templates/050-table-data-page.mustache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/040-pages/010-create-blend.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/040-pages/010-create-blend.mustache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/040-pages/030-draft-blend.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_patterns/040-pages/030-draft-blend.mustache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/010-content-block.json" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/010-content-block.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/010-content-block.mustache" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/010-content-block.mustache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/020-content-block-cta.json" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/020-content-block-cta.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/020-content-block-cta.mustache" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/020-content-block-cta.mustache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/025-content-block-cta-pie-chart.json" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/025-content-block-cta-pie-chart.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/025-content-block-cta-pie-chart.mustache" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/025-content-block-cta-pie-chart.mustache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/030-content-block-sections.json" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/030-content-block-sections.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/030-content-block-sections.mustache" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/030-content-block-sections.mustache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/040-content-block-images.json" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/040-content-block-images.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/040-content-block-images.mustache" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/040-content-block-images.mustache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/050-grid-content-block.json" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/050-grid-content-block.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/050-grid-content-block.mustache" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/050-grid-content-block.mustache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-toggles/010-toggle-zone.json" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/010-toggle-zone.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-toggles/010-toggle-zone.mustache" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/010-toggle-zone.mustache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-toggles/011-toggle-zone-animate.json" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/011-toggle-zone-animate.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-toggles/011-toggle-zone-animate.mustache" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/011-toggle-zone-animate.mustache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-toggles/060-accordian-block.json" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/060-accordian-block.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-toggles/060-accordian-block.mustache" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/060-accordian-block.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/images/bog-logo.png" afterPath="$PROJECT_DIR$/source/images/bog-logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/000-atoms/010-global/010-colors.mustache" afterPath="$PROJECT_DIR$/source/_patterns/000-atoms/010-global/010-colors.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/020-select.mustache" afterPath="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/020-select.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/021-select-alt.mustache" afterPath="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/021-select-alt.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/020-select-form-item.json" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/020-select-form-item.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/030-grids/020-even-grid-two.json" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/030-grids/020-even-grid-two.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/030-grids/020-even-grid-two.mustache" afterPath="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/030-grids/020-even-grid-two.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/020-organisms/020-blocks/010-content-columns.json" afterPath="$PROJECT_DIR$/source/_patterns/020-organisms/020-blocks/010-content-columns.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/010-form.mustache" afterPath="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/010-form.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/020-form-two-columns.json" afterPath="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/020-form-two-columns.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/020-form-two-columns.mustache" afterPath="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/020-form-two-columns.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/030-templates/020-detail-page.json" afterPath="$PROJECT_DIR$/source/_patterns/030-templates/020-detail-page.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/030-templates/020-detail-page.mustache" afterPath="$PROJECT_DIR$/source/_patterns/030-templates/020-detail-page.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/030-templates/030-wizard-page.json" afterPath="$PROJECT_DIR$/source/_patterns/030-templates/030-wizard-page.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/030-templates/030-wizard-page.mustache" afterPath="$PROJECT_DIR$/source/_patterns/030-templates/030-wizard-page.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/030-templates/040-form-page.json" afterPath="$PROJECT_DIR$/source/_patterns/030-templates/040-form-page.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_patterns/030-templates/040-form-page.mustache" afterPath="$PROJECT_DIR$/source/_patterns/030-templates/040-form-page.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/images/bog-logo.svg" afterPath="$PROJECT_DIR$/source/images/bog-logo.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/sass/_05-components.scss" afterPath="$PROJECT_DIR$/source/sass/_05-components.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/sass/_06-trumps-external-overrides.scss" afterPath="$PROJECT_DIR$/source/sass/_06-trumps-external-overrides.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/sass/_06-trumps-ie-fixes.scss" afterPath="$PROJECT_DIR$/source/sass/_06-trumps-ie-fixes.scss" />
+    </list>
     <ignored path="ads-blendoptimizer-gold.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +82,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="030-draft-blend.mustache" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/040-pages/030-draft-blend.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            <state relative-caret-position="404">
+              <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="060-accordian-block.mustache" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/060-accordian-block.mustache">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="151" selection-start-line="4" selection-start-column="142" selection-end-line="4" selection-end-column="151" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="060-accordian-block.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/060-accordian-block.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="061-accordian-block-alt.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/061-accordian-block-alt.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="061-accordian-block-alt.mustache" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/061-accordian-block-alt.mustache">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="070-content-block-accordian.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/070-content-block-accordian.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="030-draft-blend.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/040-pages/030-draft-blend.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="301" column="34" selection-start-line="301" selection-start-column="34" selection-end-line="301" selection-end-column="34" />
+              <folding>
+                <element signature="n#!!block;n#primary-nav#0;n#!!block;n#site-header#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#inner-page-nav#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#dashboard-grid#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#dashboard-section#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="070-content-block-accordian-alt.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/070-content-block-accordian-alt.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="070-content-block-accordian-alt.mustache" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/070-content-block-accordian-alt.mustache">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="162" selection-start-line="10" selection-start-column="162" selection-end-line="10" selection-end-column="162" />
               <folding />
             </state>
           </provider>
@@ -39,57 +185,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/010-form.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/021-select-form-item-alt.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/021-select-form-item-alt.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/036-input-date-form-item-alt.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/036-input-date-form-item-alt.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/036-input-date-alt.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/036-input-telephone-alt.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/037-input-money-alt.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/039-input-account-alt.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/039-input-account-alt.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/037-input-money-alt.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/035-input-telephone-alt.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/033-input-date-alt.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/083-textarea-auto-grow-alt.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/083-textarea-auto-grow-alt.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/090-images/040-circle-image.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/090-images/020-logo-app.json" />
-        <option value="$PROJECT_DIR$/source/sass/_02-generic.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/090-images/060-image-with-content.json" />
-        <option value="$PROJECT_DIR$/source/js/AdsFormFunctions-module.js" />
-        <option value="$PROJECT_DIR$/source/_patterns/030-templates/010-wizard-page.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/030-templates/020-dashboard.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/030-templates/020-dashboard.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/030-templates/030-detail-page.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/030-templates/030-detail-page.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/030-templates/040-detail-page-sections.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/030-templates/040-detail-page-sections.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/030-templates/010-wizard-page.json" />
-        <option value="$PROJECT_DIR$/source/js/AdsPageWizard-module.js" />
-        <option value="$PROJECT_DIR$/source/sass/_05-components_forms.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/000-meta/_001-foot.mustache" />
-        <option value="$PROJECT_DIR$/source/js/pattern-lab-demo.js" />
-        <option value="$PROJECT_DIR$/source/js/AdsCharts-module.js" />
-        <option value="$PROJECT_DIR$/source/sass/_04-objects.scss" />
-        <option value="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/020-form-two-columns.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/040-modals/010-modal.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/040-modals/010-modal-cta.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/040-modals/010-modal-cta.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/040-modals/020-modal-cta.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/040-modals/010-modal.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/030-templates/030-wizard-page.json" />
-        <option value="$PROJECT_DIR$/source/_patterns/030-templates/020-detail-page.json" />
         <option value="$PROJECT_DIR$/source/_patterns/030-templates/010-dashboard.mustache" />
         <option value="$PROJECT_DIR$/source/_patterns/030-templates/010-dashboard.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/020-select-form-item.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/020-form-two-columns.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/020-form-two-columns.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/011-input-tooltip-form-item.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/011-input-tooltip-form-item.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/030-form-three-columns.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/030-form-three-columns.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/010-form.mustache" />
         <option value="$PROJECT_DIR$/source/sass/_05-components.scss" />
+        <option value="$PROJECT_DIR$/source/sass/_06-trumps-external-overrides.scss" />
+        <option value="$PROJECT_DIR$/source/sass/_06-trumps_global-only.scss" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/020-select-form-item.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/021-select-tooltip-form-item.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/021-select-tooltip-form-item.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/040-pages/010-create-blend.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/020-select.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/021-select-alt.mustache" />
+        <option value="$PROJECT_DIR$/source/images/bog-logo.svg" />
+        <option value="$PROJECT_DIR$/source/_patterns/040-pages/010-create-blend.json" />
+        <option value="$PROJECT_DIR$/source/sass/_06-trumps-ie-fixes.scss" />
         <option value="$PROJECT_DIR$/source/_patterns/030-templates/020-detail-page.mustache" />
         <option value="$PROJECT_DIR$/source/_patterns/030-templates/030-wizard-page.mustache" />
-        <option value="$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/020-form-two-columns.json" />
         <option value="$PROJECT_DIR$/source/_patterns/030-templates/040-form-page.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/030-templates/050-table-data-page.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/030-templates/050-table-data-page.json" />
         <option value="$PROJECT_DIR$/source/_patterns/030-templates/040-form-page.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/source/_patterns/030-templates/030-wizard-page.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/030-templates/020-detail-page.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/020-organisms/020-blocks/010-content-columns.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/000-atoms/010-global/010-colors.mustache" />
+        <option value="$PROJECT_DIR$/public/patterns/000-atoms-040-glyphs-010-glyph/000-atoms-040-glyphs-010-glyph.escaped.html" />
+        <option value="$PROJECT_DIR$/public/patterns/040-pages-010-create-blend/040-pages-010-create-blend.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/030-grids/020-even-grid-two.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/030-grids/020-even-grid-two.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/050-grid-content-block.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/060-content-block-tabular-data.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/060-content-block-table-data.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/060-content-block-table-data.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-toggles/060-accordian-block.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/070-content-block-expand-grid-row.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/070-content-block-expand-grid-row.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/070-content-block-accordian.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/040-pages/030-draft-blend.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/061-accordian-block-alt.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/061-accordian-block-alt.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/070-content-block-accordian-alt.json" />
+        <option value="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/070-content-block-accordian-alt.mustache" />
+        <option value="$PROJECT_DIR$/source/_patterns/040-pages/030-draft-blend.mustache" />
       </list>
     </option>
   </component>
@@ -149,7 +295,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1335" />
+    <option name="width" value="1423" />
     <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -159,7 +305,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -177,6 +323,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -205,20 +353,262 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="040-pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="020-organisms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="010-molecules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="060-content-blocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="040-modals" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="010-molecules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="060-content-blocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="030-grids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="010-molecules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="060-content-blocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="020-zones" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="010-molecules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="060-content-blocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="010-toggles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="010-molecules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="000-atoms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ads-blendoptimizer-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../envisionrx-fabricator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../naming-conventions-for-colors" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="editor.config.accepted" value="true" />
@@ -228,11 +618,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source/_patterns/030-templates" />
-      <recent name="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/040-modals" />
-      <recent name="$PROJECT_DIR$/source/js" />
+      <recent name="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones" />
+      <recent name="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles" />
+      <recent name="$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones" />
+      <recent name="$PROJECT_DIR$/source/_patterns/000-atoms/100-blocks" />
       <recent name="$PROJECT_DIR$/source/_patterns/040-pages" />
-      <recent name="$PROJECT_DIR$/source/_patterns/000-atoms/070-forms" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/source/_patterns" />
@@ -343,24 +733,34 @@
       <workItem from="1465568660130" duration="4860000" />
       <workItem from="1465575391938" duration="1664000" />
       <workItem from="1465673389076" duration="25000" />
-      <workItem from="1465673443959" duration="84000" />
+      <workItem from="1465673443959" duration="411000" />
+      <workItem from="1465828455475" duration="5414000" />
+      <workItem from="1465913750350" duration="10583000" />
+      <workItem from="1466432986632" duration="4870000" />
+      <workItem from="1466516131110" duration="246000" />
+      <workItem from="1466774478787" duration="620000" />
+      <workItem from="1466787130404" duration="5074000" />
+      <workItem from="1467035869057" duration="4969000" />
+      <workItem from="1467125541381" duration="3856000" />
+      <workItem from="1467207554535" duration="280000" />
+      <workItem from="1467212108263" duration="2952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180173000" />
+    <option name="totallyTimeSpent" value="219364000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1335" height="873" extended-state="0" />
+    <frame x="0" y="23" width="1423" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2562814" sideWeight="0.50448143" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31659058" sideWeight="0.49551857" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30313838" sideWeight="0.49551857" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24905375" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24812031" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -369,7 +769,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25224072" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39974457" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -412,202 +812,101 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/040-list/020-search-result-list.json">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/010-label.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="5" selection-start-line="1" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/040-pages/030-detail-page-content-sections.json" />
-    <entry file="file://$PROJECT_DIR$/source/_patterns/000-atoms/080-ctas/150-cta-block.json">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/010-input-form-item.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/030-input.mustache">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="10" selection-end-column="5" />
+          <caret line="1" column="108" selection-start-line="1" selection-start-column="96" selection-end-line="1" selection-end-column="108" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/040-list/010-wizard-link-list.mustache">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/020-forms/010-input-form-item.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/030-templates/010-wizard-page.json" />
-    <entry file="file://$PROJECT_DIR$/source/_patterns/030-templates/010-wizard-page.mustache" />
-    <entry file="file://$PROJECT_DIR$/source/js/AdsPageWizard-module.js">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/000-atoms/070-forms/010-label.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3171">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/js/AdsModal-module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/sass/_05-components_forms.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="203" column="9" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-zones/050-grid-content-block.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/050-tabular-data/010-table-data.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/js/Members/MyAccount.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/js/pattern-lab-demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/000-atoms/000-meta/_001-foot.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/js/AdsCharts-module.js">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/010-form.mustache">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+          <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/010-form.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="61" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/011-form-alt.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/sass/_06-trumps.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="423" column="32" selection-start-line="423" selection-start-column="32" selection-end-line="423" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/sass/_04-objects.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="339" column="50" selection-start-line="339" selection-start-column="50" selection-end-line="339" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/000-atoms/080-ctas/075-anchor-primary-glyph.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/040-modals/020-modal-cta.mustache">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="168" selection-start-line="1" selection-start-column="168" selection-end-line="1" selection-end-column="168" />
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/000-atoms/080-ctas/061-anchor-arrow-alt.mustache">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/020-form-two-columns.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="375">
+          <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/040-modals/010-modal.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/040-modals/010-modal.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/040-modals/020-modal-cta.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/sass/_06-trumps_units.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="207" column="38" selection-start-line="207" selection-start-column="38" selection-end-line="207" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/sass/_06-trumps_colors.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/010-assets/010-page-intro.mustache">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/030-templates/040-form-page.mustache">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/010-assets/010-page-intro.json">
+    <entry file="file://$PROJECT_DIR$/public/patterns/040-pages-010-create-blend/040-pages-010-create-blend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/patterns/040-pages-010-create-blend/040-pages-010-create-blend.escaped.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/patterns/040-pages-010-create-blend/040-pages-010-create-blend.mustache">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="6" selection-end-column="5" />
+          <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/030-templates/010-dashboard.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/030-sections/010-dashboard-content-zone.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+        <state relative-caret-position="135">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -618,136 +917,269 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/030-sections/030-expand-grid-row.mustache">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/050-grid-content-block.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/040-pages/010-create-blend.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="64" column="76" selection-start-line="64" selection-start-column="76" selection-end-line="64" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/040-pages/010-create-blend.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/030-grids/020-even-grid-two.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/040-content-block-images.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/050-grid-content-block.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/050-tabular-data/010-table-data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/040-content-block-images.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/050-tabular-data/010-table-data.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/010-content-block.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/030-content-block-sections.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/030-sections/020-dashboard-content-zone-even.mustache">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/030-sections/020-dashboard-content-zone-even.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/030-grids/020-even-grid-two.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/060-content-block-table-data.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/025-content-block-cta-pie-chart.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/000-atoms/100-blocks/021-radar-chart.mustache" />
+    <entry file="file://$PROJECT_DIR$/source/_patterns/000-atoms/100-blocks/020-pie-chart.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/020-content-block-cta.mustache">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/025-content-block-cta-pie-chart.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/sass/_05-components.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7125">
-          <caret line="711" column="12" selection-start-line="711" selection-start-column="12" selection-end-line="711" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/sass/_05-components_navigational.scss">
+    <entry file="file://$PROJECT_DIR$/source/sass/_05-components_accordion.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="117" column="14" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="14" />
+        <state relative-caret-position="555">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/030-templates/010-dashboard.json">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/010-content-block.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="151" column="25" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
+        <state relative-caret-position="210">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/000-atoms/050-typography/012-page-header-scalable.json">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/030-sections/030-expand-grid-row.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="4" selection-end-column="5" />
+        <state relative-caret-position="420">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/030-templates/030-wizard-page.json">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/060-content-block-table-data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+        <state relative-caret-position="390">
+          <caret line="26" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/030-templates/030-wizard-page.mustache">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/030-sections/030-expand-grid-row.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="360">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/030-templates/020-detail-page.mustache">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/070-content-block-accordian.mustache">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/030-templates/020-detail-page.json">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/060-accordian-block.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
+        <state relative-caret-position="60">
+          <caret line="4" column="151" selection-start-line="4" selection-start-column="142" selection-end-line="4" selection-end-column="151" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/000-atoms/080-ctas/021-button-primary-size-1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/020-form-two-columns.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/020-form-two-columns.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/011-form-alt.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/030-templates/040-form-page.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/010-form.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="68" column="10" selection-start-line="2" selection-start-column="8" selection-end-line="68" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/030-templates/040-form-page.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/020-organisms/040-forms/010-form.mustache">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/060-accordian-block.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" column="95" selection-start-line="25" selection-start-column="95" selection-end-line="25" selection-end-column="95" />
+          <caret line="25" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/061-accordian-block-alt.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="495">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/010-toggles/061-accordian-block-alt.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/070-content-block-accordian.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/070-content-block-accordian-alt.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/010-molecules/060-content-blocks/020-zones/070-content-block-accordian-alt.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="162" selection-start-line="10" selection-start-column="162" selection-end-line="10" selection-end-column="162" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/040-pages/030-draft-blend.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="301" column="34" selection-start-line="301" selection-start-column="34" selection-end-line="301" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!block;n#primary-nav#0;n#!!block;n#site-header#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#inner-page-nav#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dashboard-grid#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dashboard-section#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/040-pages/030-draft-blend.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
           <folding />
         </state>
       </provider>

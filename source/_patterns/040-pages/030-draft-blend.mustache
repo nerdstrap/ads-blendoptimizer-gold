@@ -1,0 +1,61 @@
+<div class="o-container-global">
+	{{> organisms-site-header-authenticated}}
+    <div class="t-2@large c-page" id="main"{{#page-name}} data-pagename="{{page-name}}"{{/page-name}}>
+		{{> molecules-inner-page-nav}}
+        <div class="u-bg-img u-bg-img--large c-image-feature@large c-image-feature@large--style-1 c-image-feature@large--size-1 t-0@small o-container c-page__content c-image-feature__content">
+            <div class="u-space-1@large u-space-3-lg@large u-space-1-3-sm@small o-container__wrap">
+                <div class="o-sections">
+                    <div class="o-sections__section t-alpha@large u-shadow@large t-1@small u-zone-space o-sections o-media__main c-content-block">
+                        <div class="o-sections__section c-content-block__main">
+							{{#dashboard-grid}}
+                                <div class="{{#dashboardGridClasses}}{{dashboardGridClasses}} {{/dashboardGridClasses}}o-sections-2-4 o-sections o-flex o-flex--grid o-flex--spaced{{#dashboardGridClasses1}} {{dashboardGridClasses1}}{{/dashboardGridClasses1}}">
+									{{#rows}}
+										{{#cell0}}
+                                            <div class="o-sections@small__section u-size-2@large o-flex@large o-flex@large--stretch o-flex@large__cell">
+												{{> molecules-content-block-cta-pie-chart}}
+                                            </div>
+										{{/cell0}}
+										{{#cell1}}
+                                            <div class="o-sections@small__section u-size-2@large o-flex@large o-flex@large--stretch o-flex@large__cell">
+												{{> molecules-content-block-table-data}}
+                                            </div>
+										{{/cell1}}
+									{{/rows}}
+                                </div>
+							{{/dashboard-grid}}
+                        </div>
+                    </div>
+                    <div class="o-sections__section t-alpha@large u-shadow@large t-1@small u-zone-space o-sections o-media__main c-content-block">
+                        <div class="o-sections__section c-content-block__main">
+							{{#dashboard-section}}
+								{{> molecules-content-block-accordian-alt}}
+							{{/dashboard-section}}
+                        </div>
+                    </div>
+                    <div class="o-sections__section t-alpha@large u-shadow@large t-1@small u-zone-space o-sections o-media__main c-content-block">
+                        <div class="o-sections__section c-content-block__main">
+							{{#dashboard-section-2}}
+								{{> molecules-content-block-accordian}}
+							{{/dashboard-section-2}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	{{> organisms-site-footer}}
+</div>
+
+<style type="text/css">
+    @media screen and (min-width: 47.75rem) {
+        .c-image-feature:before, .c-image-feature\@large:before {
+            background-image: url({{background-image-src}})
+        }
+    }
+
+    @media screen and (max-width: 47.75rem) {
+        .c-image-feature:before, .c-image-feature\@small:before {
+            background-image: url({{background-image-src}})
+        }
+    }
+</style>

@@ -98,10 +98,6 @@
 		"wizard-nav": {
 			"list-items": [
 				{
-					"text": "Section 0",
-					"href": "#section-0"
-				},
-				{
 					"text": "Section 1",
 					"href": "#section-1"
 				},
@@ -112,27 +108,14 @@
 				{
 					"text": "Section 3",
 					"href": "#section-3"
+				},
+				{
+					"text": "Section 4",
+					"href": "#section-4"
 				}
 			]
 		},
 		"zones": [
-			{
-				"id": "section-0",
-				"text": "Section 0",
-				"paragraph": {
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
-				},
-				"cta-block": {
-					"href": "#",
-					"title": "Lorem ipsum",
-					"media-image": {
-						"alt": "media image",
-						"src": "/images/placeholder-image_50x50.png"
-					},
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat, beatae, dicta necessitatibus dolore aut sit eos dolorem quaerat, laborum modi veritatis? Tenetur dolores minima explicabo iusto, enim nobis aliquid suscipit nisi quis optio, rem amet praesentium, sequi dolorem alias!",
-					"text2": "- username"
-				}
-			},
 			{
 				"id": "section-1",
 				"text": "Section 1",
@@ -183,6 +166,23 @@
 					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat, beatae, dicta necessitatibus dolore aut sit eos dolorem quaerat, laborum modi veritatis? Tenetur dolores minima explicabo iusto, enim nobis aliquid suscipit nisi quis optio, rem amet praesentium, sequi dolorem alias!",
 					"text2": "- username"
 				}
+			},
+			{
+				"id": "section-4",
+				"text": "Section 4",
+				"paragraph": {
+					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam doloremque, sequi delectus molestiae rem quae recusandae consectetur at pariatur placeat eveniet quisquam aut dolorem dolore nisi error ex adipisci harum dicta ducimus temporibus nostrum eos reiciendis enim. Autem, libero."
+				},
+				"cta-block": {
+					"href": "#",
+					"title": "Lorem ipsum",
+					"media-image": {
+						"alt": "media image",
+						"src": "/images/placeholder-image_50x50.png"
+					},
+					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat, beatae, dicta necessitatibus dolore aut sit eos dolorem quaerat, laborum modi veritatis? Tenetur dolores minima explicabo iusto, enim nobis aliquid suscipit nisi quis optio, rem amet praesentium, sequi dolorem alias!",
+					"text2": "- username"
+				}
 			}
 		],
 		"site-footer": {
@@ -219,6 +219,7 @@
 				]
 			},
 			"i18n_copyright": "<span class=\"u-nw\">&copy;2016 ADS</span>. All Rights Reserved."
-		}
+		},
+		"background-image-src": "/images/fpo-placeimg_600x400.jpg"
 	}
 }

@@ -1,0 +1,21 @@
+{{#accordian-block}}
+    <div class="o-sections">
+		{{#sections}}
+            <div class="o-sections__section c-toggle c-accordion">
+                <{{#tag}}{{tag}}{{/tag}}{{^tag}}h3{{/tag}} class="js-toggle-state u-space-2-4 u-space-1-3-sm u-glyph-after c-button c-button--secondary c-button--default c-toggle__cta c-accordion__title" role="button">
+					<span>
+						{{{text}}}
+                    </span>
+                </{{#tag}}{{tag}}{{/tag}}{{^tag}}h3{{/tag}}>
+                <div class="c-toggle__content c-toggle__content--animate c-accordion__content">
+                    <div class="t-1 u-zone-sections">
+                        <div class="u-zone-space u-zone-sections__section">
+							{{> atoms-article-header }}
+							{{> atoms-paragraph }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+		{{/sections}}
+    </div>
+{{/accordian-block}}
